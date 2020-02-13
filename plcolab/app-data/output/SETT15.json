@@ -1,0 +1,17 @@
+{
+    "isSuccess": true,
+    "requestId": "2afa37b8-e725-4138-95cd-80d2873aa406",
+    "shortRequestId": null,
+    "fileNameInteroperability": null,
+    "UUID": "cb0abacdd4bb72b0fdbee08259101ca64ee9a0fd89f735374172ab308874be7951e5241a62e4186693604b0256da6dee",
+    "documentNumber": "SETT15",
+    "LDF": "FACTURA-UBL(860511055;SETT15;2020-01-05;PRINCIPAL;PRINCIPAL)",
+    "URL": "https://plataforma-beta.facture.co/PublicViewer#/PublicViewer/ODYwNTExMDU1LzQ2ZTc0OGU1LTcyMmEtNGIxNy04NTcwLTc2MGMwNzFkNWY3OS8yMjk4NmQ0Ni1lMzM0LTQ2ZjYtOTRjNi1mNDViZjIxN2UyZmE=",
+    "UBL": null,
+    "UrlPdf": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-UBL/FACTURA-UBL(860511055;SETT15;2020-01-05;PRINCIPAL;PRINCIPAL).pdf?sv=2017-11-09&sig=C1ZyzxJsow8K1mghYs6eg4M7q9GF58tlY9ZtIqU49lI%3D&spr=https&se=2025-01-20T21%3A50%3A25Z&srt=o&ss=b&sp=r",
+    "UrlXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-UBL/FACTURA-UBL(860511055;SETT15;2020-01-05;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=C1ZyzxJsow8K1mghYs6eg4M7q9GF58tlY9ZtIqU49lI%3D&spr=https&se=2025-01-20T21%3A50%3A25Z&srt=o&ss=b&sp=r",
+    "AckXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/ACK/ACK(860511055;SETT15;2020-01-05;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=C1ZyzxJsow8K1mghYs6eg4M7q9GF58tlY9ZtIqU49lI%3D&spr=https&se=2025-01-20T21%3A50%3A25Z&srt=o&ss=b&sp=r",
+    "AckNumber": null,
+    "pdfFileName": "face_f08605110550000SETT15.pdf",
+    "xmlFileName": "face_f08605110550000SETT15.xml"
+}

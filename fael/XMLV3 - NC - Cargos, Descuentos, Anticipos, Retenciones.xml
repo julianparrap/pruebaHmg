@@ -1,0 +1,254 @@
+<NotaCredito>
+	<Cabecera Numero="NC132"  OrdenCompra="123" FechaOrdenCompra="2018-12-29" FechaEmision="2019-07-25" HoraEmision="08:10:00" Prefijo="NC"
+	Vencimiento="2019-10-28"  MonedaNota="COP" Observaciones="Observacion"  FormaDePago="1" LineasDeNota="1" TipoOperacion="05" />
+	
+	<ObservacionesAdicionales>
+		<Observaciones>otras observaciones para el documento</Observaciones>
+		<Observaciones>otras observaciones para el documento</Observaciones>
+	</ObservacionesAdicionales>
+			
+	<PeriodoFacturado FechaInicio="2019-06-01" HoraInicio="00:00:00" FechaFin="2019-06-30" HoraFin="23:59:00" />
+	
+	<ReferenciasNotas>
+		<ReferenciaNota FacturaAsociada="" CodigoNota="" DescripcionNota=""  />
+		<ReferenciaNota FacturaAsociada="" CodigoNota="" DescripcionNota=""/>
+	</ReferenciasNotas>
+	
+	<FacturasRelacionadas>
+		<FacturaRelacionada Numero="SETP990000682" CUFE="aa97f64da04e7c9db0f79b56fdb5b947927ec6a7d965be42101aacd8ac554a1c2f867148a78b743d4a253dd2f70d3445" FechaEmisionFA="2019-07-22"/>
+		<FacturaRelacionada Numero="SETP990000681" CUFE="40c244ca7e3e57109f28e5e7bd248d8c5777deef78d9bb574f5760a9e0a101d739270f35ca2e87eaac062b39403a1d15" FechaEmisionFA="2019-07-19"/>
+	</FacturasRelacionadas>
+	
+	<DocumentosDeDespacho>
+		<DocumentoDespacho Numero="DD78965" FechaEmision="2019-06-08" />
+		<DocumentoDespacho Numero="DD88965" FechaEmision="2019-06-09" />
+	</DocumentosDeDespacho>
+	
+	<DocumentosDeRecibo>
+		<DocumentoRecibo Numero="DR21365" FechaEmision="2019-06-07" />
+		<DocumentoRecibo Numero="DR21366" FechaEmision="2019-06-07" />
+	</DocumentosDeRecibo>
+
+	<DocumentosAdicionalesReferencia>
+		<DocumentoAdicionalReferencia Numero="FAC5" FechaEmision="2019-06-05" TipoDocumento="03" UrlAdjunto=""/>
+		<DocumentoAdicionalReferencia Numero="FAC6" FechaEmision="2019-06-05" TipoDocumento="03" UrlAdjunto=""/>
+	</DocumentosAdicionalesReferencia>
+  
+  <!-- TODO: incluir en excel, No mapea DIAN, SI UBL  -->
+	<Notificacion Tipo="Mail" De="defacture@yopmail.com">
+		<Para>recibo1@yopmail.com</Para>
+		<Para>recibo2@yopmail.com</Para>
+	</Notificacion>
+
+	<Emisor TipoPersona="1" TipoRegimen="04" TipoIdentificacion="31" NumeroIdentificacion="900458003" DV="3" RazonSocial="CONEXOS LOGISTICA S A S"  NumeroMatriculaMercantil="" NombreComercial= "Mi Empresa" >
+		
+		<CodigosCIIU>
+			<CIIU>4762</CIIU>
+			<CIIU>4769</CIIU>
+		</CodigosCIIU>
+		
+		<Direccion CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130001" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Alto Bosque Calle 30 #2-64" />
+		
+		<DireccionesAdicionales>
+			<Direccion>Alto Bosque Calle 80 #3-60</Direccion>
+			<Direccion>Alto Bosque Calle 70 #4-44</Direccion>
+		</DireccionesAdicionales>
+		
+		<ObligacionesEmisor>
+			<CodigoObligacion>O-11</CodigoObligacion>
+			<CodigoObligacion>O-06</CodigoObligacion>
+		</ObligacionesEmisor>
+		
+		<DireccionFiscal CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130001" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Alto Bosque Calle 30 #21-164"/>
+		
+		<TributoEmisor CodigoTributo="01" NombreTributo="IVA"/>
+		
+		<Contacto Nombre="Armando San Andres" 	Telefono="240029" Telfax="6240029" Email="armandosa@conexoslogistica.com.co" Notas="Contactar en horario diurno"/>
+
+		<Consorcio>
+			<Participante  RazonSocial="CONEXOS LOGISTICA S A S" Nit="900458003"  DV="3" Regimen="04" CodigoTributo="01" NombreTributo="IVA" Porcentaje="70" >
+				<Obligaciones>
+					<CodigoObligacion>O-06</CodigoObligacion>
+					<CodigoObligacion>O-07 </CodigoObligacion>
+				</Obligaciones>
+			</Participante>
+			<Participante  RazonSocial="RYO LOGISTICA SAS" Nit="900658872"  DV="5" CodigoObligacion="O-13" Regimen="04" CodigoTributo="02" NombreTributo="IC" Porcentaje="30" >
+				<Obligaciones>
+					<CodigoObligacion>O-06</CodigoObligacion>
+					<CodigoObligacion>O-07 </CodigoObligacion>
+				</Obligaciones>
+			</Participante>
+		</Consorcio>
+			
+	</Emisor>
+
+
+	<Cliente TipoPersona="1" TipoRegimen="05" TipoIdentificacion="31" NumeroIdentificacion="800195623" DV="7" NombreComercial="ALIMENTOS ECONOMICOS" RazonSocial="ALIMENTOS SAS S A S"  NumeroMatriculaMercantil="">
+
+		<!-- NO incluidos por la DIAN, Si por UBL -->
+		<PersonaNatural PrimerNombre="Victor-Cliente" SegundoNombre="Raul-Cliente" Apellido="Castro Mier"/>
+    
+		<Direccion CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130005" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Chapacua Carrera 19 #31-14" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es"/>
+	
+		<ObligacionesCliente>
+			<CodigoObligacion>O-06</CodigoObligacion>
+			<CodigoObligacion>O-07</CodigoObligacion>
+			<CodigoObligacion>O-08</CodigoObligacion>
+			<CodigoObligacion>O-09</CodigoObligacion>
+		</ObligacionesCliente>
+	
+		<DireccionFiscal CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130005" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Chapacua Carrera 19 #35-15" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es" />
+	
+		<Contacto Nombre="Javier Gonzalez" Telefono="5542900" Telfax="5552900" Email="javiergz@alimentoseco.com.co" Notas="Encargado del area de reclamaciones"/>
+
+		<TributoCliente CodigoTributo="01" NombreTributo="IVA"/>
+		
+	</Cliente>
+  
+	<Autorizado  TipoIdentificacion="13" NumeroIdentificacion="1047449432" DV="" Nombre="Fulano de Tal" />
+	
+  <Entrega FechaSalida="2019-06-13" HoraSalida="06:30:00">
+	<Direccion CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130001" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Manga Avenida Jimenez Carrera 19 #31-14" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es"/>
+	
+	<Transportador NombreComercial="SERVIENTREGA" RazonSocial="SERVIENTREGA S.A" TipoRegimen="04" TipoIdentificacion="31" NumeroIdentificacion="860512330" DV="3" NumeroMatriculaMercantil="28050012"  >
+		
+		<Direccion CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130001" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Avenida el Bosque Carrera 8 #21-15" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es"/>
+			
+		<ObligacionesTransportador>
+			<CodigoObligacion>A-29</CodigoObligacion>
+			<CodigoObligacion>O-07</CodigoObligacion>
+		</ObligacionesTransportador>
+	    
+		<DireccionFiscal CodigoMunicipio="13001" NombreCiudad="Cartagena de Indias" CodigoPostal="130001" NombreDepartamento="Bolivar" CodigoDepartamento="13" Direccion="Avenida el Bosque Carrera 8 #21-15" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es" />	
+       
+		<TributoTransportador CodigoTributo="01" NombreTributo="IVA"/>
+		
+		<Contacto Nombre="Adolfo Hernandez" Telefono="3187999652" Telfax="8542900" Email="adolfo@servientrega.com.co" Notas="Encargado de transportas la mercancia"/>
+	
+	</Transportador>
+	
+  </Entrega>
+
+	<TerminosEntrega>
+		<TerminoEntrega ID="TE935" TerminosEspeciales="Portes Debidos" Incoterms="CFR" DescripcionIncoterms="Costo y flete" />
+	</TerminosEntrega>
+
+	<MediosDePago  CodigoMedioPago="43" >
+		<IdentificadorPago>
+			<ReferenciaPago>Referencia 1</ReferenciaPago>
+			<ReferenciaPago>Referencia 2</ReferenciaPago>
+		</IdentificadorPago>
+	</MediosDePago>
+
+	<Anticipos> 
+		<Anticipo IDPago="A1" ValorPagoAnticipo="200.00" MonedaAnticipo="COP" FechaRecepcion="2019-05-06" FechaPago="2019-05-06" HoraPago="09:15:00" InstruccionesAnticipos="Ya pago al incio de mes" />
+	</Anticipos>
+
+	<DescuentosOCargos>
+		<DescuentoOCargo ID="1" Indicador="false" CodigoDescuento="09" Justificacion="Descuento por fidelidad" Porcentaje="30.00" Valor="750.00" ValorBase="2500.00"  />
+		<DescuentoOCargo ID="1" Indicador="true"  Justificacion="Cargo por envio" Porcentaje="10.00" Valor="250" ValorBase="2500.00"  />
+	</DescuentosOCargos>
+  
+	<TasaDeCambio  MonedaDestino="USD" ValorTasaDeCambio="3010.00" FechaTasaDeCambio="2019-06-13" />
+
+	<Impuestos>
+    <!--CODIGO 01 ->IVA-->
+		<Impuesto Valor="475" Tipo="01" Nombre="IVA">
+			<Subtotal ValorBase="2500" Valor="475" Porcentaje="19"  />
+		</Impuesto>
+    
+    <!--CODIGO 02 ->IC -IMPOCONSUMO -->
+		<Impuesto Valor="0" Tipo="02" Nombre="INC">
+			<Subtotal ValorBase="2500" Porcentaje="0.00" Valor="0.00" />
+		</Impuesto>
+
+    <!--CODIGO 22 ->Impuesto al Consumo de Bolsa Plástica -->
+		<!--<Impuesto Valor="2000" Tipo="22" Nombre="Bolsas">
+			<Subtotal ValorBase="" Porcentaje="" ValorUnidadMedidaBase="1.00" 
+			CodigoUnidadMedidaBase="NIU" ValorTributoXUnidad="1000" Valor="1000" />
+		</Impuesto>-->
+	
+	</Impuestos>
+  
+	<Retenciones>
+
+    <!--CODIGO 05 ->RETE IVA-->
+		<Retencion Valor="375" Tipo="05" Nombre="ReteIVA">
+			<Subtotal ValorBase="2500" Valor="375" Porcentaje="15"   />
+		</Retencion>
+
+    <!--CODIGO 06 ->RETE FUENTE-->
+		<Retencion Valor="62.5" Tipo="06" Nombre="ReteFuente">
+			<Subtotal ValorBase="2500" Valor="62.5" Porcentaje="2.5" />
+		</Retencion>
+		
+		<Retencion Valor="37.5" Tipo="07" Nombre="ReteICA">
+			<Subtotal ValorBase="2500" Valor="37.5" Porcentaje="1.5" />
+		</Retencion>
+    
+	</Retenciones>
+	
+  
+	<Totales Bruto="2000.00" BaseImponible="2500.00" BrutoMasImpuestos="2475.00" Cargos="250.00"  Descuentos="750.00"  Impuestos="475.00" Retenciones="375.00"  General="1775" Anticipo="200.00" Redondeo="0.00" />
+
+	<Linea>
+		<Detalle NumeroLinea="1" Nota="" Cantidad="1.00" UnidadMedida="94" SubTotalLinea="2000" Descripcion="Audifonos sony" CantidadXEmpaque=""  Marca="" NombreModelo="" CantidadBase="1.00" UnidadCantidadBase="EA" PrecioUnitario="2500" ValorTotalItem="2500" />
+			<PrecioReferencia ValorArticulo="955242" CodigoTipoPrecio="65"/>
+			<DescuentosOCargos>
+				<DescuentoOCargo ID="05" Indicador="false" Justificacion="Descuentos escpecíficos por inventarios" Porcentaje="0.20" Valor="500" ValorBase="2500"  />
+			</DescuentosOCargos>
+			<Impuestos>
+				<Impuesto Valor="475" Tipo="01" Nombre="IVA">
+					<Subtotal ValorBase="2500" Valor="475"  ValorUnidMedidaBase=""  CodigoUnidMedidaBase="" ValorTributoXUnidad=""  Porcentaje="19"  />
+				</Impuesto>
+				<Impuesto Valor="0.00" Tipo="02" Nombre="INC">
+					<Subtotal ValorBase="2500" Valor="0.00"  ValorUnidMedidaBase=""  CodigoUnidMedidaBase="" ValorTributoXUnidad=""  Porcentaje="0.00"  />
+				</Impuesto>
+			</Impuestos>
+			<Retenciones>
+				<Retencion Valor="375" Tipo="05" Nombre="ReteIVA">
+					<Subtotal ValorBase="2500" Valor="375" Porcentaje="15"   />
+				</Retencion>
+				<Retencion Valor="62.5" Tipo="06" Nombre="ReteFuente">
+					<Subtotal ValorBase="2500" Valor="62.5" Porcentaje="2.5" />
+				</Retencion>
+				<Retencion Valor="37.5" Tipo="07" Nombre="ReteICA">
+					<Subtotal ValorBase="2500" Valor="37.5" Porcentaje="1.5" />
+				</Retencion>
+			</Retenciones>
+			<CodificacionVendedor CodigoArticulo="CV6814" CodigoExtendido="CV273242" />
+			<CodificacionesEstandar>
+				<CodificacionEstandar  CodigoArticulo="AC6814"  CodigoEstandar="010"  />
+			</CodificacionesEstandar>
+			<Mandante Nit="900587439" DV="3" TipoIdentificacion="31" />
+	</Linea>
+
+	<!-- datos adicionales NO incluidos por la DIAN, Si UBL= extensión -->
+	<Extensiones>
+		<!-- moneda extranjera -->
+		<ForeignCurrency currency="USD" exchangeRate="3005.5">
+		  <Detalle>
+			<Linea Codigo="41555010" PrecioUnitario="1182.08" SubTotalLinea="1182.08" ValorTotalItem="1406.68">
+			  <Impuesto>
+				<Subtotal Tipo="01" Porcentaje="19" Valor="224.6" />
+			  </Impuesto>
+			  <Descuento Porcentaje="0" DescuentoValor="0" />
+			</Linea>
+		  </Detalle>
+		  <Totales Bruto="1182.08" Base="1182.08" Impuestos="224.6" Descuentos="0" Retenciones="0" Cargos="0" General="1406.68" Anticipo="0.00" TotalIva="5000" TotalImpoconsumo ="1500" TotalIca ="1300"/>
+		</ForeignCurrency>
+
+			<!-- datos adicionales NO incluidos por la DIAN, Si UBL= extensión -->
+		<DatosAdicionales>
+			<CampoAdicional   Nombre="nombre" Valor="prueba"/>
+		</DatosAdicionales>
+
+		<!-- informacion adicional por filas -->
+		<InformacionAdicionalRows>
+		  <InformacionAdicionalRow>
+			<CampoAdicional Categoria="" Nombre="Nombre" Valor="Jose" />
+			<CampoAdicional Categoria="" Nombre="Apellido" Valor="Perez" />
+		  </InformacionAdicionalRow>
+		</InformacionAdicionalRows>
+	</Extensiones>
+</NotaCredito>

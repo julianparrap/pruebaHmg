@@ -1,0 +1,117 @@
+<Factura>
+	<Cabecera  Numero="SETT1" OrdenCompra="6010026" FechaOrdenCompra="2019-12-12" FechaEmision="2019-12-12" Vencimiento="2020-01-12" HoraEmision="08:10:00" MonedaFactura="COP" Observaciones="Descuentese del 10% sobre le valor de la mercancia, si cancela antes de 30 días. Despues de esta fecha no se aceptan descuentos." TipoFactura="FACTURA-UBL" FormaDePago="2" LineasDeFactura="4" TipoOperacion="05" FormatoContingencia="Papel"/>
+	<ObservacionesAdicionales>
+		<Observaciones></Observaciones>
+		<Observaciones></Observaciones>
+	</ObservacionesAdicionales>
+	<NumeracionDIAN NumeroResolucion="18760000001" FechaInicio="2019-01-19" FechaFin="2030-01-19" PrefijoNumeracion="SETT" ConsecutivoInicial="1" ConsecutivoFinal="5000000"/>
+	<!-- TODO: incluir en excel, No mapea DIAN, SI UBL -->
+		<Emisor TipoPersona="1" TipoRegimen="48" TipoIdentificacion="31" NumeroIdentificacion="860511055" DV="8" RazonSocial="HERMAGU S.A." NumeroMatriculaMercantil="183263" NombreComercial= "HERMAGU S.A." >
+		<CodigosCIIU>
+			<CIIU>4530</CIIU>
+		</CodigosCIIU>
+		<Direccion CodigoMunicipio="11001" NombreCiudad="BOGOTA D.C." CodigoPostal="" NombreDepartamento="BOGOTA D.C." CodigoDepartamento="11" Direccion="Calle 17 No 28A - 29" />
+		<ObligacionesEmisor>
+			<CodigoObligacion>O-03</CodigoObligacion>
+			<CodigoObligacion>O-05</CodigoObligacion>
+			<CodigoObligacion>O-07</CodigoObligacion>
+			<CodigoObligacion>O-09</CodigoObligacion>
+			<CodigoObligacion>O-10</CodigoObligacion>
+			<CodigoObligacion>O-14</CodigoObligacion>
+			<CodigoObligacion>O-42</CodigoObligacion>
+			<CodigoObligacion>O-48</CodigoObligacion>
+		</ObligacionesEmisor>
+		<DireccionFiscal CodigoMunicipio="11001" NombreCiudad="BOGOTA D.C." CodigoPostal="" NombreDepartamento="BOGOTA D.C." CodigoDepartamento="11" Direccion="Calle 17 No 28A - 29"/>
+		<TributoEmisor CodigoTributo="01" NombreTributo="IVA"/>
+	</Emisor>
+	
+	<Cliente TipoPersona="2" TipoRegimen="49" TipoIdentificacion="13" NumeroIdentificacion="19162419" DV="6" NombreComercial="WILSON RAFAEL ARIZA SALCEDO" RazonSocial="TAXI-CAMPEROS" NumeroMatriculaMercantil="">
+		<!-- NO incluidos por la DIAN, Si por UBL -->
+		<Direccion CodigoMunicipio="08001" NombreCiudad="BARRANQUILLA" CodigoPostal="" NombreDepartamento="ATLANTICO" CodigoDepartamento="08" Direccion="CARRERA 38 No 43 - 74 LOCAL 2" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es"/>
+		<ObligacionesCliente>
+			<CodigoObligacion>O-05</CodigoObligacion>
+			<CodigoObligacion>O-49</CodigoObligacion>
+		</ObligacionesCliente>
+		<DireccionFiscal CodigoMunicipio="08001" NombreCiudad="BARRANQUILLA" CodigoPostal="" NombreDepartamento="ATLANTICO" CodigoDepartamento="08" Direccion="CARRERA 38 No 43 - 74 LOCAL 2" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es" />
+		<Contacto Nombre="Juan Carlos Moya H" Telefono="3112260252" Telfax="" Email="sistemas@hermagu.com.co" Notas="Encargado"/>
+		<TributoCliente CodigoTributo="01" NombreTributo="IVA"/>
+	</Cliente>
+	<Autorizado TipoIdentificacion="13" NumeroIdentificacion="19162419" DV="6" Nombre="WILSON RAFAEL ARIZA SALCEDO" />
+	<MediosDePago CodigoMedioPago="ZZZ" FormaDePago="OTRO" Vencimiento="2020-01-12">
+	</MediosDePago>
+	
+	<Totales Bruto="363900" BaseImponible="399300" BrutoMasImpuestos="475167" Cargos= "0" Descuentos="0" Impuestos="75867" Retenciones="0" General="" Anticipo="0" Redondeo="0" TotalDescuentosLineas="0" TotalCargosLineas="0" />
+
+	<!--Impuestos generales de la factura-->
+	<Impuestos>
+		<Impuesto Nombre="IVA" Tipo="01" Valor="35400">
+			<Subtotal Valor="35400" CodigoUnidadMedidaBase="94" Porcentaje="19" ValorBase="399300"/>
+		</Impuesto>
+	<Impuestos>
+
+	<Linea>
+		<!-- Datos de referencias vendedidas al cliente -->
+		<Detalle NumeroLinea="1" Nota="" Cantidad="3" UnidadMedida="Unidad" SubTotalLinea="124500" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Frontier 2.4Lts, Inyeccion; 16 V" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="3" UnidadCantidadBase="Unidad" PrecioUnitario="41500" ValorTotalItem="124500" />
+		<Extensiones>
+			<DatosAdicionales>
+				<CampoAdicional Nombre="linea" Valor="64"/>
+				<CampoAdicional Nombre="referencia" Valor="0518-205"/>
+				<CampoAdicional Nombre="equivalencia" Valor="205-0518"/>
+			</DatosAdicionales>
+	</Extensiones>
+	<Impuestos>
+		<Impuesto Valor="23655" Tipo="01" Nombre="IVA">
+			<Subtotal ValorBase="124500"  Porcentaje="19"  Valor="23655" CodigoUnidadMedidaBase="94"  />
+		</Impuesto>
+	</Impuestos>
+	</Linea>
+	
+	<Linea>
+		<Detalle NumeroLinea="2" Nota="" Cantidad="4" UnidadMedida="Unidad" SubTotalLinea="130800" Descripcion="PASTILLA DE FRE Pathfinder, 92/96; D21, 90/97; Frontier 4X2 19" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="4" UnidadCantidadBase=	"Unidad" PrecioUnitario="32700" ValorTotalItem="130800" />
+		<Extensiones>
+			<DatosAdicionales>
+				<CampoAdicional Nombre="linea" Valor="64"/>
+				<CampoAdicional Nombre="referencia" Valor="7228-D333SM"/>
+				<CampoAdicional Nombre="equivalencia" Valor="7228-D333S"/>
+			</DatosAdicionales>
+		</Extensiones>
+		<Impuestos>
+			<Impuesto Valor="24852" Tipo="01" Nombre="IVA">
+				<Subtotal ValorBase="13800"  Porcentaje="19"  Valor="24852" CodigoUnidadMedidaBase="94"  />
+			</Impuesto>
+	</Impuestos>
+	</Linea>
+	
+	<Linea>
+		<Detalle NumeroLinea="3" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="108600" Descripcion="BOMBA DE FRENO 1 Hilux 4X2, 4X4"  CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="108600" ValorTotalItem="108600" />
+		<Extensiones>
+			<DatosAdicionales>
+				<CampoAdicional Nombre="linea" Valor="67"/>
+				<CampoAdicional Nombre="referencia" Valor="472013D040"/>
+				<CampoAdicional Nombre="equivalencia" Valor=""/>
+			</DatosAdicionales>
+		</Extensiones>
+		<Impuestos>
+			<Impuesto Valor="20634" Tipo="01" Nombre="IVA">
+				<Subtotal ValorBase="108600"  Porcentaje="19"  Valor="20634" CodigoUnidadMedidaBase="94"  />
+			</Impuesto>
+	</Impuestos>
+	</Linea>
+	
+	<!-- Datos para la factura que lleva fletes -->
+	<Linea>
+    <Detalle NumeroLinea="4" Cantidad="1" UnidadMedida="94" SubTotalLinea="0" Descripcion="flete" CantidadBase="0" UnidadCantidadBase="94" PrecioUnitario="0" ValorTotalItem="0" Ocultar="true"  />
+    <precioreferencia ValorArticulo= "valor flete" CodigoTipoPrecio="03">
+    </precioreferencia>
+    <Impuestos>
+        <Impuesto Valor="6726" Tipo="01" Nombre="IVA">
+            <Subtotal ValorBase="35400" Valor="6726" Porcentaje="19" CodigoUnidadMedidaBase="94"/>
+        </Impuesto>
+     	<CodificacionesEstandar>
+        <CodificacionEstandar CodigoArticulo="891000039"/>
+    	</CodificacionesEstandar>
+    </Impuestos>
+	</Linea>
+</Factura>
+
+

@@ -1,0 +1,16 @@
+{
+    "isSuccess": true,
+    "isDuplicateDocumentRequest": true,
+    "requestId": "1633ac83-6edc-4f1e-8528-7084858aff57",
+    "shortRequestId": null,
+    "fileNameInteroperability": null,
+    "UUID": "adf4398294b303005e9b13a56023f3041b9b27c8",
+    "documentNumber": "FRM1",
+    "LDF": "FACTURA-UBL(821002693;FRM1;2018-10-29;PRINCIPAL;PRINCIPAL)",
+    "URL": "https://plataforma-beta.facture.co/PublicViewer#/PublicViewer/ODIxMDAyNjkzLzM4YmFiNzBmLWI1NjktNDVhNC1hMWRmLTZhMGEyY2M0Yjc5ZC8wNGJiMmUzOC1mZTg1LTRjNzQtOTRmMC1jYzUxMmJjMjEzYzM=",
+    "UBL": null,
+    "UrlPdf": "https://plcolabrepextbeta.blob.core.windows.net/821002693/FACTURA-UBL/FACTURA-UBL(821002693;FRM1;2018-10-29;PRINCIPAL;PRINCIPAL).pdf?sv=2017-11-09&sig=apfIu39msnbj70RlgApXGqohmsB13YwpFoK93uyTqZg%3D&spr=https&se=2019-11-14T22%3A07%3A07Z&srt=o&ss=b&sp=r",
+    "UrlXml": "https://plcolabrepextbeta.blob.core.windows.net/821002693/FACTURA-UBL/FACTURA-UBL(821002693;FRM1;2018-10-29;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=apfIu39msnbj70RlgApXGqohmsB13YwpFoK93uyTqZg%3D&spr=https&se=2019-11-14T22%3A07%3A07Z&srt=o&ss=b&sp=r",
+    "pdfFileName": "face_f0821002693000000FRM1.pdf",
+    "xmlFileName": "face_f0821002693000000FRM1.xml"
+}

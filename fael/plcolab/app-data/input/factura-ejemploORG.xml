@@ -1,0 +1,127 @@
+<Factura>
+    <Cabecera Numero="FRM2" OrdenCompra="123" FechaOrdenCompra="2018-10-23" Fecha="2018-10-29" Vencimiento="2018-10-29" Hora="08:10:00" Observaciones="Observacion" TipoFactura="FACTURA-UBL" FormaDePago="1" Recibo="T01" FechaRecibo="2005-07-02" />
+    <DocumentoDespacho Codigo="" Fecha="" />
+    <DocumentoRecibo Codigo="" Fecha="" />
+    <DocumentoReferencia Codigo="" TipoDocumento="" Fecha="" UrlAdjunto="" />
+    <Notificacion Tipo="Email">
+        <Para>ccorderoc20@yopmail.com</Para>
+    </Notificacion>
+    <Emisor TipoPersona="1" TipoRegimen="2" TipoIdentificacion="31" Numero="900588043" DigitoVerificacion="5">
+        <Nombre RazonSocial="Looney Toons" Registrado="Looney Toons" />
+        <DireccionFisica Direccion="direccion de un lugar del emisor" NombreDepartamento="Bolivar" NombreCiudad="Cartagena" CodigoPais="CO" Pais="Colombia" />
+    </Emisor>
+    <Cliente TipoPersona="2" TipoRegimen="2" TipoIdentificacion="31" Numero="900205407" DigitoVerificacion="0">
+        <Nombre RazonSocial="AURA MORELOS NORIEGA" Registrado="VICTOR MORELOS NORIEGA" />
+        <DireccionFisica Direccion="esto es una direccion del Comprador" NombreDepartamento="Bolivar" NombreCiudad="Cartagena" CodigoPais="CO" Pais="Colombia" />
+        <PersonaNatural PrimerNombre="Victor-Cinliente" SegundoNombre="Raul-Cliente" Apellido="Castro Mier" />
+        <Contacto Nombre="victor" Mail="geotech_original@yopmail.com" Telefono="6121235" />
+        <ContactoEntrega Nombre="" Telefono="" Fax="" CorreoElectronico="" />
+    </Cliente>
+    <Detalle>
+        <Linea CodigoGTIN="" Gln="" CantidadEmpaques="" Posicion="1" Cantidad="1" PrecioUnitario="85000" SubTotalLinea="85000" ValorTotalItem="85000" UnidadMedida="Unidad" Descripcion="item de la linea #1">
+            <DocumentoReferencia Codigo="" TipoDocumento="" Fecha="" UrlAdjunto="" />
+            <Impuesto>
+                <Subtotal Tipo="01" Porcentaje="1" Valor="10" />
+            </Impuesto>
+            <Impuesto>
+                <Subtotal Tipo="02" Porcentaje="2" Valor="20" />
+            </Impuesto>
+            <Impuesto>
+                <Subtotal Tipo="03" Porcentaje="3" Valor="30" />
+            </Impuesto>
+            <Descuento Porcentaje="4" DescuentoValor="0" />
+            <Cargo Porcentaje="5" CargoValor="0" />
+            <ItemsAdicionales>
+                <Item nombre="peso" valor="15" />
+                <Item nombre="altura" valor="1.5" />
+            </ItemsAdicionales>
+            <Recibo Id="T01" />
+            <Recibo Id="T02" />
+        </Linea>
+    </Detalle>
+    <Impuestos>
+        <!-- CODIGO 04 ->Impuesto Nacional Al Consumo -->
+        <Impuesto Valor="30" Tipo="04">
+            <Subtotal ValorBase="30" Porcentaje="0.3" Valor="0" />
+        </Impuesto>
+        <!-- CODIGO 03 ->ICA -->
+        <Impuesto Valor="30" Tipo="03">
+            <Subtotal ValorBase="30" Porcentaje="0.3" Valor="0" />
+        </Impuesto>
+        <!-- CODIGO 02 ->ImpoConsumo -->
+        <Impuesto Valor="20" Tipo="02">
+            <Subtotal ValorBase="20" Porcentaje="0.2" Valor="0" />
+        </Impuesto>
+        <!-- CODIGO 01 ->IVA -->
+        <Impuesto Valor="10" Tipo="01">
+            <Subtotal ValorBase="10" Porcentaje="0.1" Valor="0" />
+        </Impuesto>
+    </Impuestos>
+    <Retenciones>
+        <!-- CODIGO 0E ->RETE RENTA -->
+        <Retencion Valor="0" Tipo="0E">
+            <Subtotal ValorBase="0" Porcentaje="0" Valor="0" />
+        </Retencion>
+        <!-- CODIGO 0D ->RETE CREE -->
+        <Retencion Valor="0" Tipo="0D">
+            <Subtotal ValorBase="0" Porcentaje="0" Valor="0" />
+        </Retencion>
+        <!-- CODIGO 0C ->RETE ICA -->
+        <Retencion Valor="0" Tipo="0C">
+            <Subtotal ValorBase="0" Porcentaje="0" Valor="0" />
+        </Retencion>
+        <!-- CODIGO 0B -> RETE IVA -->
+        <Retencion Valor="0" Tipo="0B">
+            <Subtotal ValorBase="0" Porcentaje="0" Valor="0" />
+        </Retencion>
+        <!-- CODIGO 0A -> RETE FUENTE -->
+        <Retencion Valor="0" Tipo="0A">
+            <Subtotal ValorBase="0" Porcentaje="0" Valor="0" />
+        </Retencion>
+    </Retenciones>
+    <Generales>
+        <Descuento Porcentaje="0" DescuentoValor="0" BaseValor="0" DescuentoRazon="es descuento por fin de año" />
+        <DescuentoLineas Valor="0" />
+        <Subtotales SubtotalBrutoLineas="0" SubtotalBruto="0" />
+        <Cargo Porcentaje="0" CargoValor="0" BaseValor="0" CargoRazon="cargo por intereses" />
+    </Generales>
+    <Totales Bruto="85000" Base="85000" Impuestos="60" Descuentos="0" Retenciones="0" Cargos="0" General="85090" Anticipo="0" />
+    <Extensiones>
+        <Numeracion NumeroAprobacion="36555555" FechaInicio="2018-03-15" FechaFin="2020-03-15" Prefijo="FRM" NumeroInicio="1" NumeroFin="400000" />
+        <!--  moneda extranjera  -->
+        <ForeignCurrency currency="USD" exchangeRate="3005.5">
+            <Detalle>
+                <Linea Codigo="41555010" PrecioUnitario="1182.08" SubTotalLinea="1182.08" ValorTotalItem="1406.68">
+                    <Impuesto>
+                        <Subtotal Tipo="01" Porcentaje="19" Valor="224.6" />
+                    </Impuesto>
+                    <Descuento Porcentaje="0" DescuentoValor="0" />
+                    <ItemsAdicionales>
+                        <Item nombre="SubTotalLinead" valor="0" />
+                    </ItemsAdicionales>
+                </Linea>
+            </Detalle>
+            <Totales Bruto="1182.08" Base="1182.08" Impuestos="224.6" Descuentos="0" Retenciones="0" Cargos="0" General="1406.68" />
+        </ForeignCurrency>
+        <!--  informacion adicional  -->
+        <InformacionAdicional>
+            <campoAdicional name="nombre" value="victor" />
+            <campoAdicional name="apellido" value="castro" />
+        </InformacionAdicional>
+        <!--  informacion adicional por filas  -->
+        <InformacionAdicionalRows>
+            <InformacionAdicionalRow>
+                <campoAdicional categoria="" nombre="Nombre" valor="Jose" />
+                <campoAdicional categoria="" nombre="Apellido" valor="Perez" />
+            </InformacionAdicionalRow>
+            <InformacionAdicionalRow>
+                <campoAdicional categoria="" nombre="Nombre" valor="Pedro" />
+                <campoAdicional categoria="" nombre="Apellido" valor="Ruiz" />
+            </InformacionAdicionalRow>
+            <InformacionAdicionalRow>
+                <campoAdicional categoria="" nombre="Nombre" valor="Maria" />
+                <campoAdicional categoria="" nombre="Apellido" valor="Villadiego" />
+            </InformacionAdicionalRow>
+        </InformacionAdicionalRows>
+    </Extensiones>
+</Factura>

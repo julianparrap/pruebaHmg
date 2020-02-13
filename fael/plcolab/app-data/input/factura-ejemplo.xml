@@ -1,0 +1,193 @@
+<Factura>
+	<Cabecera  Numero="8605110558" OrdenCompra="599685" FechaOrdenCompra="2019-12-03" FechaEmision="2019-12-03" Vencimiento="2020-01-04" HoraEmision="08:10:00" MonedaFactura="COP" Observaciones="Descuentese el 10% sobre le valor de la mercancia, si cancela antes de 30 días. Despues de esta fecha no se aceptan descuentos." TipoFactura="FACTURA-UBL" FormaDePago="2" LineasDeFactura="11" TipoOperacion="05" FormatoContingencia="Papel"/>
+	<ObservacionesAdicionales>
+		<Observaciones></Observaciones>
+		<Observaciones></Observaciones>
+	</ObservacionesAdicionales>
+	<NumeracionDIAN NumeroResolucion="18760000001" FechaInicio="2019-01-19" FechaFin="2030-01-19" PrefijoNumeracion="SETT" ConsecutivoInicial="1" ConsecutivoFinal="5000000"/>
+	<PeriodoFacturado FechaInicio="2019-12-03" HoraInicio="" FechaFin="2019-12-03" HoraFin="" />
+	<!-- TODO: incluir en excel, No mapea DIAN, SI UBL -->
+	<Notificacion Tipo="Mail" De="info@hermagu.com.co">
+		<Para>jcmoyah32@gmail.com.com</Para>
+		<Para>jcmoyah32@yahoo.com</Para>
+	</Notificacion>
+	<Emisor TipoPersona="1" TipoRegimen="48" TipoIdentificacion="31" NumeroIdentificacion="860511055" DV="8" RazonSocial="HERMAGU S.A." NumeroMatriculaMercantil="183263" NombreComercial= "HERMAGU S.A." >
+		<CodigosCIIU>
+			<CIIU>4530</CIIU>
+		</CodigosCIIU>
+		<Direccion CodigoMunicipio="11001" NombreCiudad="BOGOTA D.C." CodigoPostal="" NombreDepartamento="BOGOTA D.C." CodigoDepartamento="11" Direccion="Calle 17 No 28A - 29" />
+		<ObligacionesEmisor>
+			<CodigoObligacion>O-03</CodigoObligacion>
+			<CodigoObligacion>O-05</CodigoObligacion>
+			<CodigoObligacion>O-07</CodigoObligacion>
+			<CodigoObligacion>O-09</CodigoObligacion>
+			<CodigoObligacion>O-10</CodigoObligacion>
+			<CodigoObligacion>O-14</CodigoObligacion>
+			<CodigoObligacion>O-42</CodigoObligacion>
+			<CodigoObligacion>O-48</CodigoObligacion>
+		</ObligacionesEmisor>
+		<DireccionFiscal CodigoMunicipio="11001" NombreCiudad="BOGOTA D.C." CodigoPostal="" NombreDepartamento="BOGOTA D.C." CodigoDepartamento="11" Direccion="Calle 17 No 28A - 29"/>
+		<TributoEmisor CodigoTributo="01" NombreTributo="IVA"/>
+		<Contacto Nombre="Servicio al cliente" Telefono="2084666" Telfax="2013519" Email="info@hermagu.com.co" Notas="Conactar en horario de oficina"/>
+	</Emisor>
+	<Cliente TipoPersona="2" TipoRegimen="49" TipoIdentificacion="13" NumeroIdentificacion="51878397" DV="2" NombreComercial="ACOSTA CASTAÑEDA LUZ NANCY" RazonSocial="REPUESTOS RINAN" NumeroMatriculaMercantil="">
+		<!-- NO incluidos por la DIAN, Si por UBL -->
+		<PersonaNatural PrimerNombre="LUZ" SegundoNombre="NANCY" Apellido="ACOSTA CASTAÑEDA"/>
+		<Direccion CodigoMunicipio="11001" NombreCiudad="BOGOTA D.C." CodigoPostal="" NombreDepartamento="BOGOTA D.C." CodigoDepartamento="13" Direccion="CALLE 161 No 7F - 44" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es"/>
+		<ObligacionesCliente>
+			<CodigoObligacion>O-05</CodigoObligacion>
+			<CodigoObligacion>O-49</CodigoObligacion>
+		</ObligacionesCliente>
+		<DireccionFiscal CodigoMunicipio="11001" NombreCiudad="BOGOTA D.C." CodigoPostal="" NombreDepartamento="BOGOTA D.C." CodigoDepartamento="13" Direccion="CALLE 161 No 6F - 44" CodigoPais="CO" NombrePais="Colombia" IdiomaPais="es" />
+		<Contacto Nombre="Juan Carlos Moya H" Telefono="3112260252" Telfax="" Email="sistemas@hermagu.com.co" Notas="Encargado"/>
+		<TributoCliente CodigoTributo="01" NombreTributo="IVA"/>
+	</Cliente>
+	<Autorizado TipoIdentificacion="13" NumeroIdentificacion="51878397" DV="2" Nombre="LUZ NANCY CASTAÑEDA ACOSTA" />
+	<MediosDePago CodigoMedioPago="ZZZ" FormaDePago="OTRO" Vencimiento="2020-01-04">
+	</MediosDePago>
+	<Totales Bruto="345300" BaseImponible="366132" BrutoMasImpuestos="435697" Cargos= "0" Descuentos="34530" Impuestos="69565" Retenciones="0" General="435697" Anticipo="0" Redondeo="0" TotalDescuentosLineas="0" TotalCargosLineas="0" />
+
+	<InformacionAdicional>
+		<!--Se adidiona el descunto que se ofrece PF o CD-->
+		<DescuentoLineas Valor="34530" />
+		<Subtotales SubtotalBrutoLineas="345300" SubtotalBruto="345300"/>
+	</InformacionAdicional>
+	<Linea>
+		<!-- Datos de referencias vendedidas al cliente -->
+		<Detalle NumeroLinea="1" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="58500" Descripcion="CABLES DE ALTA 8 mm.  inductivo; chevro-Dodge  (ESPECIAL)" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="58500" ValorTotalItem="58500" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="01"/>
+			<CampoAdicional Nombre="referencia" Valor="0809-220"/>
+			<CampoAdicional Nombre="equivalencia" Valor="220-0809"/>
+		</DatosAdicionales>
+	</Extensiones>
+	<Linea>
+		<!-- Datos de referencias vendedidas al cliente -->
+	<Detalle NumeroLinea="2" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="25800" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Monza 1.8,2.0 sil; Con protector" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="25800" ValorTotalItem="25800" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="09"/>
+			<CampoAdicional Nombre="referencia" Valor="0642-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0642"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="3" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="32500" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Spark GT 2011/.." CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="32500" ValorTotalItem="32500" />
+	</Linea>
+	<Extensiones>
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="14"/>
+			<CampoAdicional Nombre="referencia" Valor="0605-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0605"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="4" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="19500" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Spark 7.24 1.0 Lts,2004/.." CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="19500" ValorTotalItem="19500" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="14"/>
+			<CampoAdicional Nombre="referencia" Valor="0660-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0660"/>
+		</DatosAdicionales>
+	</Extensiones>
+	
+	<Detalle NumeroLinea="5" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="23100" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Optra 1.4L 04/.." CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="23100" ValorTotalItem="23100" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="14"/>
+			<CampoAdicional Nombre="referencia" Valor="0680-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0680"/>
+		</DatosAdicionales>
+
+	<Detalle NumeroLinea="6" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="21800" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; R4,R6,R12" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="21800" ValorTotalItem="21800" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="16"/>
+			<CampoAdicional Nombre="referencia" Valor="0307-025"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0307"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="7" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="20600" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Sprint" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="20600" ValorTotalItem="20600" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="52"/>
+			<CampoAdicional Nombre="referencia" Valor="0609-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0609"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="8" Nota="" Cantidad="2" UnidadMedida="Unidad" SubTotalLinea="39400" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Atos 2002/; 4 cables" CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="2" UnidadCantidadBase="Unidad" PrecioUnitario="19700" ValorTotalItem="39400" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="59"/>
+			<CampoAdicional Nombre="referencia" Valor="0703-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0703"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="9" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="37200" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Grand i10 1.2L 2015/.." CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="37200" ValorTotalItem="37200" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="59"/>
+			<CampoAdicional Nombre="referencia" Valor="0726-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0726"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="10" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="36900" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Picanto Ion 1.2Lts; 2001/.." CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="36900" ValorTotalItem="36900" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="60"/>
+			<CampoAdicional Nombre="referencia" Valor="2423-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-2423"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<Detalle NumeroLinea="11" Nota="" Cantidad="1" UnidadMedida="Unidad" SubTotalLinea="30000" Descripcion="CABLES DE ALTA 8 mm.  Resistivo; Van N300 1.2 Lts; 2010/.." CantidadXEmpaque="" Marca="" NombreModelo="" CantidadBase="1" UnidadCantidadBase="Unidad" PrecioUnitario="30000" ValorTotalItem="30000" />
+	</Linea>
+	<Extensiones>
+		<!-- Se vinculan datos adicionales que tienen la referencia para la representación grafica -->
+		<DatosAdicionales>
+			<CampoAdicional Nombre="linea" Valor="60"/>
+			<CampoAdicional Nombre="referencia" Valor="0688-205"/>
+			<CampoAdicional Nombre="equivalencia" Valor="205-0688"/>
+		</DatosAdicionales>
+	</Extensiones>
+
+	<!-- Datos para la factura que lleva fletes -->
+	<Linea>
+    <Detalle NumeroLinea="1" Cantidad="1" UnidadMedida="94" SubTotalLinea="0" Descripcion="flete" CantidadBase="0" UnidadCantidadBase="94" PrecioUnitario="0" ValorTotalItem="0" Ocultar="true"  />
+    <precioreferencia ValorArticulo= "valor flete" CodigoTipoPrecio="03">
+    </precioreferencia>
+    <Impuestos>
+        <Impuesto Valor="3958.08" Tipo="01" Nombre="IVA">
+            <Subtotal ValorBase="20832" Valor="3958.08" Porcentaje="19" CodigoUnidadMedidaBase="94"/>
+        </Impuesto>
+     	<CodificacionesEstandar>
+        <CodificacionEstandar CodigoArticulo="891000039"/>
+    	</CodificacionesEstandar>
+    </Impuestos>
+	</Linea>
+</Factura>
+
+
