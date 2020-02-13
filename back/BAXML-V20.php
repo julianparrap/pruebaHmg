@@ -12,7 +12,7 @@ class generaXml extends conectarBD{
 		extract($_POST);
 		$fechaActual = date("Y-m-d");
 		$horaActual = date("H:i:s");
-		$sqlLiemMaes = $this->consultar("lima_idxx,lima_tore,clma_feec", "liem_maes JOIN mpedidos ON (lima_orco = idx OR lima_liem = pedido ) join clie_mae on (lima_clie=clma_codi) join copa_clie on (clma_pode=copc_codi) join ciud_mae on (clma_ciud=cima_idxx) join depa_mae on (cima_iddp=dema_idxx)", "lima_idxx=".$lima_idxx, 4);
+		$sqlLiemMaes = $this->consultar("lima_idxx,lima_tore,clma_feec", "liem_maes JOIN mpedidos ON (lima_orco = idx OR lima_liem = pedido ) join clie_mae on (lima_clie=clma_codi) join copa_clie on (descuento=copc_idxx) join ciud_mae on (clma_ciud=cima_idxx) join depa_mae on (cima_iddp=dema_idxx)", "lima_idxx=".$lima_idxx, 4);
 		$datosLiemMaes = mysqli_fetch_array($sqlLiemMaes);
 		//contador de la cantidad del detalle de la factura
 		$sqlContDetaLiem = $this->consultar("deli_idle", "deta_liem", "deli_idle=".$lima_idxx, 2);
@@ -86,8 +86,8 @@ class generaXml extends conectarBD{
  			$porceCond = $datosLiemMaes["copc_deco"];
  			$valorCond = $datosLiemMaes["lima_vtpe"];
  			$pagueSoloCond = $brutoMasImpuestos-$valorCond;
- 		}0
-00  		//texto en letras
+		}
+ 		//texto en letras
  		$textoEnLetras = numerotexto($brutoMasImpuestos);
  		$text .= "<CampoAdicional Nombre='valorenletras' Valor='".$textoEnLetras."'/> \n";
  		$text .= "<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='".$datosLiemMaes[""]."10%  $64934'/> \n";
@@ -105,24 +105,31 @@ class generaXml extends conectarBD{
  		$text .= "</Impuesto> \n";
  		$text .= "</Impuestos> \n";
 
-
+ 		$contador=1;
  		//<!-- Datos de referencias vendedidas al cliente -->
-		$sqlDetaLiem = $this->consultar("*", "deta_liem", "deli_idle=".$lima_idxx, 4);
+		$sqlDetaLiem = $this->consultar("*", "deta_liem join refe_maes on (deli_idre=rema_idxx)", "deli_idle=".$lima_idxx, 4);
 		while ($datosDetaLiem = mysqli_fetch_array($sqlDetaLiem)) {
+			$subTotal = $datosDetaLiem["deli_caap"]*$datosDetaLiem["deli_prec"];
+			$valorTotal = $subTotal - ($subTotal*intval('0.'.$datosLiemMaes["copc_depf"]));
  			$text .= "<Linea> \n";
- 			$text .= "<Detalle NumeroLinea='1' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='374976' Descripcion='LIQUIDO FRENO 1 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='20832' ValorTotalItem='416640' /> \n";
-			
+ 			$text .= "<Detalle NumeroLinea='".$contador."' Nota='' Cantidad='".$datosDetaLiem["deli_caap"]."' UnidadMedida='Unidad' SubTotalLinea='".$subTotal."' Descripcion='".$datosDetaLiem["rema_desc"]."' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='".$datosDetaLiem["deli_caap"]."' UnidadCantidadBase='Unidad' PrecioUnitario='".$datosDetaLiem["deli_prec"]."' ValorTotalItem='".$valorTotal."' /> \n";
+ 			$text .= "<DatosAdicionales> \n";
+ 			$text .= "<CampoAdicional Nombre='linea' Valor='".$datosDetaLiem["rema_line"]."'/> \n";
+ 			$text .= "<CampoAdicional Nombre='referencia' Valor='".$datosDetaLiem["rema_oem"]."'/> \n";
+ 			$text .= "<CampoAdicional Nombre='equivalencia' Valor='".$datosDetaLiem["rema_desc"]."'/> \n";
+ 			$text .= "</DatosAdicionales> \n";
+ 			//<!--Se adidiona el descunto que se ofrece PF-->
+			if ($datosLiemMaes["copc_depf"]!=0) {
+ 				$text .= "<DescuentoOCargo ID='09' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='416640' Valor='41664'  /> \n";
+				
+			}
+
+
+			$contador ++;
 		}
 
 
- 		$text .= "<DatosAdicionales> \n";
- 		$text .= "<CampoAdicional Nombre='linea' Valor='18'/> \n";
- 		$text .= "<CampoAdicional Nombre='referencia' Valor='5802'/> \n";
- 		$text .= "<CampoAdicional Nombre='equivalencia' Valor='LITRO DOT4'/> \n";
- 		$text .= "</DatosAdicionales> \n";
 
- 		//<!--Se adidiona el descunto que se ofrece PF-->
- 		$text .= "<DescuentoOCargo ID='09' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='416640' Valor='41664'  /> \n";
  		$text .= "<Impuestos> \n";
  		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='71245.44'> \n";
  		$text .= "<Subtotal ValorBase='374976'  Porcentaje='19'  Valor='71245.44' CodigoUnidadMedidaBase='94'/> \n";
