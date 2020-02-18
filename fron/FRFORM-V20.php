@@ -128,24 +128,55 @@
 	  }
 
 		function valiFactElec(lima_idxx,cantidad,clma_codi,clma_nomb){
-			if (cantidad==1) {
+			/*if (cantidad==1) {
 				//ajax para generar el xml de la factura 
 				$.ajax({
 					type :"POST",
 					url : "../func/php/FUXML-V20.php",
-				 	data: "accion=generarFactura&lima_idxx="+lima_idxx,
+				 	data: "accion=generarFactura&lima_idxx="+matr_lima_idxx,
 				 	beforeSend :function(){
 						$("#bloquea").css({'display':'block'});
 					},
 				 	success:function(data){
 						$("#bloquea").css({'display':'none'});
-						//ajax para correr el xml de la facturacion electronica 
-						//ejecutarXmlFactElect();
+						//ajax para correr el xml de la facturacion electronica             
+						//ejecutarXmlFactElect(data);
 					} 
 			 	});
+				
 			}
-			else{
-				$.ajax({
+			else{*/
+				var matr_lima_idxx = lima_idxx.split("-");
+				for (var i = 0; i < matr_lima_idxx.length; i++) {
+					//ajax para generar el xml de la factura 
+					$.ajax({
+						type :"POST",
+						url : "../func/php/FUXML-V20.php",
+					 	data: "accion=generarFactura&lima_idxx="+matr_lima_idxx[i],
+					 	beforeSend :function(){
+							$("#bloquea").css({'display':'block'});
+						},
+					 	success:function(data){
+							$("#bloquea").css({'display':'none'});
+							//ajax para correr el xml de la facturacion electronica
+							$.ajax({
+								type :"POST",
+								url : "../plcolab/index.php",
+					 			data: "accion=generarFactura&lima_idxx="+data,
+							 	beforeSend :function(){
+									$("#bloquea").css({'display':'block'});
+								},
+							 	success:function(data){
+									$("#bloquea").css({'display':'none'});
+									//funcion para guardar la respuesta del json en la base de datos
+									//validarJson();
+								} 
+						 	}); 
+							//ejecutarXmlFactElect(data);
+						} 
+				 	});
+				}
+				/*$.ajax({
 					type :"POST",
 					url : "../func/php/FUFACT-V20.php",
 				 	data: "accion=factCliente&clma_codi="+clma_codi,
@@ -164,16 +195,16 @@
 							
 						});
 					} 
-			 	});
-			}
+			 	});*/
+			//}
 	  }
 
 	//funcion para correr el xml de la facturacion electronica 
-	function ejecutarXmlFactElect(){
+	function ejecutarXmlFactElect(lima_liem){
 		$.ajax({
 			type :"POST",
 			url : "../plcolab/index.php",
- 			data: "accion=generarFactura&lima_idxx="+lima_idxx,
+ 			data: "accion=generarFactura&lima_idxx="+lima_idxx+"&lima_liem="+lima_liem,
 		 	beforeSend :function(){
 				$("#bloquea").css({'display':'block'});
 			},

@@ -26,7 +26,6 @@ class conectarBD {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		  exit;
 		}
-		//mysqli_query(SET NAMES 'utf8');
 		$mysqli->query("SET NAMES 'utf8'");
 		return $mysqli;
 	}

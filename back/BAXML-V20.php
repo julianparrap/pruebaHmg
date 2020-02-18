@@ -1,4 +1,6 @@
 <?php
+	error_reporting(0);
+
 /**
  * Modulo de facturacion 
  * Por: Julian Parra
@@ -17,12 +19,13 @@ class generaXml extends conectarBD{
 		//contador de la cantidad del detalle de la factura
 		$sqlContDetaLiem = $this->consultar("deli_idle", "deta_liem", "deli_idle=".$lima_idxx, 2);
 
+		echo $datosLiemMaes["lima_liem"];
 		$formaDePago = ($datosLiemMaes["copc_pldi"]==0)?1:2;
- 		$nom_mae= "../../plcolab/app-data/input/factura-ejemplo.xml";
+ 		$nom_mae= "../../plcolab/app-data/input/factura-ejemplo".$datosLiemMaes["lima_liem"].".xml";
  		$morden = fopen($nom_mae,"w") or die("No se encontro la ruta para la exportacion");
 		$vencimiento = date("Y-m-d",strtotime($fechaActual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
  		$text = "<Factura> \n";
- 		$text .= "<Cabecera  Numero='SETT401' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
+ 		$text .= "<Cabecera  Numero='SETT".$datosLiemMaes["lima_liem"]."' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
  		$text .= "<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> \n";
  		$text .= "<Notificacion Tipo='Mail' De='info@hermagu.com.co'> \n";
  		$text .= "<Para>sistemas@hermagu.com.co</Para> \n";
@@ -60,6 +63,7 @@ class generaXml extends conectarBD{
  		$tipoIdentificacion=($datosLiemMaes["clma_tipo"] == "NATURAL")?13:31;
  		$text .= "<Cliente TipoPersona='".$tipoPersona."' TipoRegimen='".$tiporegimen."' TipoIdentificacion='".$tipoIdentificacion."' NumeroIdentificacion='".$datosLiemMaes["clma_nitt"]."' DV='".$datosLiemMaes["clma_dive"]."' NombreComercial='".$nombreComercial."' RazonSocial='".$datosLiemMaes["clma_repr"]."'> \n";
  		$text .= "<Direccion CodigoMunicipio='".$datosLiemMaes["dema_codi"]."".str_pad($datosLiemMaes["cima_codi"], 5, "0", STR_PAD_LEFT)."' NombreCiudad='".$datosLiemMaes["cima_noci"]."' CodigoPostal='' NombreDepartamento='".$datosLiemMaes["dema_node"]."' CodigoDepartamento='".$datosLiemMaes["dema_codi"]."' Direccion='".$datosLiemMaes["clma_dire"]."' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> \n";
+ 		$text .= "<Contacto Nombre='".$datosLiemMaes["clma_repr"]."' Telefono='".$datosLiemMaes["clma_cel1"]."' Telfax='' Email='".$datosLiemMaes["clma_cor1"]."' Notas='Representante legal'/> \n";
  		$text .= "<ObligacionesCliente> \n";
  		//responsabilidades trivutarias
 		while ($datosMoviReti = mysqli_fetch_array($sqlMoviReti)) {
@@ -85,7 +89,7 @@ class generaXml extends conectarBD{
  		$text .= "<DatosAdicionales> \n";
  		$text .= "<CampoAdicional Nombre='codigo' Valor='".$datosLiemMaes["clma_codi"]."'/> \n";
  		$text .= "<CampoAdicional Nombre='pedido N°' Valor='".$datosLiemMaes["lima_liem"]."'/> \n";
- 		$text .= "<CampoAdicional Nombre='transportadora' Valor='".$datosLiemMaes["transport"]."'/> \n";
+ 		$text .= "<CampoAdicional Nombre='Transportador - Guia N°' Valor='".$datosLiemMaes["transport"]."'/> \n";
  		$text .= "<CampoAdicional Nombre='vendedor' Valor='".$datosAsesoresWeb["nombres"]."'/> \n";
  		$text .= "<CampoAdicional Nombre='condicionesdepago' Valor='".$datosLiemMaes["clma_copa"]."'/> \n";
  		//validar descuentos
@@ -93,17 +97,21 @@ class generaXml extends conectarBD{
  			//condicionado
  		if ($datosLiemMaes["copc_deco"]!=0) {
  			$porceCond = $datosLiemMaes["copc_deco"];
- 			$valorCond = $datosLiemMaes["lima_vtpe"]*intval('0.'.$porceCond);
+ 			$valorCond = $datosLiemMaes["lima_vtpe"]*($datosLiemMaes["copc_deco"]/100);
  			$pagueSoloCond = $brutoMasImpuestos-$valorCond;
  			$fecha_actual = date("d-m-Y");
 			$canceleAntes = date("d-m-Y",strtotime($fecha_actual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
- 		//texto en letras
- 		$textoEnLetras = $this->numerotexto($brutoMasImpuestos);
- 		$text .= "<CampoAdicional Nombre='valorenletras' Valor='".$textoEnLetras."'/> \n";
- 		$text .= "<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='".$porceCond."%  $".$valorCond."'/> \n";
- 		$text .= "<CampoAdicional Nombre='paguesolamente' Valor='".$pagueSoloCond."'/> \n";
- 		$text .= "<CampoAdicional Nombre='canceleantes' Valor='".$canceleAntes."'/> \n";
- 		$text .= "<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el ".$porceCond."% Dcto a pie, para pago antes de ".$datosLiemMaes["copc_pldi"]." días. Pague oportunamete y evite perder este descuento.'/> \n";
+
+
+
+
+	 		//texto en letras
+	 		$textoEnLetras = $this->numerotexto(round(intval($brutoMasImpuestos),0));
+	 		$text .= "<CampoAdicional Nombre='valorenletras' Valor='".strtoupper($textoEnLetras)." MCT'/> \n";
+	 		$text .= "<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='".$porceCond."%  $".$valorCond."'/> \n";
+	 		$text .= "<CampoAdicional Nombre='paguesolamente' Valor='".$pagueSoloCond."'/> \n";
+	 		$text .= "<CampoAdicional Nombre='canceleantes' Valor='".$canceleAntes."'/> \n";
+	 		$text .= "<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el ".$porceCond."% Dcto a pie, para pago antes de ".$datosLiemMaes["copc_pldi"]." días. Pague oportunamete y evite perder este descuento.'/> \n";
 		}
  		$text .= "</DatosAdicionales> \n";
  		$text .= "</Extensiones> \n";
@@ -156,22 +164,24 @@ class generaXml extends conectarBD{
 		} 
 
  		//<!-- Datos para la factura que lleva fletes -->
- 		$text .= "<Linea> \n";
- 		$text .= "<Detalle NumeroLinea='".$contador."' Cantidad='1' UnidadMedida='94' SubTotalLinea='".$vrFlete."' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='".$datosLiemMaes["lima_vfle"]."' Ocultar='true'/> \n";
- 		$text .= "<precioreferencia ValorArticulo= '".$vrFlete."' CodigoTipoPrecio='03'> \n";
- 		$text .= "</precioreferencia> \n";
-		if ($datosLiemMaes["lima_vdfl"]!=0) {
-			$text .= "<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='".$porc_desc."' ValorBase='".$datosLiemMaes["lima_vfle"]."' Valor='".$vrFlete."'  /> \n";
+		if ($datosLiemMaes["lima_vfle"]!=0) {
+	 		$text .= "<Linea> \n";
+	 		$text .= "<Detalle NumeroLinea='".$contador."' Cantidad='1' UnidadMedida='94' SubTotalLinea='".$vrFlete."' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='".$datosLiemMaes["lima_vfle"]."' Ocultar='true'/> \n";
+	 		$text .= "<precioreferencia ValorArticulo= '".$vrFlete."' CodigoTipoPrecio='03'> \n";
+	 		$text .= "</precioreferencia> \n";
+			if ($datosLiemMaes["lima_vdfl"]!=0) {
+				$text .= "<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='".$porc_desc."' ValorBase='".$datosLiemMaes["lima_vfle"]."' Valor='".$vrFlete."'  /> \n";
+			}
+	 		$text .= "<Impuestos> \n";
+	 		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($iva_flete,0)."'> \n";
+	 		$text .= "<Subtotal ValorBase='".$vrFlete."' Valor='".round($iva_flete,0)."' Porcentaje='19' CodigoUnidadMedidaBase='94'/> \n";
+	 		$text .= "</Impuesto> \n";
+	 		$text .= "</Impuestos> \n";
+	 		$text .= "<CodificacionesEstandar> \n";
+	 		$text .= "<CodificacionEstandar CodigoArticulo='891000039'/> \n";
+	 		$text .= "</CodificacionesEstandar> \n";
+	 		$text .= "</Linea> \n";
 		}
- 		$text .= "<Impuestos> \n";
- 		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($iva_flete,0)."'> \n";
- 		$text .= "<Subtotal ValorBase='".$vrFlete."' Valor='".round($iva_flete,0)."' Porcentaje='19' CodigoUnidadMedidaBase='94'/> \n";
- 		$text .= "</Impuesto> \n";
- 		$text .= "</Impuestos> \n";
- 		$text .= "<CodificacionesEstandar> \n";
- 		$text .= "<CodificacionEstandar CodigoArticulo='891000039'/> \n";
- 		$text .= "</CodificacionesEstandar> \n";
- 		$text .= "</Linea> \n";
  		$text .= "</Factura> \n";
  		$text .= " \n";
  		$text .= " \n";
@@ -181,94 +191,95 @@ class generaXml extends conectarBD{
 
 	  
 
-	 private function numerotexto ($numero) {
-    // Primero tomamos el numero y le quitamos los caracteres especiales y extras
-    // Dejando solamente el punto "." que separa los decimales
-    // Si encuentra mas de un punto, devuelve error.
-    // NOTA: Para los paises en que el punto y la coma se usan de forma
-    // inversa, solo hay que cambiar la coma por punto en el array de "extras"
-    // y el punto por coma en el explode de $partes
-    
-    $extras= array("/[\$]/","/ /","/,/","/-/");
-    $limpio=preg_replace($extras,"",$numero);
-    $partes=explode(".",$limpio);
-    if (count($partes)>2) {
-      return "Error, el n&uacute;mero no es correcto";
-      exit();
-    }
-    
-    // Ahora explotamos la parte del numero en elementos de un array que
-    // llamaremos $digitos, y contamos los grupos de tres digitos
-    // resultantes
-    
-    $digitos_piezas=chunk_split ($partes[0],1,"#");
-    $digitos_piezas=substr($digitos_piezas,0,strlen($digitos_piezas)-1);
-    $digitos=explode("#",$digitos_piezas);
-    $todos=count($digitos);
-    $grupos=ceil (count($digitos)/3);
-    
-    // comenzamos a dar formato a cada grupo
-    $unidad = array   ('un','dos','tres','cuatro','cinco','seis','siete','ocho','nueve');
-    $decenas = array ('diez','once','doce', 'trece','catorce','quince');
-    $decena = array   ('dieci','veinti','treinta','cuarenta','cincuenta','sesenta','setenta','ochenta','noventa');
-    $centena = array   ('ciento','doscientos','trescientos','cuatrocientos','quinientos','seiscientos','setecientos','ochocientos','novecientos');
-    $resto=$todos;
-    
-    for ($i=1; $i<=$grupos; $i++) {
-      // Hacemos el grupo
-      if ($resto>=3) {
-        $corte=3; } else {
-        $corte=$resto;
-      }
-      $offset=(($i*3)-3)+$corte;
-      $offset=$offset*(-1);
-      // la siguiente seccion es una adaptacion de la contribucion de cofyman y JavierB
-      $num=implode("",array_slice ($digitos,$offset,$corte));
-      $resultado[$i] = "";
-      $cen = (int) ($num / 100);              //Cifra de las centenas
-      $doble = $num - ($cen*100);             //Cifras de las decenas y unidades
-      $dec = (int)($num / 10) - ($cen*10);    //Cifra de las decenas
-      $uni = $num - ($dec*10) - ($cen*100);   //Cifra de las unidades
-      if ($cen > 0) {
-        if ($num == 100) $resultado[$i] = "cien";
-        else $resultado[$i] = $centena[$cen-1].' ';
-      }//end if
-      if ($doble>0) {
-        if ($doble == 20) {
-          $resultado[$i] .= " veinte";
-        }
-        elseif (($doble < 16) and ($doble>9)) {
-           $resultado[$i] .= $decenas[$doble-10];
-        }
-        else {
-          $resultado[$i] .=' '. $decena[$dec-1];
-        }//end if
-        if ($dec>2 and $uni<>0) $resultado[$i] .=' y ';
-        if (($uni>0) and ($doble>15) or ($dec==0)) {
-          if ($i==1 && $uni == 1) $resultado[$i].="uno";
-          elseif ($i==2 && $num == 1) $resultado[$i].="";
-          else $resultado[$i].=$unidad[$uni-1];
-        }
-      }
-      // Le agregamos la terminacion del grupo
-      switch ($i) {
-        case 2:
-        	$resultado[$i].= ($resultado[$i]=="") ? "" : " mil ";
-        break;
-        case 3:
-        	$resultado[$i].= ($num==1) ? " millón " : " millones ";
-        break;
-    	}
-        $resto-=$corte;
-    }
-    // Sacamos el resultado (primero invertimos el array)
-    $resultado_inv= array_reverse($resultado, TRUE);
-    $final="";
-    foreach ($resultado_inv as $parte){
-      $final.=$parte;
-    }
-    return $final;
-	}
+	  function numerotexto ($numero) {
+	    // Primero tomamos el numero y le quitamos los caracteres especiales y extras
+	    // Dejando solamente el punto "." que separa los decimales
+	    // Si encuentra mas de un punto, devuelve error.
+	    // NOTA: Para los paises en que el punto y la coma se usan de forma
+	    // inversa, solo hay que cambiar la coma por punto en el array de "extras"
+	    // y el punto por coma en el explode de $partes
+	    
+	    $extras= array("/[\$]/","/ /","/,/","/-/");
+	    $limpio=preg_replace($extras,"",$numero);
+	    $partes=explode(".",$limpio);
+	    if (count($partes)>2) {
+	      return "Error, el n&uacute;mero no es correcto";
+	      exit();
+	    }
+	    
+	    // Ahora explotamos la parte del numero en elementos de un array que
+	    // llamaremos $digitos, y contamos los grupos de tres digitos
+	    // resultantes
+	    
+	    $digitos_piezas=chunk_split ($partes[0],1,"#");
+	    $digitos_piezas=substr($digitos_piezas,0,strlen($digitos_piezas)-1);
+	    $digitos=explode("#",$digitos_piezas);
+	    $todos=count($digitos);
+	    $grupos=ceil (count($digitos)/3);
+	    
+	    // comenzamos a dar formato a cada grupo
+	    $unidad = array   ('un','dos','tres','cuatro','cinco','seis','siete','ocho','nueve');
+	    $decenas = array ('diez','once','doce', 'trece','catorce','quince');
+	    $decena = array   ('dieci','veinti','treinta','cuarenta','cincuenta','sesenta','setenta','ochenta','noventa');
+	    $centena = array   ('ciento','doscientos','trescientos','cuatrocientos','quinientos','seiscientos','setecientos','ochocientos','novecientos');
+	    $resto=$todos;
+	    
+	    for ($i=1; $i<=$grupos; $i++) {
+	      // Hacemos el grupo
+	      if ($resto>=3) {
+	        $corte=3; } else {
+	        $corte=$resto;
+	      }
+	      $offset=(($i*3)-3)+$corte;
+	      $offset=$offset*(-1);
+	      // la siguiente seccion es una adaptacion de la contribucion de cofyman y JavierB
+	      $num=implode("",array_slice ($digitos,$offset,$corte));
+	      $resultado[$i] = "";
+	      $cen = (int) ($num / 100);              //Cifra de las centenas
+	      $doble = $num - ($cen*100);             //Cifras de las decenas y unidades
+	      $dec = (int)($num / 10) - ($cen*10);    //Cifra de las decenas
+	      $uni = $num - ($dec*10) - ($cen*100);   //Cifra de las unidades
+	      if ($cen > 0) {
+	        if ($num == 100) $resultado[$i] = "cien";
+	        else $resultado[$i] = $centena[$cen-1].' ';
+	      }//end if
+	      if ($doble>0) {
+	        if ($doble == 20) {
+	          $resultado[$i] .= " veinte";
+	        }
+	        elseif (($doble < 16) and ($doble>9)) {
+	           $resultado[$i] .= $decenas[$doble-10];
+	        }
+	        else {
+	          $resultado[$i] .=' '. $decena[$dec-1];
+	        }//end if
+	        if ($dec>2 and $uni<>0) $resultado[$i] .=' y ';
+	        if (($uni>0) and ($doble>15) or ($dec==0)) {
+	          if ($i==1 && $uni == 1) $resultado[$i].="uno";
+	          elseif ($i==2 && $num == 1) $resultado[$i].="";
+	          else $resultado[$i].=$unidad[$uni-1];
+	        }
+	      }
+	      // Le agregamos la terminacion del grupo
+	      switch ($i) {
+	        case 2:
+	        	$resultado[$i].= ($resultado[$i]=="") ? "" : " mil ";
+	        break;
+	        case 3:
+	        	$resultado[$i].= ($num==1) ? " millón " : " millones ";
+	        break;
+	    	}
+	        $resto-=$corte;
+	    }
+	    // Sacamos el resultado (primero invertimos el array)
+	    $resultado_inv= array_reverse($resultado, TRUE);
+	    $final="";
+	    foreach ($resultado_inv as $parte){
+	      $final.=$parte;
+	    }
+	    return $final;
+		}
+
 }
 
 @session_start(); 

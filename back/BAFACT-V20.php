@@ -109,7 +109,17 @@ class facturacion extends conectarBD{
 				echo "<td><img src='../img/cargar_flete.png' width='32px' class='detalles' onclick='agrgarFlete(".$datos["lima_idxx"].")' title='Agregar flete'></td>";			
 			}
 			if ($datos["lima_esta"]!='FEL') {
-				echo "<td><img src='../img/validar_dian.png' width='32px' class='detalles' onclick='valiFactElec(".$datos["lima_idxx"].",".$datos["cantidad"].",".$datos["lima_clie"].",\"$nombre\")' title='Facturar'></td>";			
+				if ($datos["cantidad"]!=1) {
+					$LimaIdxx = "";
+					$sqlLimaIdxx = $this->consultar("lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_clie=".$datos["lima_clie"]." and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-17'", 4);
+					while ($datosLimaIdxx = mysqli_fetch_array($sqlLimaIdxx)) {
+						$LimaIdxx = ($LimaIdxx=="")?$datosLimaIdxx["lima_idxx"]:$LimaIdxx."-".$datosLimaIdxx["lima_idxx"];
+					}
+					echo "<td><img src='../img/validar_dian.png' width='32px' class='detalles' onclick='valiFactElec(\"".$LimaIdxx."\",".$datos["cantidad"].",".$datos["lima_clie"].",\"$nombre\")' title='Facturar'></td>";
+				}
+				else{
+					echo "<td><img src='../img/validar_dian.png' width='32px' class='detalles' onclick='valiFactElec(\"".$datos["lima_idxx"]."\",".$datos["cantidad"].",".$datos["lima_clie"].",\"$nombre\")' title='Facturar'></td>";			
+				}
 			}
 			echo"</tr>";
 		}

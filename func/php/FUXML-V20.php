@@ -10,7 +10,7 @@
 		break;
 		//funcion para guardar la respuesta del json en la base de datos
 		case "validarJson":
-			$_SESSION["c_generaXml"]->validarJson();
+			//$_SESSION["c_generaXml"]->validarJson();
 		break;
 	}
 ?>
