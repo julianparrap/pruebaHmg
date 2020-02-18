@@ -49,50 +49,35 @@ echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 
 <?php
 	echo $formattedOutput;
+
+	$obj_queryDB = new conectarBD();
 	//funcion para guardar la respuesta del json en la base de datos
-	function validarJson(){
-		$fechaActual = date("Y-m-d H:i:s");
- 		if (file_exists("../../plcolab/app-data/output/".$numeroDocumento.".json")) {
-		//if (file_exists("../json/facturacion/SETT".$mcon_cons.".json")) {
-			$output = file_get_contents("../../plcolab/app-data/output/".$numeroDocumento.".json");
-			$arreglo = json_decode($output, true);
-			//consultar cofa_maes
-			//$sqlCofaMaes= $BDmysql->consultar("cofa_maes join movi_cons on(cofm_idxx=mcon_iddo)","cofm_idxx,cofm_idcp,mcon_idxx","mcon_idtc=14 and mcon_esta=2 and mcon_cons=".$mcon_cons,1);
-			$datosCofaMaes= mysqli_fetch_array($sqlCofaMaes);
-			$redl_idli= $arreglo["requestId"];
+	$fechaActual = date("Y-m-d H:i:s");
+	if (file_exists("../../plcolab/app-data/output/".$numeroDocumento.".json")) {
+		$output = file_get_contents("../../plcolab/app-data/output/".$numeroDocumento.".json");
+		$arreglo = json_decode($output, true);
+		//consultar liem_maes
+		$sqlLiemMaes = $obj_queryDB->consultar("ped.idx as pedIdx, con.idx as conIdx", "liem_maes JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.pedido=con.idx)", "lima_idxx=".$lima_idxx, 4);
+		$datosLiemMaes= mysqli_fetch_array($sqlLiemMaes);
+		$redl_idli= $lima_idxx;
+		$redl_idmp= $datosLiemMaes["pedIdx"];
+		$redl_idcf= $datosLiemMaes["conIdx"];
+		$redl_reid= $arreglo["requestId"];
+		$redl_cufe= $arreglo["UUID"];
+		$redl_ufac= $arreglo["URL"];
+		$redl_updf= $arreglo["UrlPdf"];
+		$redl_uxml= $arreglo["UrlXml"];
+		$redl_uack= $arreglo["AckXml"];
+		$redl_fpdf= $arreglo["pdfFileName"];
+		$redl_fxml= $arreglo["xmlFileName"];
+		$redl_fech= $fechaActual;
+		$redl_idus= 1;//$_SESSION["usum_idxx"];
 
-			$redc_reid= $arreglo["requestId"];
-			$redc_cufe= $arreglo["UUID"];
-			$redc_ufac= $arreglo["URL"];
-			$redc_updf=	$arreglo["UrlPdf"];
-			$redc_uxml=	$arreglo["UrlXml"];
-			$redc_uack=	$arreglo["AckXml"];
-			$redc_fpdf=	$arreglo["pdfFileName"];
-			$redc_fxml=	$arreglo["xmlFileName"];
-			$BDmysql->insertar("redi_cofa","redc_idem,redc_idco,redc_idcl,redc_idcf,redc_reid,redc_cufe,redc_ufac,redc_updf,redc_uxml,redc_uack,redc_fpdf,redc_fxml,redc_fech,redc_idus","".$_SESSION["empm_idxx"].",".$datosCofaMaes["cofm_idxx"].",".$datosCofaMaes["cofm_idcp"].",".$datosCofaMaes["mcon_idxx"].",'".$redc_reid."','".$redc_cufe."','".$redc_ufac."','".$redc_updf."','".$redc_uxml."','".$redc_uack."','".$redc_fpdf."','".$redc_fxml."',".$_SESSION["usum_idxx"]);
-			$BDmysql->actualizar("cofa_maes","cofm_vafe='S'","cofm_idxx=".$datosCofaMaes["cofm_idxx"]);
-		}
-		else{
-			$sqlCofaMaes= $BDmysql->consultar("cofa_maes join movi_cons on(cofm_idxx=mcon_iddo)","cofm_idxx,cofm_idcp,mcon_idxx","mcon_idtc=14 and mcon_esta=2 and mcon_cons=".$mcon_cons,1);
-		$datosCofaMaes= mysqli_fetch_array($sqlCofaMaes);
-		$BDmysql->actualizar("cofa_maes","cofm_vafe='E'","cofm_idxx=".$datosCofaMaes["cofm_idxx"]);
-	}	
-
-
-
-
-
-	function validarJson(){
-		extract($_POST);
- 		if (file_exists("../../plcolab/app-data/output/".$numeroDocumento.".json")) {
-			$output = file_get_contents("../../plcolab/app-data/output/SETT4.json");
-			$arreglo = json_decode($output, true);
-			echo "string".$arreglo["UUID"];
-			echo "<br>".$arreglo["UrlPdf"];
- 		}
- 		else{
-			echo "Error a la hora de generar el documento."; 			
- 		}	
+		$obj_queryDB->insertar("redi_liem","redl_idli,redl_idmp,redl_idcf,redl_reid,redl_cufe,redl_ufac,redl_updf,redl_uxml,redl_uack,redl_fpdf,redl_fxml,redl_fech,redl_idus",$redl_idli.",".$redl_idmp.",".$redl_idcf.",'".$redl_reid."','".$redl_cufe."','".$redl_ufac."','".$redl_updf."','".$redl_uxml."','".$redl_uack."','".$redl_fpdf."','".$redl_fxml."','".$redl_fech."',".$redl_idus);
+		$obj_queryDB->actualizar("liem_maes","lima_vafe='S'","lima_idxx=".$lima_idxx);
 	}
+	else{
+		$obj_queryDB->actualizar("liem_maes","lima_vafe='E'","lima_idxx=".$lima_idxx);
+	}	
 ?>
 </textarea>
