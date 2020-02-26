@@ -1,0 +1,141 @@
+<Factura> 
+<Cabecera  Numero='SETT118' OrdenCompra='602237' FechaOrdenCompra='2020-01-17' FechaEmision='2020-02-21' Vencimiento='2020-03-22' HoraEmision='02:26:38' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='6' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='816005778' DV='4' NombreComercial='IMPORTADORA MAZLUV S.A.' RazonSocial='JESUS ANTONY JONES ALVAREZ'> 
+<Direccion CodigoMunicipio='6600001' NombreCiudad='PEREIRA' CodigoPostal='' NombreDepartamento='RISARALDA' CodigoDepartamento='66' Direccion='CARRERA 12 N°. 19-39' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='JESUS ANTONY JONES ALVAREZ' Telefono='3206742077' Telfax='' Email='contabilidad@importadoraramazluv.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='6600001' NombreCiudad='PEREIRA' CodigoPostal='' NombreDepartamento='RISARALDA' CodigoDepartamento='66' Direccion='CARRERA 12 N°. 19-39' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-22'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='5527'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602237'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='SERVIENTREGA'/> 
+<CampoAdicional Nombre='vendedor' Valor='CARLOS ENRIQUE'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='978120' BaseImponible='978120' BrutoMasImpuestos='1163963' Cargos= '0' Descuentos='0' Impuestos='185843' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1111500' Neto='978120' Subtotal='978120' TotalDescuentosLineas='133380' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='185843'> 
+<Subtotal ValorBase='978120'  Porcentaje='19'  Valor='185843' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='194832' Descripcion='KIT JUNTA LADO RUEDA Corsa Coupe,L,GL,Active 1300cc96/07, 30 Estrias' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='36900' ValorTotalItem='221400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='15'/> 
+<CampoAdicional Nombre='referencia' Valor='1350974'/> 
+<CampoAdicional Nombre='equivalencia' Valor='22x30x52'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='221400' Valor='26568'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='37018.08'> 
+<Subtotal ValorBase='194832'  Porcentaje='19'  Valor='37018.08' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='88000' Descripcion='KIT JUNTA LADO RUEDA 626 Milenio, 1800-2000cc      98/06   30 Estrias' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='50000' ValorTotalItem='100000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='6755372'/> 
+<CampoAdicional Nombre='equivalencia' Valor='28x30x56'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='100000' Valor='12000'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16720'> 
+<Subtotal ValorBase='88000'  Porcentaje='19'  Valor='16720' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='374440' Descripcion='RUEDA LIBRE Manual-Luv 1600cc 82/89       Juego x 2' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='425500' ValorTotalItem='425500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='432'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='425500' Valor='51060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='71143.6'> 
+<Subtotal ValorBase='374440'  Porcentaje='19'  Valor='71143.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='125136' Descripcion='SENSOR OXIGENO 1 Cable Corsa 1.4L-1.6L,      Astra 1.8L-2.0L,Vectra 2.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='71100' ValorTotalItem='142200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='15'/> 
+<CampoAdicional Nombre='referencia' Valor='ES10779'/> 
+<CampoAdicional Nombre='equivalencia' Valor='ES10779'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='142200' Valor='17064'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23775.84'> 
+<Subtotal ValorBase='125136'  Porcentaje='19'  Valor='23775.84' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='164736' Descripcion='SENSOR OXIGENO R19 1.6Lts, Clio II, Megane,  Laguna II -4 Cables' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='93600' ValorTotalItem='187200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7700107433'/> 
+<CampoAdicional Nombre='equivalencia' Valor='ES10778'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='187200' Valor='22464'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='31299.84'> 
+<Subtotal ValorBase='164736'  Porcentaje='19'  Valor='31299.84' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='30976' Descripcion='TERMOSTATO 88oC. Hilux 22R' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='17600' ValorTotalItem='35200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='9091603078JP'/> 
+<CampoAdicional Nombre='equivalencia' Valor='W52TA-88A'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='35200' Valor='4224'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='5885.44'> 
+<Subtotal ValorBase='30976'  Porcentaje='19'  Valor='5885.44' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

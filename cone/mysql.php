@@ -33,21 +33,21 @@ class conectarBD {
 	public function actualizar($tabla, $campos, $condiciones){
 		$con = $this->conectarBD();
 		$sql=('update ' .$tabla. ' set '.$campos.' where '.$condiciones);
-		$res=$con->query($sql) or die ("Error en consulta => ".$con->error);
+		$res=$con->query($sql) or die ("Error en actualización => ".$con->error);
 		mysqli_close($con);
 	}
 
 	public function eliminar($tabla,$condiciones){
 		$con= $this->conectarBD();
 		$sql =('delete from '.$tabla.' where '.$condiciones);
-		$res=$con->query($sql) or die ("Error en consulta => ".$con->error);
+		$res=$con->query($sql) or die ("Error en eliminación => ".$con->error);
 		mysqli_close($con);
 	}
 
 	public function insertar($tabla,$valores){
 		$con = $this->conectarBD();
 		$sql =('insert into '.$tabla.' values '.$valores);
-		$res=$con->query($sql) or die ("Error en consulta => ".$con->error);
+		$res=$con->query($sql) or die ("Error en inserción => ".$con->error);
 		mysqli_close($con);
 	}
 
@@ -55,6 +55,7 @@ class conectarBD {
 		if ($valido == 4){
 			$con= $this->conectarBD();
 			$sql = ('select ' .$atributo.' from '.$tablas.' where '.$codiciones);
+			//echo "SQL---".$sql."---SQL";
 			$res=$con->query($sql) or die ("Error en consulta => ".$con->error);
 			return $res;	
 			mysqli_close($con);

@@ -1,0 +1,155 @@
+<Factura> 
+<Cabecera  Numero='SETT24' OrdenCompra='602235' FechaOrdenCompra='2020-01-17' FechaEmision='2020-02-26' Vencimiento='2020-03-27' HoraEmision='02:02:34' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='7' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='900414561' DV='2' NombreComercial='EXTRA REPUESTOSROMERO S.A.S.' RazonSocial='RICARDO EDELBERTO ROMERO RUIZ'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='TRANSV. 78H No. 42-83 SUR' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='RICARDO EDELBERTO ROMERO RUIZ' Telefono='3133830193' Telfax='' Email='EXTRAREPUESTOSROMERO@GMAIL.COM' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='TRANSV. 78H No. 42-83 SUR' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-27'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='3329'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602235'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='MIGUEL ANGEL'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1196976' BaseImponible='1196976' BrutoMasImpuestos='1424401' Cargos= '0' Descuentos='0' Impuestos='227425' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1360200' Neto='1196976' Subtotal='1196976' TotalDescuentosLineas='163224' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='227425'> 
+<Subtotal ValorBase='1196976'  Porcentaje='19'  Valor='227425' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='215688' Descripcion='ANILLOS MOTOR Aveo Family 1.5L. 8Valv. SOHC' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='81700' ValorTotalItem='245100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='SWG10030 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='245100' Valor='29412'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='40980.72'> 
+<Subtotal ValorBase='215688'  Porcentaje='19'  Valor='40980.72' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='168608' Descripcion='CASQUETES BIELA Racer,Cielo,Aveo 1.4L.-1.6L., Optra 1.4L con Orificio ' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='47900' ValorTotalItem='191600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='BB432J STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='B95432 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='191600' Valor='22992'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='32035.52'> 
+<Subtotal ValorBase='168608'  Porcentaje='19'  Valor='32035.52' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='167200' Descripcion='CASQUETES BIELA Racer,Cielo,Aveo 1.4L.-1.6L., Optra 1.4L con Orificio ' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='47500' ValorTotalItem='190000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='BB432J-025'/> 
+<CampoAdicional Nombre='equivalencia' Valor='B95432-025'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='190000' Valor='22800'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='31768'> 
+<Subtotal ValorBase='167200'  Porcentaje='19'  Valor='31768' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='194304' Descripcion='CASQUETES CIGUENAL Racer,Cielo,Aveo 1.4L.-1.6L., Optra 1.4L' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='73600' ValorTotalItem='220800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='BC452J-025'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M14452SP-025'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='220800' Valor='26496'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='36917.76'> 
+<Subtotal ValorBase='194304'  Porcentaje='19'  Valor='36917.76' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='196152' Descripcion='CASQUETES CIGUENAL Racer,Cielo,Aveo 1.4L.-1.6L., Optra 1.4L' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='74300' ValorTotalItem='222900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='BC452J-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M14452SP-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='222900' Valor='26748'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='37268.88'> 
+<Subtotal ValorBase='196152'  Porcentaje='19'  Valor='37268.88' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='132000' Descripcion='CASQUETES CIGUENAL Racer,Cielo,Aveo 1.4L.-1.6L., Optra 1.4L' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='50000' ValorTotalItem='150000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='MS3021-025'/> 
+<CampoAdicional Nombre='equivalencia' Valor='MS3021A-025'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='150000' Valor='18000'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='25080'> 
+<Subtotal ValorBase='132000'  Porcentaje='19'  Valor='25080' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='123024' Descripcion='CASQUETES CIGUENAL Racer,Cielo,Aveo 1.4L.-1.6L., Optra 1.4L' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='46600' ValorTotalItem='139800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='MS3021-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='MS3021A-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='139800' Valor='16776'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23374.56'> 
+<Subtotal ValorBase='123024'  Porcentaje='19'  Valor='23374.56' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

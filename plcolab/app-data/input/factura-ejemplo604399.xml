@@ -1,0 +1,803 @@
+<Factura> 
+<Cabecera  Numero='SETT118' OrdenCompra='604399' FechaOrdenCompra='2020-02-18' FechaEmision='2020-02-19' Vencimiento='2020-03-20' HoraEmision='03:14:04' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='57' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='830027209' DV='1' NombreComercial='IMPORTAMOS FORD LTDA.' RazonSocial='CESAR AUGUSTO MARTINEZ SALAZAR'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 15 NO. 7-66' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CESAR AUGUSTO MARTINEZ SALAZAR' Telefono='3195548261' Telfax='' Email='auxsistemas@hermagu.com.co' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 15 NO. 7-66' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-20'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='1051'/> 
+<CampoAdicional Nombre='pedido N°' Valor='604399'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='JUAN CARLOS'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' TREINTA Y TRES MILLONES QUINIENTOS  OCHENTA Y UN MIL QUINIENTOS  SESENTA Y DOS MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $2,821,980'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='30759582'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-20'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='28219800' BaseImponible='28219800' BrutoMasImpuestos='33581562' Cargos= '0' Descuentos='0' Impuestos='5361762' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='28219800' Neto='28219800' Subtotal='28219800' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='5361762'> 
+<Subtotal ValorBase='28219800'  Porcentaje='19'  Valor='5361762' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='44300' Descripcion='6-POLEA GUIA CORREA MICRO V Ram 1500 ; Grand Cherokee     Durango, 98/' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='44300' ValorTotalItem='44300' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='38033 '/> 
+<CampoAdicional Nombre='equivalencia' Valor='38033'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8417'> 
+<Subtotal ValorBase='44300'  Porcentaje='19'  Valor='8417' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='94000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='4700' ValorTotalItem='94000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BCPR5ES'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='17860'> 
+<Subtotal ValorBase='94000'  Porcentaje='19'  Valor='17860' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='124000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='6200' ValorTotalItem='124000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BCPR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23560'> 
+<Subtotal ValorBase='124000'  Porcentaje='19'  Valor='23560' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='106000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='5300' ValorTotalItem='106000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5E'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20140'> 
+<Subtotal ValorBase='106000'  Porcentaje='19'  Valor='20140' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='104000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='5200' ValorTotalItem='104000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19760'> 
+<Subtotal ValorBase='104000'  Porcentaje='19'  Valor='19760' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='106000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='5300' ValorTotalItem='106000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5EYA-11'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20140'> 
+<Subtotal ValorBase='106000'  Porcentaje='19'  Valor='20140' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='98000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='4900' ValorTotalItem='98000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR6E'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18620'> 
+<Subtotal ValorBase='98000'  Porcentaje='19'  Valor='18620' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='120000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='6000' ValorTotalItem='120000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR6E-11'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='22800'> 
+<Subtotal ValorBase='120000'  Porcentaje='19'  Valor='22800' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='96000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='4800' ValorTotalItem='96000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BPR5ES'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18240'> 
+<Subtotal ValorBase='96000'  Porcentaje='19'  Valor='18240' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='96000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='4800' ValorTotalItem='96000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BPR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18240'> 
+<Subtotal ValorBase='96000'  Porcentaje='19'  Valor='18240' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='11' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='112000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='5600' ValorTotalItem='112000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BPR6EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21280'> 
+<Subtotal ValorBase='112000'  Porcentaje='19'  Valor='21280' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='12' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='72000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='7200' ValorTotalItem='72000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='DCPR7E'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='13680'> 
+<Subtotal ValorBase='72000'  Porcentaje='19'  Valor='13680' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='13' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='164000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x26,49mm; Cop' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='8200' ValorTotalItem='164000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='LFR5A-11'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='31160'> 
+<Subtotal ValorBase='164000'  Porcentaje='19'  Valor='31160' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='14' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='124000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='6200' ValorTotalItem='124000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RA7YC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23560'> 
+<Subtotal ValorBase='124000'  Porcentaje='19'  Valor='23560' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='15' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='112000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 0.8;  Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='5600' ValorTotalItem='112000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RA8HC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21280'> 
+<Subtotal ValorBase='112000'  Porcentaje='19'  Valor='21280' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='16' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='134000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='6700' ValorTotalItem='134000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC10MCC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='25460'> 
+<Subtotal ValorBase='134000'  Porcentaje='19'  Valor='25460' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='17' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='124000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='6200' ValorTotalItem='124000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC10YC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23560'> 
+<Subtotal ValorBase='124000'  Porcentaje='19'  Valor='23560' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='18' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='96000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 5.1;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='4800' ValorTotalItem='96000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC12LC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18240'> 
+<Subtotal ValorBase='96000'  Porcentaje='19'  Valor='18240' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='19' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='325600' Descripcion='AMORTIGUADOR CAPOT Grand Cherokee 93/...         146Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='40700' ValorTotalItem='325600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13791'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13791'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='61864'> 
+<Subtotal ValorBase='325600'  Porcentaje='19'  Valor='61864' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='20' Nota='' Cantidad='18' UnidadMedida='Unidad' SubTotalLinea='622800' Descripcion='AMORTIGUADOR CAPOT Grand Cherokee Laredo 94/...  92Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='18' UnidadCantidadBase='Unidad' PrecioUnitario='34600' ValorTotalItem='622800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13946'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13946'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='118332'> 
+<Subtotal ValorBase='622800'  Porcentaje='19'  Valor='118332' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='21' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='217800' Descripcion='AMORTIGUADOR CAPOT Grand Cherokee 2014           55Lbs.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='36300' ValorTotalItem='217800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='14138'/> 
+<CampoAdicional Nombre='equivalencia' Valor='14138'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='41382'> 
+<Subtotal ValorBase='217800'  Porcentaje='19'  Valor='41382' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='22' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='217800' Descripcion='AMORTIGUADOR QUINTA PUERTA Jeep Compass 2014             132Lbs.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='36300' ValorTotalItem='217800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='14121'/> 
+<CampoAdicional Nombre='equivalencia' Valor='14121'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='41382'> 
+<Subtotal ValorBase='217800'  Porcentaje='19'  Valor='41382' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='23' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='93800' Descripcion='AMORTIGUADOR QUINTA PUERTA Grand Cherokee 2014           164Lbs.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='46900' ValorTotalItem='93800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='14137M'/> 
+<CampoAdicional Nombre='equivalencia' Valor='14137M'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='17822'> 
+<Subtotal ValorBase='93800'  Porcentaje='19'  Valor='17822' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='24' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='446400' Descripcion='AMORTIGUADOR REFORZADO Delantero-Land Cruiser 75/83' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='74400' ValorTotalItem='446400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='58026'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='84816'> 
+<Subtotal ValorBase='446400'  Porcentaje='19'  Valor='84816' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='25' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='622000' Descripcion='AMORTIGUADOR REFORZADO Trasero-Luv 1.6L,2.0L,2.3L    4X2,4X4 82/2004' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='62200' ValorTotalItem='622000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='58029'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='118180'> 
+<Subtotal ValorBase='622000'  Porcentaje='19'  Valor='118180' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='26' Nota='' Cantidad='0' UnidadMedida='Unidad' SubTotalLinea='0' Descripcion='AMORTIGUADOR REFORZADO Delantero,Land Rover Campero  58/77' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='0' UnidadCantidadBase='Unidad' PrecioUnitario='79200' ValorTotalItem='0' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='58128'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='0'> 
+<Subtotal ValorBase='0'  Porcentaje='19'  Valor='0' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='27' Nota='' Cantidad='16' UnidadMedida='Unidad' SubTotalLinea='614400' Descripcion='AMORTIGUADOR TAPA BAUL Cherokee 92/01                146Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='16' UnidadCantidadBase='Unidad' PrecioUnitario='38400' ValorTotalItem='614400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13620M'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13620M'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='116736'> 
+<Subtotal ValorBase='614400'  Porcentaje='19'  Valor='116736' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='28' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='283200' Descripcion='AMORTIGUADOR TAPA BAUL Grand Cherokee 94/...         169Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='35400' ValorTotalItem='283200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13632M'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13632'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='53808'> 
+<Subtotal ValorBase='283200'  Porcentaje='19'  Valor='53808' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='29' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='142000' Descripcion='AMORTIGUADOR TAPA BAUL Cherokee Laredo 92/01         146Lbs.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='35500' ValorTotalItem='142000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13642M'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13642M'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='26980'> 
+<Subtotal ValorBase='142000'  Porcentaje='19'  Valor='26980' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='30' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='190000' Descripcion='AMORTIGUADOR TAPA BAUL Cherokee 94/98                184Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='47500' ValorTotalItem='190000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13909'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13909'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='36100'> 
+<Subtotal ValorBase='190000'  Porcentaje='19'  Valor='36100' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='31' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='173600' Descripcion='AMORTIGUADOR TAPA BAUL Cherokee 94/98                157Lbs.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='43400' ValorTotalItem='173600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13910'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13910M'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='32984'> 
+<Subtotal ValorBase='173600'  Porcentaje='19'  Valor='32984' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='32' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='161600' Descripcion='AMORTIGUADOR TAPA BAUL Grand Cherokee Laredo 94/...  132Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='40400' ValorTotalItem='161600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13947'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13947'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='30704'> 
+<Subtotal ValorBase='161600'  Porcentaje='19'  Valor='30704' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='33' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='279200' Descripcion='AMORTIGUADOR TAPA BAUL Grand Cherokee 99/04' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='34900' ValorTotalItem='279200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='14170'/> 
+<CampoAdicional Nombre='equivalencia' Valor='14170'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='53048'> 
+<Subtotal ValorBase='279200'  Porcentaje='19'  Valor='53048' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='34' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='139200' Descripcion='AMORTIGUADOR VIDRIO 5a. PUERTA Cherokee Laredo 92/01         45Lbs.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='23200' ValorTotalItem='139200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13641'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13641'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='26448'> 
+<Subtotal ValorBase='139200'  Porcentaje='19'  Valor='26448' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='35' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='43600' Descripcion='AMORTIGUADOR VIDRIO 5a. PUERTA Grand Cherokee Laredo 94/...  45Lbs' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='21800' ValorTotalItem='43600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='13948'/> 
+<CampoAdicional Nombre='equivalencia' Valor='13948'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8284'> 
+<Subtotal ValorBase='43600'  Porcentaje='19'  Valor='8284' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='36' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='606000' Descripcion='ANILLOS MOTOR L4-134 3.1/8" 39/73' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='101000' ValorTotalItem='606000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='535KX-030'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E104KC-030'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='115140'> 
+<Subtotal ValorBase='606000'  Porcentaje='19'  Valor='115140' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='37' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='291300' Descripcion='ANILLOS MOTOR L4-134 3.1/8" 39/73' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='97100' ValorTotalItem='291300' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='535KX-040'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E104KC-040'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='55347'> 
+<Subtotal ValorBase='291300'  Porcentaje='19'  Valor='55347' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='38' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='213800' Descripcion='ANILLOS MOTOR L4-134 3.1/8" 39/73' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='106900' ValorTotalItem='213800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='535KX-060'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E104KC-060'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='40622'> 
+<Subtotal ValorBase='213800'  Porcentaje='19'  Valor='40622' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='39' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='265000' Descripcion='ANILLOS MOTOR V6-225 66/73,L6-232-258 66/83' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='132500' ValorTotalItem='265000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='9007KX-040'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E222K-040'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='50350'> 
+<Subtotal ValorBase='265000'  Porcentaje='19'  Valor='50350' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='40' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='142500' Descripcion='ANILLOS MOTOR L6-242 4.0 Lts Cherokee 96/2005' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='142500' ValorTotalItem='142500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='E925K STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='E925K STD'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='27075'> 
+<Subtotal ValorBase='142500'  Porcentaje='19'  Valor='27075' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='41' Nota='' Cantidad='7' UnidadMedida='Unidad' SubTotalLinea='959000' Descripcion='ANILLOS MOTOR L6-242 4.0 Lts Cherokee 96/2005' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='7' UnidadCantidadBase='Unidad' PrecioUnitario='137000' ValorTotalItem='959000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='E925K-020'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E925K-020'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='182210'> 
+<Subtotal ValorBase='959000'  Porcentaje='19'  Valor='182210' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='42' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='718200' Descripcion='ANILLOS MOTOR L6-242 4.0 Lts Cherokee 96/2005' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='119700' ValorTotalItem='718200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='E925K-030'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E925K-030'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='136458'> 
+<Subtotal ValorBase='718200'  Porcentaje='19'  Valor='136458' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='43' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='287600' Descripcion='ANILLOS MOTOR V8-285 4.7Lts    Cherokee     Limited 2002/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='143800' ValorTotalItem='287600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='E968K-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E968K-050MM'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='54644'> 
+<Subtotal ValorBase='287600'  Porcentaje='19'  Valor='54644' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='44' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='332700' Descripcion='BARRA TERMINAL CONEXION "R" Grand Cherokee 5.2L, 93/98Biela Caja a Bra' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='110900' ValorTotalItem='332700' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='52037994'/> 
+<CampoAdicional Nombre='equivalencia' Valor='DS1310'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='63213'> 
+<Subtotal ValorBase='332700'  Porcentaje='19'  Valor='63213' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='45' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='2646000' Descripcion='BOMBA ACEITE L6-232,258 70/84' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='132300' ValorTotalItem='2646000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='3181340'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M081'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='502740'> 
+<Subtotal ValorBase='2646000'  Porcentaje='19'  Valor='502740' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='46' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='658800' Descripcion='BOMBA ACEITE L6-242, Cherokee 90/98' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='164700' ValorTotalItem='658800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='3243102'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M081A'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='125172'> 
+<Subtotal ValorBase='658800'  Porcentaje='19'  Valor='125172' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='47' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='281200' Descripcion='BOMBA ACEITE V8-318" 68/81' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='140600' ValorTotalItem='281200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='01'/> 
+<CampoAdicional Nombre='referencia' Valor='4071040'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M072'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='53428'> 
+<Subtotal ValorBase='281200'  Porcentaje='19'  Valor='53428' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='48' Nota='' Cantidad='7' UnidadMedida='Unidad' SubTotalLinea='2039100' Descripcion='BOMBA ACEITE Cherokee Liberty V6-226 3.7L  Grand Cherokee V8-285 4.7L' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='7' UnidadCantidadBase='Unidad' PrecioUnitario='291300' ValorTotalItem='2039100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='53020827'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M297'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='387429'> 
+<Subtotal ValorBase='2039100'  Porcentaje='19'  Valor='387429' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='49' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='2426800' Descripcion='BOMBA ACEITE L4-134" 41/73' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='606700' ValorTotalItem='2426800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='804484'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M053'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='461092'> 
+<Subtotal ValorBase='2426800'  Porcentaje='19'  Valor='461092' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='50' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='501000' Descripcion='BOMBA AGUA Cherokee 91/95,Aluminio' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='83500' ValorTotalItem='501000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='4626215A'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TJ-3412'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='95190'> 
+<Subtotal ValorBase='501000'  Porcentaje='19'  Valor='95190' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='51' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='568000' Descripcion='BOMBA AGUA Grand Cherokee V8-318 5.2Lts  93/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='142000' ValorTotalItem='568000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='53020280A'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TJ-7160'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='107920'> 
+<Subtotal ValorBase='568000'  Porcentaje='19'  Valor='107920' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='52' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='2196000' Descripcion='BOMBA AGUA Grand Cherokee 99/2007        Comander V8-285 4.7Lts' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='109800' ValorTotalItem='2196000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='TJ-7163'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TJ-7163'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='417240'> 
+<Subtotal ValorBase='2196000'  Porcentaje='19'  Valor='417240' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='53' Nota='' Cantidad='14' UnidadMedida='Unidad' SubTotalLinea='904400' Descripcion='BOMBA CLUTCH Wrangler 96/... con Embolo    Plastica' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='14' UnidadCantidadBase='Unidad' PrecioUnitario='64600' ValorTotalItem='904400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='52104105'/> 
+<CampoAdicional Nombre='equivalencia' Valor='CMA350007'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='171836'> 
+<Subtotal ValorBase='904400'  Porcentaje='19'  Valor='171836' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='54' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='1360000' Descripcion='BOMBA CLUTCH Cherokee 91/95. Plastica con  Embolo' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='68000' ValorTotalItem='1360000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='52107640'/> 
+<CampoAdicional Nombre='equivalencia' Valor='CMA350005'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='258400'> 
+<Subtotal ValorBase='1360000'  Porcentaje='19'  Valor='258400' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='55' Nota='' Cantidad='19' UnidadMedida='Unidad' SubTotalLinea='978500' Descripcion='BOMBA CLUTCH 3/4" Land Rover 110, Aluminio' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='19' UnidadCantidadBase='Unidad' PrecioUnitario='51500' ValorTotalItem='978500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='550732'/> 
+<CampoAdicional Nombre='equivalencia' Valor='GMC1032'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='185915'> 
+<Subtotal ValorBase='978500'  Porcentaje='19'  Valor='185915' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='56' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='1536600' Descripcion='BOMBA DIRECCION HIDRAULICA Cherokee Todas, 1996/01       Wrangler, 199' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='256100' ValorTotalItem='1536600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='52087871 '/> 
+<CampoAdicional Nombre='equivalencia' Valor='403J'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='291954'> 
+<Subtotal ValorBase='1536600'  Porcentaje='19'  Valor='291954' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='57' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='1808000' Descripcion='BOMBA FRENO 1",Todos 42/64,Stdbkr 47/63' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='90400' ValorTotalItem='1808000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='05'/> 
+<CampoAdicional Nombre='referencia' Valor='805348'/> 
+<CampoAdicional Nombre='equivalencia' Valor='MC2796'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='343520'> 
+<Subtotal ValorBase='1808000'  Porcentaje='19'  Valor='343520' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

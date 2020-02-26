@@ -1,0 +1,295 @@
+<Factura> 
+<Cabecera  Numero='SETT118' OrdenCompra='602236' FechaOrdenCompra='2020-01-17' FechaEmision='2020-02-21' Vencimiento='2020-03-22' HoraEmision='02:26:38' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='17' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='816005778' DV='4' NombreComercial='IMPORTADORA MAZLUV S.A.' RazonSocial='JESUS ANTONY JONES ALVAREZ'> 
+<Direccion CodigoMunicipio='6600001' NombreCiudad='PEREIRA' CodigoPostal='' NombreDepartamento='RISARALDA' CodigoDepartamento='66' Direccion='CARRERA 12 N°. 19-39' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='JESUS ANTONY JONES ALVAREZ' Telefono='3206742077' Telfax='' Email='contabilidad@importadoraramazluv.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='6600001' NombreCiudad='PEREIRA' CodigoPostal='' NombreDepartamento='RISARALDA' CodigoDepartamento='66' Direccion='CARRERA 12 N°. 19-39' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-22'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='5527'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602236'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='SERVIENTREGA'/> 
+<CampoAdicional Nombre='vendedor' Valor='CARLOS ENRIQUE'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1545104' BaseImponible='1545104' BrutoMasImpuestos='1838674' Cargos= '0' Descuentos='0' Impuestos='293570' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1755800' Neto='1545104' Subtotal='1545104' TotalDescuentosLineas='210696' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='293570'> 
+<Subtotal ValorBase='1545104'  Porcentaje='19'  Valor='293570' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='0' UnidadMedida='Unidad' SubTotalLinea='0' Descripcion='EMPAQUE TAPA VALVULAS Corsa Todos 96/07 en Caucho' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='0' UnidadCantidadBase='Unidad' PrecioUnitario='5800' ValorTotalItem='0' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='15'/> 
+<CampoAdicional Nombre='referencia' Valor='90409594'/> 
+<CampoAdicional Nombre='equivalencia' Valor='76351'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='0' Valor='0'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='0'> 
+<Subtotal ValorBase='0'  Porcentaje='19'  Valor='0' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='20240' Descripcion='GUAYA ACELERADOR Alto 99/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='11500' ValorTotalItem='23000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='1591075FB0'/> 
+<CampoAdicional Nombre='equivalencia' Valor='GMCAC-2009'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='23000' Valor='2760'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='3845.6'> 
+<Subtotal ValorBase='20240'  Porcentaje='19'  Valor='3845.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='0' UnidadMedida='Unidad' SubTotalLinea='0' Descripcion='GUAYA CLUTCH Picanto Morning 2008/2012' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='0' UnidadCantidadBase='Unidad' PrecioUnitario='17300' ValorTotalItem='0' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='60'/> 
+<CampoAdicional Nombre='referencia' Valor='4151007500'/> 
+<CampoAdicional Nombre='equivalencia' Valor='KIAEM-3015'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='0' Valor='0'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='0'> 
+<Subtotal ValorBase='0'  Porcentaje='19'  Valor='0' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='0' UnidadMedida='Unidad' SubTotalLinea='0' Descripcion='GUAYA CONJ. CONTROL Y SELECTOR Alto 1.0L 12V 98/04' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='0' UnidadCantidadBase='Unidad' PrecioUnitario='62100' ValorTotalItem='0' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='2830078G02 '/> 
+<CampoAdicional Nombre='equivalencia' Valor='GMCCC-3574'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='0' Valor='0'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='0'> 
+<Subtotal ValorBase='0'  Porcentaje='19'  Valor='0' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='64856' Descripcion='GUAYA CONTROL-SELECTOR CAMBIOS Spark GT 1.2L. 2010/2012' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='73700' ValorTotalItem='73700' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='25189435'/> 
+<CampoAdicional Nombre='equivalencia' Valor='GMCCC-3720'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='73700' Valor='8844'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='12322.64'> 
+<Subtotal ValorBase='64856'  Porcentaje='19'  Valor='12322.64' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='39776' Descripcion='GUAYA FRENO EMERGENCIA Principal, 323 87/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='11300' ValorTotalItem='45200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='8COB44002A'/> 
+<CampoAdicional Nombre='equivalencia' Valor='MAZF-267'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='45200' Valor='5424'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7557.44'> 
+<Subtotal ValorBase='39776'  Porcentaje='19'  Valor='7557.44' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='34848' Descripcion='GUAYA FRENO EMERGENCIA Trooper 90/.,Trasero Izquierdo' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='19800' ValorTotalItem='39600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='94366788'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TROF-843'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='39600' Valor='4752'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='6621.12'> 
+<Subtotal ValorBase='34848'  Porcentaje='19'  Valor='6621.12' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='0' UnidadMedida='Unidad' SubTotalLinea='0' Descripcion='GUAYA VELOCIMETRO Swfit 1.3L., GTI 1.3L., 1.6L. -Sencillo-' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='0' UnidadCantidadBase='Unidad' PrecioUnitario='11800' ValorTotalItem='0' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='53'/> 
+<CampoAdicional Nombre='referencia' Valor='3491062B20 '/> 
+<CampoAdicional Nombre='equivalencia' Valor='GMCVZ-839'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='0' Valor='0'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='0'> 
+<Subtotal ValorBase='0'  Porcentaje='19'  Valor='0' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='165792' Descripcion='PISTONES MOTOR B2600' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='188400' ValorTotalItem='188400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='KM9216-075'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M9216-3-075'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='188400' Valor='22608'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='31500.48'> 
+<Subtotal ValorBase='165792'  Porcentaje='19'  Valor='31500.48' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='154088' Descripcion='PISTONES MOTOR Motor 22R-Hilux 2400cc' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='175100' ValorTotalItem='175100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='KT9205 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='T9205-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='175100' Valor='21012'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29276.72'> 
+<Subtotal ValorBase='154088'  Porcentaje='19'  Valor='29276.72' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='11' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='132792' Descripcion='PISTONES MOTOR Luv 1600cc,Ranura Ancha' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='150900' ValorTotalItem='150900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='KE828H-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E0828H-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='150900' Valor='18108'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='25230.48'> 
+<Subtotal ValorBase='132792'  Porcentaje='19'  Valor='25230.48' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='12' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='295504' Descripcion='PISTONES MOTOR Luv 2300cc' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='167900' ValorTotalItem='335800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='KE8905 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='E8905-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='335800' Valor='40296'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='56145.76'> 
+<Subtotal ValorBase='295504'  Porcentaje='19'  Valor='56145.76' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='13' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='128040' Descripcion='PISTONES MOTOR Motor 4G63,Ran 1.2,1.5,3.0    2000cc, L300 2.0' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='145500' ValorTotalItem='145500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='68'/> 
+<CampoAdicional Nombre='referencia' Valor='KM8569-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M8569-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='145500' Valor='17460'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='24327.6'> 
+<Subtotal ValorBase='128040'  Porcentaje='19'  Valor='24327.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='14' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='161656' Descripcion='PISTONES MOTOR Motor 4G63,Ran 1.2,1.5,3.0    2000cc, L300 2.0' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='183700' ValorTotalItem='183700' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='68'/> 
+<CampoAdicional Nombre='referencia' Valor='KM8569 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='M8569-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='183700' Valor='22044'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='30714.64'> 
+<Subtotal ValorBase='161656'  Porcentaje='19'  Valor='30714.64' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='15' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='155848' Descripcion='PISTONES MOTOR Motor FS-Matsuri 2000cc' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='177100' ValorTotalItem='177100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='KM8309-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M8309-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='177100' Valor='21252'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29611.12'> 
+<Subtotal ValorBase='155848'  Porcentaje='19'  Valor='29611.12' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='16' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='78672' Descripcion='KIT JUNTA LADO CAJA Sprint, 1000cc 87/04 Tipo NTN' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='44700' ValorTotalItem='89400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='1340918'/> 
+<CampoAdicional Nombre='equivalencia' Valor='22x19x35'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='89400' Valor='10728'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14947.68'> 
+<Subtotal ValorBase='78672'  Porcentaje='19'  Valor='14947.68' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='17' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='112992' Descripcion='KIT JUNTA LADO RUEDA 323, Ecuador 1500cc 93/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='32100' ValorTotalItem='128400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='6755363'/> 
+<CampoAdicional Nombre='equivalencia' Valor='24x21x52'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='128400' Valor='15408'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21468.48'> 
+<Subtotal ValorBase='112992'  Porcentaje='19'  Valor='21468.48' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

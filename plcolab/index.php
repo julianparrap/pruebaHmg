@@ -10,6 +10,7 @@ $SubscriptionKey = 'de5da094f12c47d38a8aa676f4c59a93';
 // tipo de documento a emitir: "FA", "NC", "ND", ...
 $documentType = "FACTURA-UBL";
 $lima_idxx = $_POST["lima_idxx"];
+//$lima_idxx = $_POST["lima_idxx"];
 $options = [];
 
 //  EJEMPLO: el xml del documento debe ser generado por algun software
@@ -48,18 +49,18 @@ echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 
 
 <?php
+	require_once("../cone/mysql.php");
 	echo $formattedOutput;
-
 	$obj_queryDB = new conectarBD();
 	//funcion para guardar la respuesta del json en la base de datos
 	$fechaActual = date("Y-m-d H:i:s");
-	if (file_exists("../../plcolab/app-data/output/".$numeroDocumento.".json")) {
-		$output = file_get_contents("../../plcolab/app-data/output/".$numeroDocumento.".json");
+	if (file_exists("app-data/output/".$numeroDocumento.".json") && $numeroDocumento != "error") {
+		$output = file_get_contents("app-data/output/".$numeroDocumento.".json");
 		$arreglo = json_decode($output, true);
 		//consultar liem_maes
-		$sqlLiemMaes = $obj_queryDB->consultar("ped.idx as pedIdx, con.idx as conIdx", "liem_maes JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.pedido=con.idx)", "lima_idxx=".$lima_idxx, 4);
+		$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "liem_maes JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "lima_liem=".$lima_idxx, 4);
 		$datosLiemMaes= mysqli_fetch_array($sqlLiemMaes);
-		$redl_idli= $lima_idxx;
+		$redl_idli= $datosLiemMaes["lima_idxx"];
 		$redl_idmp= $datosLiemMaes["pedIdx"];
 		$redl_idcf= $datosLiemMaes["conIdx"];
 		$redl_reid= $arreglo["requestId"];
@@ -73,11 +74,11 @@ echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 		$redl_fech= $fechaActual;
 		$redl_idus= 1;//$_SESSION["usum_idxx"];
 
-		$obj_queryDB->insertar("redi_liem","redl_idli,redl_idmp,redl_idcf,redl_reid,redl_cufe,redl_ufac,redl_updf,redl_uxml,redl_uack,redl_fpdf,redl_fxml,redl_fech,redl_idus",$redl_idli.",".$redl_idmp.",".$redl_idcf.",'".$redl_reid."','".$redl_cufe."','".$redl_ufac."','".$redl_updf."','".$redl_uxml."','".$redl_uack."','".$redl_fpdf."','".$redl_fxml."','".$redl_fech."',".$redl_idus);
-		$obj_queryDB->actualizar("liem_maes","lima_vafe='S'","lima_idxx=".$lima_idxx);
+		$obj_queryDB->insertar("redi_liem (redl_idli,redl_idmp,redl_idcf,redl_reid,redl_cufe,redl_ufac,redl_updf,redl_uxml,redl_uack,redl_fpdf,redl_fxml,redl_fech,redl_idus)","(".$redl_idli.",".$redl_idmp.",".$redl_idcf.",'".$redl_reid."','".$redl_cufe."','".$redl_ufac."','".$redl_updf."','".$redl_uxml."','".$redl_uack."','".$redl_fpdf."','".$redl_fxml."','".$redl_fech."',".$redl_idus.")");
+		$obj_queryDB->actualizar("liem_maes","lima_vafe='S'","lima_idxx=".$datosLiemMaes["lima_idxx"]);
 	}
 	else{
-		$obj_queryDB->actualizar("liem_maes","lima_vafe='E'","lima_idxx=".$lima_idxx);
+		$obj_queryDB->actualizar("liem_maes","lima_vafe='E'","lima_liem=".$lima_idxx);
 	}	
 ?>
 </textarea>
