@@ -1,0 +1,72 @@
+<Factura> 
+<Cabecera  Numero='SETT139' OrdenCompra='601459' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='01:57:14' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='1' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='49' TipoIdentificacion='13' NumeroIdentificacion='52519371' DV='6' NombreComercial='LUBRI CLABE ' RazonSocial='CLAUDIA  PATRICIA  BERMUDEZ MOLANO '> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 12 SUR # 20A-34' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CLAUDIA  PATRICIA  BERMUDEZ MOLANO ' Telefono='3143945373' Telfax='' Email='claudia.bermudez497@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-49</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 12 SUR # 20A-34' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='3235'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601459'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='ENTREGAS AM29KL'/> 
+<CampoAdicional Nombre='vendedor' Valor='EDUIN'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor=''/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $37,150'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-37150'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-30'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='371500' BaseImponible='371500' BrutoMasImpuestos='442085' Cargos= '0' Descuentos='0' Impuestos='70585' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='371500' Neto='371500' Subtotal='371500' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='70585'> 
+<Subtotal ValorBase='371500'  Porcentaje='19'  Valor='70585' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='371500' Descripcion='LIQUIDO FRENO "Caneca" X 20 Lts  DOT4' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='371500' ValorTotalItem='371500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5811'/> 
+<CampoAdicional Nombre='equivalencia' Valor='20 Lts.'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='70585'> 
+<Subtotal ValorBase='371500'  Porcentaje='19'  Valor='70585' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

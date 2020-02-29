@@ -1,0 +1,113 @@
+<Factura> 
+<Cabecera  Numero='SETT394' OrdenCompra='601432' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='01:57:13' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='4' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='49' TipoIdentificacion='13' NumeroIdentificacion='51748995' DV='1' NombreComercial='COSMOSREPUESTOS' RazonSocial='BLANCA AURORA GUZMAN DIAZ'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 57 NO. 97-01' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='BLANCA AURORA GUZMAN DIAZ' Telefono='3118916478' Telfax='' Email='blancaurora1964@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-49</CodigoObligacion> 
+<CodigoObligacion>O-15</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 57 NO. 97-01' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='10027'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601432'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='               '/> 
+<CampoAdicional Nombre='vendedor' Valor='CARLOS JULIO'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $31,650'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-31650'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-30'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='316500' BaseImponible='316500' BrutoMasImpuestos='376635' Cargos= '0' Descuentos='0' Impuestos='60135' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='316500' Neto='316500' Subtotal='316500' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='60135'> 
+<Subtotal ValorBase='316500'  Porcentaje='19'  Valor='60135' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='71600' Descripcion='ANILLOS MOTOR Motor G16,G16B Swift 1.6L.    16Valv. 92/96' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='71600' ValorTotalItem='71600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='53'/> 
+<CampoAdicional Nombre='referencia' Valor='SWS20142 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='13604'> 
+<Subtotal ValorBase='71600'  Porcentaje='19'  Valor='13604' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='35900' Descripcion='CASQUETES BIELA Swift 1.600cc,Esteem 1.600cc  Motor 4LG16' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='35900' ValorTotalItem='35900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='53'/> 
+<CampoAdicional Nombre='referencia' Valor='CB2405-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='CB2405A-050'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='6821'> 
+<Subtotal ValorBase='35900'  Porcentaje='19'  Valor='6821' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='52000' Descripcion='CASQUETES CIGUENAL Swift 1.600cc,Esteem 1.600cc  Motor 4LG16' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='52000' ValorTotalItem='52000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='53'/> 
+<CampoAdicional Nombre='referencia' Valor='MS2405-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='MS2405GP-050'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9880'> 
+<Subtotal ValorBase='52000'  Porcentaje='19'  Valor='9880' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='157000' Descripcion='PISTONES MOTOR Motor G16-Swift 1600cc        16 Valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='157000' ValorTotalItem='157000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='53'/> 
+<CampoAdicional Nombre='referencia' Valor='KS7521 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='S7521-0-STD'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29830'> 
+<Subtotal ValorBase='157000'  Porcentaje='19'  Valor='29830' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

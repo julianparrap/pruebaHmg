@@ -1,0 +1,165 @@
+<Factura> 
+<Cabecera  Numero='SETT32' OrdenCompra='601379' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='01:57:14' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='10' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='901254273' DV='2' NombreComercial='ENJIN REPUESTOS S.A.S.' RazonSocial='JUDDY ANDREA SAMUDIO GARZON'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 26 NO 77-01' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='JUDDY ANDREA SAMUDIO GARZON' Telefono='3102131370' Telfax='' Email='proveedores@enjinrepuestos.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 26 NO 77-01' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='2145'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601379'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='ENTREGAS AM19KL'/> 
+<CampoAdicional Nombre='vendedor' Valor='BLANCA DORIS'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor=''/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $52,740'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-52740'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-30'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='527400' BaseImponible='527400' BrutoMasImpuestos='627606' Cargos= '0' Descuentos='0' Impuestos='100206' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='527400' Neto='527400' Subtotal='527400' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='100206'> 
+<Subtotal ValorBase='527400'  Porcentaje='19'  Valor='100206' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='16' UnidadMedida='Unidad' SubTotalLinea='128000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 12x26,5mm; Copa' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='16' UnidadCantidadBase='Unidad' PrecioUnitario='8000' ValorTotalItem='128000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RER8MC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='24320'> 
+<Subtotal ValorBase='128000'  Porcentaje='19'  Valor='24320' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='32' UnidadMedida='Unidad' SubTotalLinea='201600' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='32' UnidadCantidadBase='Unidad' PrecioUnitario='6300' ValorTotalItem='201600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC10YC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='38304'> 
+<Subtotal ValorBase='201600'  Porcentaje='19'  Valor='38304' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='12' UnidadMedida='Unidad' SubTotalLinea='57600' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='12' UnidadCantidadBase='Unidad' PrecioUnitario='4800' ValorTotalItem='57600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='10944'> 
+<Subtotal ValorBase='57600'  Porcentaje='19'  Valor='10944' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='65100' Descripcion='LIQUIDO FRENO 1 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='21700' ValorTotalItem='65100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5802'/> 
+<CampoAdicional Nombre='equivalencia' Valor='LITRO DOT4'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='12369'> 
+<Subtotal ValorBase='65100'  Porcentaje='19'  Valor='12369' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='27200' Descripcion='LIQUIDO FRENO 1/2 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='13600' ValorTotalItem='27200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5801'/> 
+<CampoAdicional Nombre='equivalencia' Valor='1/2 LITRO'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='5168'> 
+<Subtotal ValorBase='27200'  Porcentaje='19'  Valor='5168' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='25200' Descripcion='CABLES ALTA 8 mm. Resistivo; Accent Iny; Verna; Gyro, Taxi Super Pony ' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='25200' ValorTotalItem='25200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='0704-205'/> 
+<CampoAdicional Nombre='equivalencia' Valor='205-0704'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='4788'> 
+<Subtotal ValorBase='25200'  Porcentaje='19'  Valor='4788' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='10600' Descripcion='EMPAQUE TAPA VALVULAS Aveo-Optra 1.4L-1.6L 16Valv.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='10600' ValorTotalItem='10600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='96353002'/> 
+<CampoAdicional Nombre='equivalencia' Valor='19315728'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='2014'> 
+<Subtotal ValorBase='10600'  Porcentaje='19'  Valor='2014' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='12100' Descripcion='EMPAQUE TAPA VALVULAS Sail 1.4 Lts, 2013/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='12100' ValorTotalItem='12100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='75296'/> 
+<CampoAdicional Nombre='equivalencia' Valor='75296'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='2299'> 
+<Subtotal ValorBase='12100'  Porcentaje='19'  Valor='2299' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

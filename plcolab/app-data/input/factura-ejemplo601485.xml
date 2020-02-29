@@ -1,0 +1,70 @@
+<Factura> 
+<Cabecera  Numero='SETT309' OrdenCompra='601485' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='01:57:15' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='1' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='900479151' DV='5' NombreComercial='DISTRIBUIDORA JAPON KOREA S.A.S. #2' RazonSocial='ANYELA ROCIO GUTIERREZ ROJAS '> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='AV. CALLE 1 # 19D-58' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='ANYELA ROCIO GUTIERREZ ROJAS ' Telefono='' Telfax='' Email='carteradisjakosas@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='AV. CALLE 1 # 19D-58' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='3212'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601485'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='               '/> 
+<CampoAdicional Nombre='vendedor' Valor='EDUIN'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor=''/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='157680' BaseImponible='157680' BrutoMasImpuestos='187639' Cargos= '0' Descuentos='0' Impuestos='29959' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='175200' Neto='157680' Subtotal='157680' TotalDescuentosLineas='17520' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29959'> 
+<Subtotal ValorBase='157680'  Porcentaje='19'  Valor='29959' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='157680' Descripcion='PISTONES MOTOR Motor G4CS-H100 2.4L. Gasolina' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='175200' ValorTotalItem='175200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KHM8650-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='HM8650-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='175200' Valor='17520'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29959.2'> 
+<Subtotal ValorBase='157680'  Porcentaje='19'  Valor='29959.2' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

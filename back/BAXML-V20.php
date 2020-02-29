@@ -23,7 +23,7 @@ class generaXml extends conectarBD{
 
 		echo $datosLiemMaes["lima_liem"];
 		$formaDePago = ($datosLiemMaes["copc_pldi"]==0)?1:2;
- 		$nom_mae= "../../plcolab/app-data/input/factura-ejemplo".$datosLiemMaes["lima_liem"].".xml";
+ 		$nom_mae= "../../xml/factura/factura-ejemplo".$datosLiemMaes["lima_liem"].".xml";
  		$morden = fopen($nom_mae,"w") or die("No se encontro la ruta para la exportacion");
 		$vencimiento = date("Y-m-d",strtotime($fechaActual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
  		$text = "<Factura> \n";

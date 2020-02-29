@@ -1,0 +1,308 @@
+<Factura> 
+<Cabecera  Numero='SETT7' OrdenCompra='601452' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-28' Vencimiento='2020-03-29' HoraEmision='02:32:54' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='18' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='48' TipoIdentificacion='13' NumeroIdentificacion='1094927723' DV='9' NombreComercial='DISTRIRENAULT JOHAN MANUEL AGUDELO' RazonSocial='JOHAN MANUEL AGUDELO GARCIA'> 
+<Direccion CodigoMunicipio='6300001' NombreCiudad='ARMENIA' CodigoPostal='' NombreDepartamento='QUINDIO' CodigoDepartamento='63' Direccion='CARRERA 20 NO. 12-43' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='JOHAN MANUEL AGUDELO GARCIA' Telefono='3116217293' Telfax='' Email='distrirenault2010@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='6300001' NombreCiudad='ARMENIA' CodigoPostal='' NombreDepartamento='QUINDIO' CodigoDepartamento='63' Direccion='CARRERA 20 NO. 12-43' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-29'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='5632'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601452'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='               '/> 
+<CampoAdicional Nombre='vendedor' Valor=''/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='3403260' BaseImponible='3403260' BrutoMasImpuestos='4049879' Cargos= '0' Descuentos='0' Impuestos='646619' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='3781400' Neto='3403260' Subtotal='3403260' TotalDescuentosLineas='378140' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='646619'> 
+<Subtotal ValorBase='3403260'  Porcentaje='19'  Valor='646619' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='336600' Descripcion='GUARDAPOLVO SEMIEJE LADO CAJA "L",R9,R19,Clio,Symbol,Megane,Twingo-Con' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='18700' ValorTotalItem='374000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='316154'/> 
+<CampoAdicional Nombre='equivalencia' Valor='316154'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='374000' Valor='37400'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='63954'> 
+<Subtotal ValorBase='336600'  Porcentaje='19'  Valor='63954' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='287100' Descripcion='GUARDAPOLVO SEMIEJE LADO CAJA "L",R9,R21RS,Clio,Symbol,     Megane,Twi' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='31900' ValorTotalItem='319000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='316153'/> 
+<CampoAdicional Nombre='equivalencia' Valor='316153'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='319000' Valor='31900'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='54549'> 
+<Subtotal ValorBase='287100'  Porcentaje='19'  Valor='54549' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='162000' Descripcion='GUARDAPOLVO SEMIEJE LADO CAJA "L" Logan 2005/...Con placa   Sin rodami' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='18000' ValorTotalItem='180000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='316156'/> 
+<CampoAdicional Nombre='equivalencia' Valor='316156'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='180000' Valor='18000'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='30780'> 
+<Subtotal ValorBase='162000'  Porcentaje='19'  Valor='30780' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='280800' Descripcion='GUARDAPOLVO SEMIEJE LADO CAJA "L" Logan 2005/... Con Placa  Con Rodami' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='31200' ValorTotalItem='312000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='316157'/> 
+<CampoAdicional Nombre='equivalencia' Valor='316157'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='312000' Valor='31200'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='53352'> 
+<Subtotal ValorBase='280800'  Porcentaje='19'  Valor='53352' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='258840' Descripcion='PISTONES MOTOR Atos CityTaxi 99/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='143800' ValorTotalItem='287600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KH660 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='KH0660-0-STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='287600' Valor='28760'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='49179.6'> 
+<Subtotal ValorBase='258840'  Porcentaje='19'  Valor='49179.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='229860' Descripcion='PISTONES MOTOR Atos CityTaxi 99/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='127700' ValorTotalItem='255400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KH660-100'/> 
+<CampoAdicional Nombre='equivalencia' Valor='KH0660-4-100'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='255400' Valor='25540'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='43673.4'> 
+<Subtotal ValorBase='229860'  Porcentaje='19'  Valor='43673.4' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='135360' Descripcion='PISTONES MOTOR Atos 1.1Lts 2005/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='150400' ValorTotalItem='150400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KK672 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='K0672-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='150400' Valor='15040'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='25718.4'> 
+<Subtotal ValorBase='135360'  Porcentaje='19'  Valor='25718.4' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='252540' Descripcion='PISTONES MOTOR Atos 1.1Lts 2005/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='140300' ValorTotalItem='280600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KK672-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='K0672-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='280600' Valor='28060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='47982.6'> 
+<Subtotal ValorBase='252540'  Porcentaje='19'  Valor='47982.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='134550' Descripcion='PISTONES MOTOR New Accent 1.4Lts' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='149500' ValorTotalItem='149500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KH7556 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='H7556-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='149500' Valor='14950'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='25564.5'> 
+<Subtotal ValorBase='134550'  Porcentaje='19'  Valor='25564.5' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='142110' Descripcion='PISTONES MOTOR New Accent 1.4Lts' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='157900' ValorTotalItem='157900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KH7556-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='H7556-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='157900' Valor='15790'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='27000.9'> 
+<Subtotal ValorBase='142110'  Porcentaje='19'  Valor='27000.9' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='11' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='144540' Descripcion='PISTONES MOTOR Grand i10 1.2L. 2015/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='160600' ValorTotalItem='160600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='KK7115/4-100'/> 
+<CampoAdicional Nombre='equivalencia' Valor='K7115/4-4-10'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='160600' Valor='16060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='27462.6'> 
+<Subtotal ValorBase='144540'  Porcentaje='19'  Valor='27462.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='12' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='130410' Descripcion='PISTONES MOTOR Festiva 1300cc' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='144900' ValorTotalItem='144900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='03'/> 
+<CampoAdicional Nombre='referencia' Valor='KM713 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='M0713-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='144900' Valor='14490'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='24777.9'> 
+<Subtotal ValorBase='130410'  Porcentaje='19'  Valor='24777.9' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='13' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='159840' Descripcion='PISTONES MOTOR 626 2000cc,B2000' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='177600' ValorTotalItem='177600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='KM8605L-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M8605L-2-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='177600' Valor='17760'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='30369.6'> 
+<Subtotal ValorBase='159840'  Porcentaje='19'  Valor='30369.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='14' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='344520' Descripcion='KIT PISTON ANILLO Motor 1.2 Lts, 16 Valvulas; Twingo, 2006/13' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='191400' ValorTotalItem='382800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='S18693-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor='S18693-050'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='382800' Valor='38280'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='65458.8'> 
+<Subtotal ValorBase='344520'  Porcentaje='19'  Valor='65458.8' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='15' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='87030' Descripcion='BOMBA FRENO 7/8" B2000 87/96, B2200 95/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='96700' ValorTotalItem='96700' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='UB3943400A'/> 
+<CampoAdicional Nombre='equivalencia' Valor='UB3943400B'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='96700' Valor='9670'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16535.7'> 
+<Subtotal ValorBase='87030'  Porcentaje='19'  Valor='16535.7' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='16' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='189720' Descripcion='BOMBA FRENO 1" Trooper 88/95' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='105400' ValorTotalItem='210800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='8943329510'/> 
+<CampoAdicional Nombre='equivalencia' Valor='8970480960'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='210800' Valor='21080'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='36046.8'> 
+<Subtotal ValorBase='189720'  Porcentaje='19'  Valor='36046.8' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='17' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='70200' Descripcion='BOMBA GASOLINA 323 86/..' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='78000' ValorTotalItem='78000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='E36313350'/> 
+<CampoAdicional Nombre='equivalencia' Valor='P710'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='78000' Valor='7800'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='13338'> 
+<Subtotal ValorBase='70200'  Porcentaje='19'  Valor='13338' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='18' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='57240' Descripcion='BOMBA ACEITE R9 1.3,1.4,1.6 Lts; Carburado;83/99; Twingo 8 Valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='63600' ValorTotalItem='63600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701588187'/> 
+<CampoAdicional Nombre='equivalencia' Valor='6613'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='63600' Valor='6360'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='10875.6'> 
+<Subtotal ValorBase='57240'  Porcentaje='19'  Valor='10875.6' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

@@ -1,7 +1,7 @@
 {
     "isSuccess": true,
     "isDuplicateDocumentRequest": true,
-    "requestId": "37e6e841-fcb9-45a9-ba11-0c0950d3fa0f",
+    "requestId": "8d536ca4-26bd-4dde-9059-36bc6d31891a",
     "shortRequestId": null,
     "fileNameInteroperability": null,
     "UUID": "bfc423e1a81761c8e6acb2fd6c5e4accf6ebfb2c6563961c2529763c66e2cd904e60c6a075baac842b94d7a42670b8ac",
@@ -9,9 +9,9 @@
     "LDF": "FACTURA-UBL(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL)",
     "URL": "https://plataforma-beta.facture.co/PublicViewer#/PublicViewer/ODYwNTExMDU1LzE4MGVmOTRjLWUxYWMtNGUxOS1iOTE2LWVlOWFlOTVmMDA5ZS80MmFmZjMzMS1mODI4LTRhNjQtOWJmYS00YTQzYWNlNDQyNmM=",
     "UBL": null,
-    "UrlPdf": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-UBL/FACTURA-UBL(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL).pdf?sv=2017-11-09&sig=ZqTrNVc%2Byat8ulLWNH0%2B7jW6jYvUefA8yuOffKCb3ew%3D&spr=https&se=2025-02-20T20%3A18%3A32Z&srt=o&ss=b&sp=r",
-    "UrlXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-UBL/FACTURA-UBL(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=ZqTrNVc%2Byat8ulLWNH0%2B7jW6jYvUefA8yuOffKCb3ew%3D&spr=https&se=2025-02-20T20%3A18%3A32Z&srt=o&ss=b&sp=r",
-    "AckXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/ACK/ACK(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=ZqTrNVc%2Byat8ulLWNH0%2B7jW6jYvUefA8yuOffKCb3ew%3D&spr=https&se=2025-02-20T20%3A18%3A32Z&srt=o&ss=b&sp=r",
+    "UrlPdf": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-UBL/FACTURA-UBL(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL).pdf?sv=2017-11-09&sig=SRtIRwG1weKgg6mCho4D00qKY5lvRvsXsI3qyTJ6wZc%3D&spr=https&se=2025-02-28T22%3A20%3A17Z&srt=o&ss=b&sp=r",
+    "UrlXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-UBL/FACTURA-UBL(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=SRtIRwG1weKgg6mCho4D00qKY5lvRvsXsI3qyTJ6wZc%3D&spr=https&se=2025-02-28T22%3A20%3A17Z&srt=o&ss=b&sp=r",
+    "AckXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/ACK/ACK(860511055;SETT401;2020-02-15;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=SRtIRwG1weKgg6mCho4D00qKY5lvRvsXsI3qyTJ6wZc%3D&spr=https&se=2025-02-28T22%3A20%3A17Z&srt=o&ss=b&sp=r",
     "AckNumber": null,
     "pdfFileName": "face_f0860511055000SETT401.pdf",
     "xmlFileName": "face_f0860511055000SETT401.xml"

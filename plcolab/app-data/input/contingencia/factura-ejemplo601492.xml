@@ -1,0 +1,111 @@
+<Factura> 
+<Cabecera  Numero='SETT512' OrdenCompra='601492' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-28' Vencimiento='2020-03-29' HoraEmision='02:57:15' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='890700046' DV='1' NombreComercial='DISTRILLANTAS S.A' RazonSocial='ANIBAL URUENA ZARATE'> 
+<Direccion CodigoMunicipio='7300001' NombreCiudad='IBAGUÉ' CodigoPostal='' NombreDepartamento='TOLIMA' CodigoDepartamento='73' Direccion='CARRERA 5 No 26-96' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='ANIBAL URUENA ZARATE' Telefono='3186471550' Telfax='' Email='distrillantas@yahoo.com.co' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='7300001' NombreCiudad='IBAGUÉ' CodigoPostal='' NombreDepartamento='TOLIMA' CodigoDepartamento='73' Direccion='CARRERA 5 No 26-96' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-29'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='9020'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601492'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='COLVANES M.V.T.'/> 
+<CampoAdicional Nombre='vendedor' Valor=''/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $126,778'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-126777.6'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-29'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1306986' BaseImponible='1306986' BrutoMasImpuestos='1555313' Cargos= '0' Descuentos='0' Impuestos='248327' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1267776' Neto='1267776' Subtotal='1306986' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='39210'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='248327'> 
+<Subtotal ValorBase='1306986'  Porcentaje='19'  Valor='248327' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='30' UnidadMedida='Unidad' SubTotalLinea='624960' Descripcion='LIQUIDO FRENO 1 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='30' UnidadCantidadBase='Unidad' PrecioUnitario='20832' ValorTotalItem='624960' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5802'/> 
+<CampoAdicional Nombre='equivalencia' Valor='LITRO DOT4'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='118742.4'> 
+<Subtotal ValorBase='624960'  Porcentaje='19'  Valor='118742.4' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='30' UnidadMedida='Unidad' SubTotalLinea='391680' Descripcion='LIQUIDO FRENO 1/2 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='30' UnidadCantidadBase='Unidad' PrecioUnitario='13056' ValorTotalItem='391680' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5801'/> 
+<CampoAdicional Nombre='equivalencia' Valor='1/2 LITRO'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='74419.2'> 
+<Subtotal ValorBase='391680'  Porcentaje='19'  Valor='74419.2' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='24' UnidadMedida='Unidad' SubTotalLinea='251136' Descripcion='LIQUIDO FRENO "Pinta" 1/4 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='24' UnidadCantidadBase='Unidad' PrecioUnitario='10464' ValorTotalItem='251136' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5808'/> 
+<CampoAdicional Nombre='equivalencia' Valor='1/4 LITRO'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='47715.84'> 
+<Subtotal ValorBase='251136'  Porcentaje='19'  Valor='47715.84' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Cantidad='1' UnidadMedida='94' SubTotalLinea='39210.00' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='39210.00' Ocultar='true'/> 
+<precioreferencia ValorArticulo= '39210.00' CodigoTipoPrecio='03'> 
+</precioreferencia> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7450'> 
+<Subtotal ValorBase='39210.00' Valor='7450' Porcentaje='19' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<CodificacionesEstandar> 
+<CodificacionEstandar CodigoArticulo='891000039'/> 
+</CodificacionesEstandar> 
+</Linea> 
+</Factura> 
+ 
+ 
+

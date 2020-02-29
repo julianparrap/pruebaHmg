@@ -1,0 +1,151 @@
+<Factura> 
+<Cabecera  Numero='SETT12' OrdenCompra='601409' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-28' Vencimiento='2020-03-29' HoraEmision='02:32:57' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='7' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='900315328' DV='8' NombreComercial='DISTRIREPUESTOS MAZDA BLAZER S.A.S.' RazonSocial='ROSA OMAIRA CAMARGO GONZALEZ'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 131 NO. 45-49' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='ROSA OMAIRA CAMARGO GONZALEZ' Telefono='3114824890' Telfax='' Email='distrirepuestosmazdablazer@outlook.es' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 131 NO. 45-49' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-29'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='10273'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601409'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='               '/> 
+<CampoAdicional Nombre='vendedor' Valor='CARLOS JULIO'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $59,090'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-59090'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-29'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='590900' BaseImponible='590900' BrutoMasImpuestos='703171' Cargos= '0' Descuentos='0' Impuestos='112271' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='590900' Neto='590900' Subtotal='590900' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='112271'> 
+<Subtotal ValorBase='590900'  Porcentaje='19'  Valor='112271' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='88800' Descripcion='VALVULAS DE ADMISION Aveo, Optra 1,4L-1.6L         16 valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='11100' ValorTotalItem='88800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='96440081'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3882-AN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16872'> 
+<Subtotal ValorBase='88800'  Porcentaje='19'  Valor='16872' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='96000' Descripcion='VALVULAS DE ESCAPE Aveo, Optra 1,4L-1.6L         16 valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='12000' ValorTotalItem='96000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='96440079'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3883-EN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18240'> 
+<Subtotal ValorBase='96000'  Porcentaje='19'  Valor='18240' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='99400' Descripcion='PISTONES MOTOR Motor G10, Sprint-Juego x 3' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='99400' ValorTotalItem='99400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='KS7402/3 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='S7402/3-0 ST'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18886'> 
+<Subtotal ValorBase='99400'  Porcentaje='19'  Valor='18886' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='10200' Descripcion='MEDIALUNAS CIGUENAL L3-G10, Sprint' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='10200' ValorTotalItem='10200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='TW2403-025'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TW2403A-025'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='1938'> 
+<Subtotal ValorBase='10200'  Porcentaje='19'  Valor='1938' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='7' UnidadMedida='Unidad' SubTotalLinea='94500' Descripcion='VALVULAS DE ESCAPE Sprint, Carburado, 3 x Motor' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='7' UnidadCantidadBase='Unidad' PrecioUnitario='13500' ValorTotalItem='94500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='1291582062'/> 
+<CampoAdicional Nombre='equivalencia' Valor='23107-EPN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='17955'> 
+<Subtotal ValorBase='94500'  Porcentaje='19'  Valor='17955' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='45200' Descripcion='VALVULAS DE ADMISION Sprint, Carburado, 3 x Motor' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='11300' ValorTotalItem='45200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='1291182010'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3107-AN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8588'> 
+<Subtotal ValorBase='45200'  Porcentaje='19'  Valor='8588' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='156800' Descripcion='VALVULAS DE ESCAPE Aveo GTI Limited 1.6L 16 valv.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='19600' ValorTotalItem='156800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='14'/> 
+<CampoAdicional Nombre='referencia' Valor='93333562'/> 
+<CampoAdicional Nombre='equivalencia' Valor='4055-ECB'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29792'> 
+<Subtotal ValorBase='156800'  Porcentaje='19'  Valor='29792' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

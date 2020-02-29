@@ -1,0 +1,190 @@
+<Factura> 
+<Cabecera  Numero='SETT21' OrdenCompra='601481' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-28' Vencimiento='2020-03-29' HoraEmision='02:32:54' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='10' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='49' TipoIdentificacion='13' NumeroIdentificacion='46364114' DV='0' NombreComercial='MAZDA RENAUTOS' RazonSocial='FRANCELINA ACEVEDO'> 
+<Direccion CodigoMunicipio='1500759' NombreCiudad='SOGAMOSO' CodigoPostal='' NombreDepartamento='BOYACÁ' CodigoDepartamento='15' Direccion='CARRERA 17 NO. 15-88' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='FRANCELINA ACEVEDO' Telefono='' Telfax='' Email='refrancy@gmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-49</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1500759' NombreCiudad='SOGAMOSO' CodigoPostal='' NombreDepartamento='BOYACÁ' CodigoDepartamento='15' Direccion='CARRERA 17 NO. 15-88' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-29'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='8409'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601481'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='A.M. AL COBRO  '/> 
+<CampoAdicional Nombre='vendedor' Valor=''/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $159,680'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-159680'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-29'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1596800' BaseImponible='1596800' BrutoMasImpuestos='1900192' Cargos= '0' Descuentos='0' Impuestos='303392' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1596800' Neto='1596800' Subtotal='1596800' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='303392'> 
+<Subtotal ValorBase='1596800'  Porcentaje='19'  Valor='303392' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='88200' Descripcion='ANILLOS MOTOR Motor C22NE,Luv 2200' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='88200' ValorTotalItem='88200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='SWI10205-075'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16758'> 
+<Subtotal ValorBase='88200'  Porcentaje='19'  Valor='16758' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='36200' Descripcion='EMPAQUE CULATA FIBRA Luv 2200cc 98/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='18100' ValorTotalItem='36200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='8920623300'/> 
+<CampoAdicional Nombre='equivalencia' Valor='82231'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='6878'> 
+<Subtotal ValorBase='36200'  Porcentaje='19'  Valor='6878' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='119500' Descripcion='EMPAQUETADURA MOTOR COMPLETA Con retenes, Luv 2200 98/...  con protect' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='119500' ValorTotalItem='119500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='8920619710A'/> 
+<CampoAdicional Nombre='equivalencia' Valor='80178'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='22705'> 
+<Subtotal ValorBase='119500'  Porcentaje='19'  Valor='22705' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='87900' Descripcion='ANILLOS MOTOR Twingo D4F,D7F,8 Valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='87900' ValorTotalItem='87900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='DA7962 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='A18700 STD'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16701'> 
+<Subtotal ValorBase='87900'  Porcentaje='19'  Valor='16701' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='48' UnidadMedida='Unidad' SubTotalLinea='412800' Descripcion='GUIAS DE VALVULA EN BRONCE Adm-Esc MeganeI,ClioII,Symbol Scenic,16 Val' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='48' UnidadCantidadBase='Unidad' PrecioUnitario='8600' ValorTotalItem='412800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='GB-1006'/> 
+<CampoAdicional Nombre='equivalencia' Valor='GB-1006'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='78432'> 
+<Subtotal ValorBase='412800'  Porcentaje='19'  Valor='78432' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='24' UnidadMedida='Unidad' SubTotalLinea='278400' Descripcion='VALVULAS DE ADMISION MeganeI,ClioII,Symbol,Scenic, 16 Valvulas, 1400,1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='24' UnidadCantidadBase='Unidad' PrecioUnitario='11600' ValorTotalItem='278400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701471378'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3598-A'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='52896'> 
+<Subtotal ValorBase='278400'  Porcentaje='19'  Valor='52896' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='24' UnidadMedida='Unidad' SubTotalLinea='297600' Descripcion='VALVULAS DE ESCAPE MeganeI,ClioII,Symbol,Scenic, 16 Valvulas, 1400,160' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='24' UnidadCantidadBase='Unidad' PrecioUnitario='12400' ValorTotalItem='297600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701473354'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3599-E'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='56544'> 
+<Subtotal ValorBase='297600'  Porcentaje='19'  Valor='56544' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='100800' Descripcion='VALVULAS DE ADMISION Mazda 3 1.6L. 16 valv. 05/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='12600' ValorTotalItem='100800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='ZY0112111A'/> 
+<CampoAdicional Nombre='equivalencia' Valor='4150-AN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19152'> 
+<Subtotal ValorBase='100800'  Porcentaje='19'  Valor='19152' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='105600' Descripcion='VALVULAS DE ESCAPE Mazda 3 1.6L. 16 valv. 05/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='13200' ValorTotalItem='105600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='ZY0112121B'/> 
+<CampoAdicional Nombre='equivalencia' Valor='4151-EN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20064'> 
+<Subtotal ValorBase='105600'  Porcentaje='19'  Valor='20064' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='69800' Descripcion='KIT JUNTA LADO RUEDA Alto, Wagon R, 1000cc 99/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='34900' ValorTotalItem='69800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='52'/> 
+<CampoAdicional Nombre='referencia' Valor='1350993'/> 
+<CampoAdicional Nombre='equivalencia' Valor='23x19x49'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='13262'> 
+<Subtotal ValorBase='69800'  Porcentaje='19'  Valor='13262' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

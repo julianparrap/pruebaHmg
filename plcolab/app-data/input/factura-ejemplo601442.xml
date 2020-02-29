@@ -1,0 +1,103 @@
+<Factura> 
+<Cabecera  Numero='SETT60' OrdenCompra='601442' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-28' Vencimiento='2020-03-29' HoraEmision='02:30:46' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='49' TipoIdentificacion='31' NumeroIdentificacion='830006834' DV='4' NombreComercial='MATSURAMA LIMITADA' RazonSocial='DEISY P. AGUILERA AGUILERA'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='AV. CALLE 1 # 19D-16' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='DEISY P. AGUILERA AGUILERA' Telefono='3108195959' Telfax='' Email='matsuramaltdap@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-08</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='AV. CALLE 1 # 19D-16' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-29'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='3074'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601442'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='               '/> 
+<CampoAdicional Nombre='vendedor' Valor='JORGE ENRIQUE'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='137280' BaseImponible='137280' BrutoMasImpuestos='163363' Cargos= '0' Descuentos='0' Impuestos='26083' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='156000' Neto='137280' Subtotal='137280' TotalDescuentosLineas='18720' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='26083'> 
+<Subtotal ValorBase='137280'  Porcentaje='19'  Valor='26083' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='74888' Descripcion='KIT RODAMIENTO CANASTA DIFEREN Dart,D100,Ram1.5,C10,K10,Che1.5Luv1.6-2' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='85100' ValorTotalItem='85100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='706032-XT'/> 
+<CampoAdicional Nombre='equivalencia' Valor='706032-XK'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='85100' Valor='10212'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14228.72'> 
+<Subtotal ValorBase='74888'  Porcentaje='19'  Valor='14228.72' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='25256' Descripcion='KIT RODAMIENTO EXTERNO SPEED Dart,D100,Ram1.5,C10,K10,EF150CJ5-6,Luv,T' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='28700' ValorTotalItem='28700' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='706030-XT'/> 
+<CampoAdicional Nombre='equivalencia' Valor='706030-XK'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='28700' Valor='3444'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='4798.64'> 
+<Subtotal ValorBase='25256'  Porcentaje='19'  Valor='4798.64' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='37136' Descripcion='KIT RODAMIENTO INTERNO SPEED Dart,D100,Ram1.5,C10,K10,EF150CJ5-6,Cheye' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='42200' ValorTotalItem='42200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='706031-XT'/> 
+<CampoAdicional Nombre='equivalencia' Valor='706031-XK'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='42200' Valor='5064'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7055.84'> 
+<Subtotal ValorBase='37136'  Porcentaje='19'  Valor='7055.84' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

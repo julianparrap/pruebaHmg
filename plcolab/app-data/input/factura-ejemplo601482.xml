@@ -1,0 +1,96 @@
+<Factura> 
+<Cabecera  Numero='SETT386' OrdenCompra='601482' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='01:57:15' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='900073391' DV='2' NombreComercial='KIMAUTOS S.A' RazonSocial='CARLOS ANDRES PINEDA OSORIO'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 27A No. 66-38' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CARLOS ANDRES PINEDA OSORIO' Telefono='3104228337' Telfax='' Email='kimautos@importadoranipon.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 27A No. 66-38' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='2343'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601482'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='ENTREGAS AM19KL'/> 
+<CampoAdicional Nombre='vendedor' Valor='BLANCA DORIS'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='367314' BaseImponible='367314' BrutoMasImpuestos='437104' Cargos= '0' Descuentos='0' Impuestos='69790' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='422200' Neto='367314' Subtotal='367314' TotalDescuentosLineas='54886' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='69790'> 
+<Subtotal ValorBase='367314'  Porcentaje='19'  Valor='69790' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='28' UnidadMedida='Unidad' SubTotalLinea='194880' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 12x26,5mm; Copa' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='28' UnidadCantidadBase='Unidad' PrecioUnitario='8000' ValorTotalItem='224000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RER8MC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='224000' Valor='29120'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='37027.2'> 
+<Subtotal ValorBase='194880'  Porcentaje='19'  Valor='37027.2' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='113274' Descripcion='LIQUIDO FRENO 1 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='21700' ValorTotalItem='130200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5802'/> 
+<CampoAdicional Nombre='equivalencia' Valor='LITRO DOT4'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='130200' Valor='16926'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21522.06'> 
+<Subtotal ValorBase='113274'  Porcentaje='19'  Valor='21522.06' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='5' UnidadMedida='Unidad' SubTotalLinea='59160' Descripcion='LIQUIDO FRENO 1/2 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='5' UnidadCantidadBase='Unidad' PrecioUnitario='13600' ValorTotalItem='68000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5801'/> 
+<CampoAdicional Nombre='equivalencia' Valor='1/2 LITRO'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='68000' Valor='8840'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11240.4'> 
+<Subtotal ValorBase='59160'  Porcentaje='19'  Valor='11240.4' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

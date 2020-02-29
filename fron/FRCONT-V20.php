@@ -1,6 +1,6 @@
 <?php
-	$tituloFavicon = "Facturación - Redsa";
-	$tituloPagina = "FACTURACIÓN";
+	$tituloFavicon = "Contingencia - Redsa";
+	$tituloPagina = "CONTINGENCIA";
 	require_once("FRHEAD-V20.php");
 ?>
 	<!-- inicio-javascript" -->
@@ -9,7 +9,7 @@
 			var accion = "mostrarContenido";
 			$.ajax({
 				type :"POST",
-				url : "../func/php/FUFACT-V20.php",
+				url : "../func/php/FUCONT-V20.php",
 				data: "accion="+accion,
 				success:function(data){
 					$("#bloquea").css({'display':'none'});	
@@ -19,23 +19,53 @@
 			});
 		}   
 	 
-		function buscar(){
-			var caso = "buscar";
-			var clma_codi = $("#clma_codi").val();
-			$.ajax({
-				type :"POST",
-				url : "../../funciones/php/FFAC-V20.php",
-				data: "caso="+caso+"&clma_codi="+clma_codi,
-				beforeSend :function(){
-					$("#bloquea").css({'display':'block'});
-				},
-				success:function(data){
-					$("#bloquea").css({'display':'none'});
-					$("#contenido").html(data);
-					$("#clma_codi").focus();
-				}
-			});
-		}  
+	 	//validar Contingencia Masiva
+	 	function valiContMasivo(){
+	 		var pedidos = $("#pedidos").val();
+			var accion = "exportar";
+			if (pedidos == 0 || pedidos == "") {
+				swal("No se encontraron pedidos a exportar");
+				return;
+			}
+
+			var cliente = 0;
+			var fecha = 0;
+			var matrizPedidos = pedidos.split(",");
+			for (var i = 0; i < matrizPedidos.length; i++) {
+				//ajax para generar el xml de la factura 
+				$.ajax({
+					type :"POST",
+					url : "../func/php/FUCONT-V20.php",
+					data: "accion=generarContingencia&lima_idxx="+matrizPedidos[i],
+					beforeSend :function(){
+						$("#bloquea").css({'display':'block'});
+					},
+					success:function(data){
+						$("#bloquea").css({'display':'none'});
+						//ajax para correr el xml de la facturacion electronica
+						$.ajax({
+							type :"POST",
+							url : "../plcolab/index.php",
+							data: "accion=generarFactura&lima_idxx="+data+"&origen=CONT",
+							beforeSend :function(){
+								$("#bloquea").css({'display':'block'});
+							},
+							success:function(data){
+								$("#bloquea").css({'display':'none'});
+								//funcion para guardar la respuesta del json en la base de datos
+								//validarJson();
+							} 
+						}); 
+						//ejecutarXmlFactElect(data);
+					} 
+				});
+			}
+			contenido();
+
+
+
+
+	 	}
 	 
 		function seleccionar_todo(){
 			var checkboxes = document.getElementById("formulario").checkbox; //Array que contiene los checkbox
@@ -64,7 +94,7 @@
 							valores = checkboxes[x].value;
 						}
 						else{
-							valores = valores + "-" + checkboxes[x].value;
+							valores = valores + "," + checkboxes[x].value;
 						}
 					}
 				}
@@ -108,7 +138,7 @@
 			}
 			$.ajax({
 				type :"POST",
-				url : "../func/php/FUFACT-V20.php",
+				url : "../func/php/FUCONT-V20.php",
 				data : "cliente="+cliente+"&accion="+accion,
 				beforeSend :function(){
 					$("#bloquea").css({'display':'block'});
@@ -128,25 +158,7 @@
 		}
 
 		function valiFactElec(lima_idxx,cantidad,clma_codi,clma_nomb){
-			/*if (cantidad==1) {
-				//ajax para generar el xml de la factura 
-				$.ajax({
-					type :"POST",
-					url : "../func/php/FUXML-V20.php",
-					data: "accion=generarFactura&lima_idxx="+matr_lima_idxx,
-					beforeSend :function(){
-						$("#bloquea").css({'display':'block'});
-					},
-					success:function(data){
-						$("#bloquea").css({'display':'none'});
-						//ajax para correr el xml de la facturacion electronica             
-						//ejecutarXmlFactElect(data);
-					} 
-				});
-				
-			}
-			else{*/
-				var matr_lima_idxx = lima_idxx.split("-");
+				var matr_lima_idxx = lima_idxx.split(",");
 				for (var i = 0; i < matr_lima_idxx.length; i++) {
 					//ajax para generar el xml de la factura 
 					$.ajax({
@@ -162,7 +174,7 @@
 							$.ajax({
 								type :"POST",
 								url : "../plcolab/index.php",
-								data: "accion=generarFactura&lima_idxx="+data+"&origen=FACT",
+								data: "accion=generarFactura&lima_idxx="+data,
 								beforeSend :function(){
 									$("#bloquea").css({'display':'block'});
 								},
@@ -177,13 +189,12 @@
 						} 
 					});
 				}
-			//}
 		}
 
 	function ventFactElec(clma_codi,clma_nomb){
 		$.ajax({
 			type :"POST",
-			url : "../func/php/FUFACT-V20.php",
+			url : "../func/php/FUCONT-V20.php",
 			data: "accion=factCliente&clma_codi="+clma_codi,
 			beforeSend :function(){
 				$("#bloquea").css({'display':'block'});
@@ -265,7 +276,7 @@
 				return;
 				$.ajax({
 					type: "POST",
-					url : "../func/php/FUFACT-V20.php",
+					url : "../func/php/FUCONT-V20.php",
 					data: "accion=agrgarFlete&lima_idxx="+lima_idxx+"&lima_vfle="+lima_vfle+"&lima_vdfl="+lima_vdfl,
 					beforeSend :function(){
 						$("#bloquea").css({'display':'block'});

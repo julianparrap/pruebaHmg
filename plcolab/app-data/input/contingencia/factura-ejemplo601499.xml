@@ -1,0 +1,113 @@
+<Factura> 
+<Cabecera  Numero='SETT36' OrdenCompra='601499' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-28' Vencimiento='2020-03-29' HoraEmision='02:32:57' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='4' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='48' TipoIdentificacion='13' NumeroIdentificacion='79377632' DV='0' NombreComercial='AUTOPARTES LA 15 RG' RazonSocial='RIGOBERTO  GACHA PERILLA'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 15 NO. 7-10' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='RIGOBERTO  GACHA PERILLA' Telefono='3114864997' Telfax='' Email='autopartesla15rg@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-15</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 15 NO. 7-10' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-29'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='1207'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601499'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='               '/> 
+<CampoAdicional Nombre='vendedor' Valor='JORGE ENRIQUE'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $38,460'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-38460'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-29'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='384600' BaseImponible='384600' BrutoMasImpuestos='457674' Cargos= '0' Descuentos='0' Impuestos='73074' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='384600' Neto='384600' Subtotal='384600' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='73074'> 
+<Subtotal ValorBase='384600'  Porcentaje='19'  Valor='73074' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='74400' Descripcion='VALVULAS DE ADMISION Accent 1300-1500cc 95/...12 Val8 x Motor' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='9300' ValorTotalItem='74400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='2221122011'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3738-AN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14136'> 
+<Subtotal ValorBase='74400'  Porcentaje='19'  Valor='14136' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='50400' Descripcion='VALVULAS DE ESCAPE Accent 1300-1500cc 95/...12 Val4 x Motor' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='12600' ValorTotalItem='50400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='2221222011'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3739-EBN'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9576'> 
+<Subtotal ValorBase='50400'  Porcentaje='19'  Valor='9576' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='106400' Descripcion='VALVULAS DE ESCAPE Corsa Motor 1300,1400' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='13300' ValorTotalItem='106400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='15'/> 
+<CampoAdicional Nombre='referencia' Valor='90409996'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3159-ECB'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20216'> 
+<Subtotal ValorBase='106400'  Porcentaje='19'  Valor='20216' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='153400' Descripcion='EMPAQUETADURA MOTOR COMPLETA Corsa 1.4 Lts EFI-MPFI, 96/07;Con Retenes' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='76700' ValorTotalItem='153400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='15'/> 
+<CampoAdicional Nombre='referencia' Valor='93219498'/> 
+<CampoAdicional Nombre='equivalencia' Valor='80266'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29146'> 
+<Subtotal ValorBase='153400'  Porcentaje='19'  Valor='29146' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

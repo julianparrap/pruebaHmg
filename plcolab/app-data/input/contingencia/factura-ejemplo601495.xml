@@ -1,0 +1,96 @@
+<Factura> 
+<Cabecera  Numero='SETT496' OrdenCompra='601495' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='01:20:49' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='48' TipoIdentificacion='13' NumeroIdentificacion='9522660' DV='4' NombreComercial='DISTRIREPUESTOS' RazonSocial='OCTAVIANO  TORRES GUEVARA'> 
+<Direccion CodigoMunicipio='1500759' NombreCiudad='SOGAMOSO' CodigoPostal='' NombreDepartamento='BOYACÁ' CodigoDepartamento='15' Direccion='CALLE 11 NO. 17-46' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='OCTAVIANO  TORRES GUEVARA' Telefono='3138912759' Telfax='' Email='distrirepuestos0207@gmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1500759' NombreCiudad='SOGAMOSO' CodigoPostal='' NombreDepartamento='BOYACÁ' CodigoDepartamento='15' Direccion='CALLE 11 NO. 17-46' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='8404'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601495'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='A.M. AL COBRO  '/> 
+<CampoAdicional Nombre='vendedor' Valor=''/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='833184' BaseImponible='833184' BrutoMasImpuestos='991489' Cargos= '0' Descuentos='0' Impuestos='158305' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='946800' Neto='833184' Subtotal='833184' TotalDescuentosLineas='113616' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='158305'> 
+<Subtotal ValorBase='833184'  Porcentaje='19'  Valor='158305' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='308176' Descripcion='PISTONES MOTOR Motor 22R-Hilux 2400cc' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='175100' ValorTotalItem='350200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='KT9205 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='T9205-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='350200' Valor='42024'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='58553.44'> 
+<Subtotal ValorBase='308176'  Porcentaje='19'  Valor='58553.44' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='325776' Descripcion='PISTONES MOTOR B2200' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='185100' ValorTotalItem='370200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='51'/> 
+<CampoAdicional Nombre='referencia' Valor='KM8611 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='M8611-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='370200' Valor='44424'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='61897.44'> 
+<Subtotal ValorBase='325776'  Porcentaje='19'  Valor='61897.44' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='199232' Descripcion='PISTONES MOTOR D'max 2.4 Lts Gasolina' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='226400' ValorTotalItem='226400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='11'/> 
+<CampoAdicional Nombre='referencia' Valor='KE8756 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='E8756-0 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='226400' Valor='27168'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='37854.08'> 
+<Subtotal ValorBase='199232'  Porcentaje='19'  Valor='37854.08' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+
