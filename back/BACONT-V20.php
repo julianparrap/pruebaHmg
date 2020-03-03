@@ -9,8 +9,14 @@ class facturacion extends conectarBD{
 	//
 	public function mostrarContenido() {
 		$fech = date("Y-m-d");
-		$result = $this->consultar("lima_liem,lima_idxx,fac.fecha,lima_clie,lima_orco,lima_gude,fac.cliente,fac.BRUTO,fac.FLETES,fac.iva,lima_vafe", "FACT as fac join liem_maes on(lima_liem=OC)", " DATE_FORMAT( `fecha` , '%Y-%m-%d' ) > '2020-01-01' ORDER BY (fecha) limit 10", 4);
-		//$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-17' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
+		$sqlFact = $this->consultar("fac.IVA,fac.DESC_ESP,fac.DESC,lima_liem,lima_idxx,fac.fecha,lima_clie,lima_orco,lima_gude,fac.cliente,fac.BRUTO,fac.FLETES,fac.iva,lima_vafe", "FACT as fac join liem_maes on(lima_liem=OC)", " DATE_FORMAT( `fecha` , '%Y-%m-%d' ) > '2020-01-01' ORDER BY (fecha) limit 10", 4);
+		if (mysqli_num_rows($sqlFact)==0) {
+			$sqlFact = $this->consultar("fac.IVA,fac.DESC_ESP,fac.DESC,lima_liem,lima_idxx,fac.fecha,lima_clie,lima_orco,lima_gude,fac.cliente,fac.BRUTO,fac.FLETES,fac.iva,lima_vafe", "FACTtemp as fac join liem_maes on(lima_liem=OC)", " DATE_FORMAT( `fecha` , '%Y-%m-%d' ) > '2020-01-01' ORDER BY (fecha) limit 10", 4);
+		}
+		else{
+			mysqli_data_seek($sqlFact,0);
+		}
+		//$sqlFact = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-17' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
 		echo "
 		<table class='table table-hover' style='width:500px'>
 			<thead>
@@ -37,13 +43,14 @@ class facturacion extends conectarBD{
 					<td class='cabecera'>Pedido</td>
 					<td class='cabecera'>Razon Social</td>
 					<td class='cabecera'>Fecha</td>
-					<td class='cabecera'>Vr mercancía</td>
-					<td class='cabecera'>Vr descuento</td>
-					<td class='cabecera'>Vr flete</td>
-					<td class='cabecera'>Vr iva</td>
-					<td class='cabecera'>Vr total</td>
+					<td class='cabecera'>Mercancía</td>
+					<td class='cabecera'>Descuento</td>
+					<td class='cabecera'>Flete</td>
+					<td class='cabecera'>Desc Fletes</td>
+					<td class='cabecera'>Iva</td>
+					<td class='cabecera'>Valor total</td>
 				</tr></thead><tbody>";
-		while($datos = mysqli_fetch_array($result)){
+		while($datos = mysqli_fetch_array($sqlFact)){
 			$sqlClieMaes = $this->consultar("clma_tipo,clma_noes,clma_raso,clma_codi", "clie_mae", "clma_esta='ACT' and clma_codi=".$datos["cliente"], 4);
 			$datosClieMaes = mysqli_fetch_array($sqlClieMaes);
 			
@@ -72,18 +79,19 @@ class facturacion extends conectarBD{
 			}	
 			$lima_idxx = $datos["lima_idxx"];
 			$lima_orco = $datos["lima_orco"];
-			$total=($datos["BRUTO"]-$datos["DESC"])+$datos["FLETES"]+$datos["IVA"];
+			$total=($datos["BRUTO"]-($datos["DESC"]+$datos["DESC_ESP"]))+$datos["FLETES"]+$datos["IVA"];
 			echo "<tr>
 					<td><input type='checkbox' name='checkbox' id='".$lima_idxx."' value='".$lima_idxx."' onChange='contar(1)'></td>
 					<td class='$estilo' title='$causal'>".$datosClieMaes["clma_codi"]."</td>
 					<td class='$estilo' title='$causal'>".$datos["lima_liem"]."</td>
 					<td class='$estilo1' title='$causal'>".$nombre."</td>
 					<td class='$estilo' title='$causal'>".$datos["fecha"]."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["BRUTO"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["DESC"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["FLETES"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["iva"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($total)."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["BRUTO"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["DESC"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["FLETES"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["DESC_ESP"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["iva"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($total,0,',','.')."</td>
 				";
 			echo "<td><img src='../img/validar_dian.png' width='32px' class='detalles' onclick='valiFactCont(".$datos["lima_idxx"].")' title='Validar'></td>";			
 			echo"</tr>";
@@ -164,22 +172,29 @@ class facturacion extends conectarBD{
 		extract($_POST);
 		$fechaActual = date("Y-m-d");
 		$horaActual = date("H:i:s");
-		$sqlLiemMaes = $this->consultar("fecha,lima_liem,clma_feec,clma_tipo,clma_noes,clma_raso,clma_nitt,clma_dive,clma_repr,cima_noci,cima_codi,dema_node,clma_idxx,dema_codi,clma_dire,FLETES,DESC_ESP,VEN,clma_codi,TRANSPOR,clma_copa,lima_vdes,copc_deco,BRUTO,copc_pldi,copc_depf,copc_codi,clma_cel1,clma_cor1", "liem_maes JOIN FACT ON (lima_liem = OC) join clie_mae on (lima_clie=clma_codi) join copa_clie on (CPAGO=copc_codi) join ciud_mae on (clma_ciud=cima_idxx) join depa_mae on (cima_iddp=dema_idxx)", "lima_idxx=".$lima_idxx, 4);
+		$sqlLiemMaes = $this->consultar("DOCTO,fecha,lima_liem,clma_feec,clma_tipo,clma_noes,clma_raso,clma_nitt,clma_dive,clma_repr,cima_noci,cima_codi,dema_node,clma_idxx,dema_codi,clma_dire,FLETES,DESC_ESP,VEN,clma_codi,TRANSPOR,clma_copa,lima_vdes,copc_deco,BRUTO,copc_pldi,copc_depf,copc_codi,clma_cel1,clma_cor1", "liem_maes JOIN FACT ON (lima_liem = OC) join clie_mae on (lima_clie=clma_codi) join copa_clie on (CPAGO=copc_codi) join ciud_mae on (clma_ciud=cima_idxx) join depa_mae on (cima_iddp=dema_idxx)", "lima_idxx=".$lima_idxx, 4);
 
 
 		$datosLiemMaes = mysqli_fetch_array($sqlLiemMaes);
 		//contador de la cantidad del detalle de la factura
 		$sqlContDetaLiem = $this->consultar("deli_idle", "deta_liem", "deli_idle=".$lima_idxx, 2);
+		if ($datosLiemMaes["FLETES"]!=0) {
+			$sqlContDetaLiem = $sqlContDetaLiem+1;
+		}
 
-		echo $datosLiemMaes["lima_liem"];
+		echo $datosLiemMaes["DOCTO"];
 		$formaDePago = ($datosLiemMaes["copc_pldi"]==0)?1:2;
- 		$nom_mae= "../../xml/contingencia/factura-ejemplo".$datosLiemMaes["lima_liem"].".xml";
+ 		$nom_mae= "../../xml/contingencia/factura-ejemplo".$datosLiemMaes["DOCTO"].".xml";
  		$morden = fopen($nom_mae,"w") or die("No se encontro la ruta para la exportacion");
 		$vencimiento = date("Y-m-d",strtotime($fechaActual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
  		$text = "<Factura> \n";
- 		$text .= "<Cabecera  Numero='SETT".rand(5, 715)."' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
+ 		$text .= "<Cabecera  Numero='SETT".rand(5, 715)."' OrdenCompra='".rand(5, 715)."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-CONTINGENCIA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
  		//$text .= "<Cabecera  Numero='SETT".$datosLiemMaes["lima_liem"]."' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
+ 		
  		$text .= "<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> \n";
+ 		$text .= "<DocumentosAdicionalesReferencia>\n";
+		$text .= "<DocumentoAdicionalReferencia Numero='".$datosLiemMaes["DOCTO"]."' FechaEmision='".date('Y-m-d',strtotime($datosLiemMaes["FECHA"]))."' TipoDocumento='03'/>\n";
+		$text .= "</DocumentosAdicionalesReferencia>\n";
  		$text .= "<Notificacion Tipo='Mail' De='info@hermagu.com.co'> \n";
  		//$text .= "<Para>sistemas@hermagu.com.co</Para> \n";
  		$text .= "<Para>auxsistemas@hermagu.com.co</Para> \n";
@@ -263,20 +278,24 @@ class facturacion extends conectarBD{
  		$text .= "</DatosAdicionales> \n";
  		$text .= "</Extensiones> \n";
 //
-		$sqlDetaLiem = $this->consultar("deli_caap,deli_prec,rema_desc,rema_apci,rema_line,rema_oem,rema_popu", "deta_liem join refe_maes on (deli_idre=rema_idxx)", "deli_caap!=0 and deli_idle=".$lima_idxx, 4);
-		$deta_prec =0;
-		while ($datosDetaLiem = mysqli_fetch_array($sqlDetaLiem)) {
-			$deta_prec = $deta_prec+($datosDetaLiem["deli_caap"]*$datosDetaLiem["deli_prec"]);
+		$sqlDetaLiem = $this->consultar("CANT,VENTA,rema_desc,rema_apci,rema_line,rema_oem,rema_popu", "MOV2020 join refe_maes on (LN=rema_line and REFERENCIA=rema_oem)", "DOCTO=".$datosLiemMaes["DOCTO"], 4);
+		if (mysqli_num_rows($sqlDetaLiem)==0) {
+			$sqlDetaLiem = $this->consultar("CANT,VENTA,rema_desc,rema_apci,rema_line,rema_oem,rema_popu", "MOVtemp join refe_maes on (LN=rema_line and REFERENCIA=rema_oem)", "DOCTO=".$datosLiemMaes["DOCTO"], 4);
+		}
+		else{
+			mysqli_data_seek($sqlDetaLiem,0);
 		}
  		//totales
- 		$descuento = $deta_prec*($datosLiemMaes["copc_depf"]/100);
- 		$neto = $deta_prec-$descuento;
+ 		
+ 		$descuento = ($datosLiemMaes["BRUTO"]*($datosLiemMaes["copc_depf"]/100));
+ 		$descuentoslines = 	$descuento + $datosLiemMaes["DESC_ESP"];
+ 		$neto = $datosLiemMaes["BRUTO"]-$descuento;
  		$baseImponible=$neto+($datosLiemMaes["FLETES"]-$datosLiemMaes["DESC_ESP"]);
  		$iva = $baseImponible*0.19;
  		$brutoMasImpuestos = $baseImponible+$iva;
  		//totales
  		//<!--Impuestos generales de la factura-->
- 		$text .= "<Totales Bruto='".round($baseImponible,0)."' BaseImponible='".round($baseImponible,0)."' BrutoMasImpuestos='".round($brutoMasImpuestos,0)."' Cargos= '0' Descuentos='0' Impuestos='".round($iva,0)."' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='".round($datosLiemMaes["BRUTO"],0)."' Neto='".round($neto,0)."' Subtotal='".round($baseImponible,0)."' TotalDescuentosLineas='".round($descuento,0)."' TotalCargosLineas='0' Flete='".round($datosLiemMaes["FLETES"],0)."'  DescuentoEnFlete='".round($datosLiemMaes["DESC_ESP"],0)."'/>\n";
+ 		$text .= "<Totales Bruto='".round($baseImponible,0)."' BaseImponible='".round($baseImponible,0)."' BrutoMasImpuestos='".round($brutoMasImpuestos,0)."' Cargos= '0' Descuentos='0' Impuestos='".round($iva,0)."' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='".round($datosLiemMaes["BRUTO"],0)."' Neto='".round($neto,0)."' Subtotal='".round($baseImponible,0)."' TotalDescuentosLineas='".round($descuentoslines,0)."' TotalCargosLineas='0' Flete='".round($datosLiemMaes["FLETES"],0)."'  DescuentoEnFlete='".round($datosLiemMaes["DESC_ESP"],0)."'/>\n";
  		$text .= "<Impuestos> \n";
  		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($iva,0)."'> \n";
  		$text .= "<Subtotal ValorBase='".round($baseImponible,0)."'  Porcentaje='19'  Valor='".round($iva,0)."' CodigoUnidadMedidaBase='94'/> \n";
@@ -285,14 +304,13 @@ class facturacion extends conectarBD{
 
  		$contador=1;
  		//<!-- Datos de referencias vendedidas al cliente -->
- 		mysqli_data_seek($sqlDetaLiem,0);
 		while ($datosDetaLiem = mysqli_fetch_array($sqlDetaLiem)) {
-			$subTotal = $datosDetaLiem["deli_caap"]*$datosDetaLiem["deli_prec"];
+			$subTotal = $datosDetaLiem["CANT"]*$datosDetaLiem["VENTA"];
 			$vrDescuento = $subTotal*($datosLiemMaes["copc_depf"]/100);
 			$valorTotal = $subTotal - $vrDescuento;
 			$vrIva = $valorTotal*0.19;
  			$text .= "<Linea> \n";
- 			$text .= "<Detalle NumeroLinea='".$contador."' Nota='' Cantidad='".$datosDetaLiem["deli_caap"]."' UnidadMedida='Unidad' SubTotalLinea='".$valorTotal."' Descripcion='".substr($datosDetaLiem["rema_desc"]." ".$datosDetaLiem["rema_apci"], 0, 70)."' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='".$datosDetaLiem["deli_caap"]."' UnidadCantidadBase='Unidad' PrecioUnitario='".$datosDetaLiem["deli_prec"]."' ValorTotalItem='".$subTotal."' /> \n";
+ 			$text .= "<Detalle NumeroLinea='".$contador."' Nota='' Cantidad='".$datosDetaLiem["CANT"]."' UnidadMedida='Unidad' SubTotalLinea='".round($valorTotal,0)."' Descripcion='".substr($datosDetaLiem["rema_desc"]." ".$datosDetaLiem["rema_apci"], 0, 70)."' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='".$datosDetaLiem["CANT"]."' UnidadCantidadBase='Unidad' PrecioUnitario='".round($datosDetaLiem["VENTA"],0)."' ValorTotalItem='".round($subTotal,0)."' /> \n";
  			$text .= "<DatosAdicionales> \n";
  			$text .= "<CampoAdicional Nombre='linea' Valor='".$datosDetaLiem["rema_line"]."'/> \n";
  			$text .= "<CampoAdicional Nombre='referencia' Valor='".$datosDetaLiem["rema_oem"]."'/> \n";
@@ -300,11 +318,11 @@ class facturacion extends conectarBD{
  			$text .= "</DatosAdicionales> \n";
  			//<!--Se adidiona el descunto que se ofrece PF-->
 			if ($datosLiemMaes["copc_depf"]!=0) {
- 				$text .= "<DescuentoOCargo ID='".$datosLiemMaes["copc_codi"]."' Indicador='false' Justificacion='Descuento directo' Porcentaje='".$datosLiemMaes["copc_depf"]."' ValorBase='".$subTotal."' Valor='".$vrDescuento."'  /> \n";
+ 				$text .= "<DescuentoOCargo ID='".$datosLiemMaes["copc_codi"]."' Indicador='false' Justificacion='Descuento directo' Porcentaje='".$datosLiemMaes["copc_depf"]."' ValorBase='".round($subTotal,0)."' Valor='".round($vrDescuento,0)."'  /> \n";
 			}
  			$text .= "<Impuestos> \n";
- 			$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".$vrIva."'> \n";
- 			$text .= "<Subtotal ValorBase='".$valorTotal."'  Porcentaje='19'  Valor='".$vrIva."' CodigoUnidadMedidaBase='94'/> \n";
+ 			$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($vrIva,0)."'> \n";
+ 			$text .= "<Subtotal ValorBase='".round($valorTotal,0)."'  Porcentaje='19'  Valor='".round($vrIva,0)."' CodigoUnidadMedidaBase='94'/> \n";
  			$text .= "</Impuesto> \n";
 	 		$text .= "</Impuestos> \n";
 	 		$text .= "</Linea> \n";
@@ -325,15 +343,15 @@ class facturacion extends conectarBD{
  		//<!-- Datos para la factura que lleva fletes -->
 		if ($datosLiemMaes["FLETES"]!=0) {
 	 		$text .= "<Linea> \n";
-	 		$text .= "<Detalle NumeroLinea='".$contador."' Cantidad='1' UnidadMedida='94' SubTotalLinea='".$vrFlete."' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='".$datosLiemMaes["FLETES"]."' Ocultar='true'/> \n";
-	 		$text .= "<precioreferencia ValorArticulo= '".$vrFlete."' CodigoTipoPrecio='03'> \n";
+	 		$text .= "<Detalle NumeroLinea='".$contador."' Cantidad='1' UnidadMedida='94' SubTotalLinea='".round($vrFlete,0)."' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='".round($datosLiemMaes["FLETES"],0)."' Ocultar='true'/> \n";
+	 		$text .= "<precioreferencia ValorArticulo= '".round($vrFlete,0)."' CodigoTipoPrecio='03'> \n";
 	 		$text .= "</precioreferencia> \n";
 			if ($datosLiemMaes["DESC_ESP"]!=0) {
-				$text .= "<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='".$porc_desc."' ValorBase='".$datosLiemMaes["FLETES"]."' Valor='".$vrFlete."'  /> \n";
+				$text .= "<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='".$porc_desc."' ValorBase='".round($datosLiemMaes["FLETES"],0)."' Valor='".round($datosLiemMaes["DESC_ESP"],0)."'  /> \n";
 			}
 	 		$text .= "<Impuestos> \n";
 	 		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($iva_flete,0)."'> \n";
-	 		$text .= "<Subtotal ValorBase='".$vrFlete."' Valor='".round($iva_flete,0)."' Porcentaje='19' CodigoUnidadMedidaBase='94'/> \n";
+	 		$text .= "<Subtotal ValorBase='".round($vrFlete,0)."' Valor='".round($iva_flete,0)."' Porcentaje='19' CodigoUnidadMedidaBase='94'/> \n";
 	 		$text .= "</Impuesto> \n";
 	 		$text .= "</Impuestos> \n";
 	 		$text .= "<CodificacionesEstandar> \n";

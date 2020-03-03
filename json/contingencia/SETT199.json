@@ -1,0 +1,17 @@
+{
+    "isSuccess": true,
+    "requestId": "d33c518f-344f-4045-8a04-7c8a6d604e57",
+    "shortRequestId": null,
+    "fileNameInteroperability": null,
+    "UUID": "3bc8998b762b4ea2e11836aa693766bc58679db4282241f032122fcb5c61176b683833adc63eaf36e7a08243cc22af0b",
+    "documentNumber": "SETT199",
+    "LDF": "FACTURA-CONTINGENCIA-UBL(860511055;SETT199;2020-03-01;PRINCIPAL;PRINCIPAL)",
+    "URL": "https://plataforma-beta.facture.co/PublicViewer#/PublicViewer/ODYwNTExMDU1LzkyOTIyMjc0LTM1ZTUtNDhkYy1iMDgxLTdjZmJiZDE2NjkzZS8zMjYwNDhjMC01OTlkLTQ1NTEtYTlhZi03YzVkZDczMjE0OWI=",
+    "UBL": null,
+    "UrlPdf": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-CONTINGENCIA-UBL/FACTURA-CONTINGENCIA-UBL(860511055;SETT199;2020-03-01;PRINCIPAL;PRINCIPAL).pdf?sv=2017-11-09&sig=SRtIRwG1weKgg6mCho4D00qKY5lvRvsXsI3qyTJ6wZc%3D&spr=https&se=2025-02-28T22%3A20%3A17Z&srt=o&ss=b&sp=r",
+    "UrlXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/FACTURA-CONTINGENCIA-UBL/FACTURA-CONTINGENCIA-UBL(860511055;SETT199;2020-03-01;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=SRtIRwG1weKgg6mCho4D00qKY5lvRvsXsI3qyTJ6wZc%3D&spr=https&se=2025-02-28T22%3A20%3A17Z&srt=o&ss=b&sp=r",
+    "AckXml": "https://plcolabrepextbeta.blob.core.windows.net/860511055/ACK/ACK(860511055;SETT199;2020-03-01;PRINCIPAL;PRINCIPAL).xml?sv=2017-11-09&sig=SRtIRwG1weKgg6mCho4D00qKY5lvRvsXsI3qyTJ6wZc%3D&spr=https&se=2025-02-28T22%3A20%3A17Z&srt=o&ss=b&sp=r",
+    "AckNumber": null,
+    "pdfFileName": "face_fc0860511055000SETT199.pdf",
+    "xmlFileName": "face_fc0860511055000SETT199.xml"
+}

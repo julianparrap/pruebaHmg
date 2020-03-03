@@ -1,6 +1,9 @@
 <Factura> 
-<Cabecera  Numero='SETT616' OrdenCompra='601432' FechaOrdenCompra='2020-01-07' FechaEmision='2020-02-29' Vencimiento='2020-03-30' HoraEmision='02:33:44' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='4' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<Cabecera  Numero='SETT426' OrdenCompra='69' FechaOrdenCompra='2020-01-07' FechaEmision='2020-03-01' Vencimiento='2020-03-31' HoraEmision='15:56:52' MonedaFactura='COP' TipoFactura='FACTURA-CONTINGENCIA-UBL' FormaDePago='2' LineasDeFactura='4' TipoOperacion='10' FormatoContingencia='Papel'/> 
 <NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<DocumentosAdicionalesReferencia>
+<DocumentoAdicionalReferencia Numero='601432' FechaEmision='1970-01-01' TipoDocumento='03'/>
+</DocumentosAdicionalesReferencia>
 <Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
 <Para>auxsistemas@hermagu.com.co</Para> 
 </Notificacion> 
@@ -33,7 +36,7 @@
 <Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 57 NO. 97-01' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
 <TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
 </Cliente> 
-<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-30'> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-31'> 
 </MediosDePago> 
 <Extensiones> 
 <DatosAdicionales> 
@@ -45,7 +48,7 @@
 <CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
 <CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $31,650'/> 
 <CampoAdicional Nombre='paguesolamente' Valor='-31650'/> 
-<CampoAdicional Nombre='canceleantes' Valor='2020-03-30'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-31'/> 
 <CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
 </DatosAdicionales> 
 </Extensiones> 

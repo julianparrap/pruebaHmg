@@ -1,0 +1,164 @@
+<Factura> 
+<Cabecera  Numero='SETT702' OrdenCompra='602308' FechaOrdenCompra='2020-01-18' FechaEmision='2020-03-01' Vencimiento='2020-03-31' HoraEmision='18:49:34' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='8' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='48' TipoIdentificacion='13' NumeroIdentificacion='38956017' DV='6' NombreComercial='TOYONISSAN REPUESTOS POPAYAN' RazonSocial='CIRA TERESA CAMARGO DE PERALTA'> 
+<Direccion CodigoMunicipio='1900001' NombreCiudad='POPAYÁN' CodigoPostal='' NombreDepartamento='CAUCA' CodigoDepartamento='19' Direccion='CARRERA 9 NO. 1-19' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CIRA TERESA CAMARGO DE PERALTA' Telefono='3004174642' Telfax='' Email='caramirezdiaz@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1900001' NombreCiudad='POPAYÁN' CodigoPostal='' NombreDepartamento='CAUCA' CodigoDepartamento='19' Direccion='CARRERA 9 NO. 1-19' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-31'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='4819'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602308'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='COORD MERCANTIL'/> 
+<CampoAdicional Nombre='vendedor' Valor='JESUS DAVID'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $93.120'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='1.015.008'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-31'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' UN MILLóN CIENTO  OCHO MIL CIENTO  VEINTIOCHO PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='Descuentese el 10% sobre el valor de la mercancia. Si cancela antes de 30 días. Despes de esta fecha no se aceptan descuentos.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='931200' BaseImponible='931200' BrutoMasImpuestos='1108128' Cargos= '0' Descuentos='0' Impuestos='176928' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='931200' Neto='931200' Subtotal='931200' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='176928'> 
+<Subtotal ValorBase='931200'  Porcentaje='19'  Valor='176928' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='244600' Descripcion='BOMBA AGUA Montero, V6-3000' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='122300' ValorTotalItem='244600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='68'/> 
+<CampoAdicional Nombre='referencia' Valor='MD997634JP'/> 
+<CampoAdicional Nombre='equivalencia' Valor='M-46'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='46474'> 
+<Subtotal ValorBase='244600'  Porcentaje='19'  Valor='46474' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='78000' Descripcion='BOMBA AGUA Hilux, Motor 22R,2.4 Lts' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='78000' ValorTotalItem='78000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='1610039346JP'/> 
+<CampoAdicional Nombre='equivalencia' Valor='T-067'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14820'> 
+<Subtotal ValorBase='78000'  Porcentaje='19'  Valor='14820' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='99000' Descripcion='BOMBA GASOLINA Hilux 22R' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='99000' ValorTotalItem='99000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='2310035040'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TP765'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18810'> 
+<Subtotal ValorBase='99000'  Porcentaje='19'  Valor='18810' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='114000' Descripcion='CILINDRO DELANTERO FRENOS 1" "R" F20,F50 Con Purga 79/84' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='28500' ValorTotalItem='114000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='66'/> 
+<CampoAdicional Nombre='referencia' Valor='4751087680'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21660'> 
+<Subtotal ValorBase='114000'  Porcentaje='19'  Valor='21660' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='114000' Descripcion='CILINDRO DELANTERO FRENOS 1" "L" F20,F50 Con Purga 79/84' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='28500' ValorTotalItem='114000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='66'/> 
+<CampoAdicional Nombre='referencia' Valor='4753087680'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21660'> 
+<Subtotal ValorBase='114000'  Porcentaje='19'  Valor='21660' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='92000' Descripcion='TORNILLO-PIN PASADOR SATELITE Toyota LandCruiser Nal. 4.5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='9200' ValorTotalItem='92000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='40131-1'/> 
+<CampoAdicional Nombre='equivalencia' Valor='40131-1'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='17480'> 
+<Subtotal ValorBase='92000'  Porcentaje='19'  Valor='17480' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='107800' Descripcion='SATELITE F250 4x4, Lariat, Toyota      LandCruiser Nal.3.8,4.5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='53900' ValorTotalItem='107800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='34367'/> 
+<CampoAdicional Nombre='equivalencia' Valor='34367'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20482'> 
+<Subtotal ValorBase='107800'  Porcentaje='19'  Valor='20482' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='81800' Descripcion='FLOTADOR TANQUE GASOLINA L300 Van 96/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='40900' ValorTotalItem='81800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='68'/> 
+<CampoAdicional Nombre='referencia' Valor='MB434245'/> 
+<CampoAdicional Nombre='equivalencia' Valor='2023'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='15542'> 
+<Subtotal ValorBase='81800'  Porcentaje='19'  Valor='15542' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

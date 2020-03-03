@@ -1,0 +1,211 @@
+<Factura> 
+<Cabecera  Numero='SETT427' OrdenCompra='405' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-01' Vencimiento='2020-03-31' HoraEmision='17:35:23' MonedaFactura='COP' TipoFactura='FACTURA-CONTINGENCIA-UBL' FormaDePago='2' LineasDeFactura='11' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<DocumentosAdicionalesReferencia>
+<DocumentoAdicionalReferencia Numero='356296' FechaEmision='1970-01-01' TipoDocumento='03'/>
+</DocumentosAdicionalesReferencia>
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='48' TipoIdentificacion='13' NumeroIdentificacion='10012550' DV='8' NombreComercial='TOYONISSAN' RazonSocial='JORGE ELIECER AGUDELO OSORNO'> 
+<Direccion CodigoMunicipio='6600001' NombreCiudad='PEREIRA' CodigoPostal='' NombreDepartamento='RISARALDA' CodigoDepartamento='66' Direccion='CARRERA 12 NO 23-55' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='JORGE ELIECER AGUDELO OSORNO' Telefono='3148449948' Telfax='' Email='toyonissan22@gmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='6600001' NombreCiudad='PEREIRA' CodigoPostal='' NombreDepartamento='RISARALDA' CodigoDepartamento='66' Direccion='CARRERA 12 NO 23-55' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-31'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='5055'/> 
+<CampoAdicional Nombre='pedido N°' Valor='600978'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='COLVANES M.V.T.'/> 
+<CampoAdicional Nombre='vendedor' Valor='CARLOS ENRIQUE'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor=''/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1054922' BaseImponible='1054922' BrutoMasImpuestos='1255357' Cargos= '0' Descuentos='0' Impuestos='200435' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1149100' Neto='1011208' Subtotal='1054922' TotalDescuentosLineas='138784' TotalCargosLineas='0' Flete='44606'  DescuentoEnFlete='892'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='200435'> 
+<Subtotal ValorBase='1054922'  Porcentaje='19'  Valor='200435' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='127776' Descripcion='BOMBA CLUTCH 5/8" Hilux 89/95' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='48400' ValorTotalItem='145200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='3141035250'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='145200' Valor='17424'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='24277'> 
+<Subtotal ValorBase='127776'  Porcentaje='19'  Valor='24277' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='101376' Descripcion='CILINDRO TRASERO FRENOS 15/16" "R" Superior FJ55,FJ43 74/79' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='38400' ValorTotalItem='115200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='4755069055'/> 
+<CampoAdicional Nombre='equivalencia' Valor='4755069085'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='115200' Valor='13824'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19261'> 
+<Subtotal ValorBase='101376'  Porcentaje='19'  Valor='19261' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='101376' Descripcion='CILINDRO TRASERO FRENOS 15/16 R Inferior FJ43,FJ45,FJ55 74/80' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='38400' ValorTotalItem='115200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='4756069045'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='115200' Valor='13824'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19261'> 
+<Subtotal ValorBase='101376'  Porcentaje='19'  Valor='19261' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='101376' Descripcion='CILINDRO TRASERO FRENOS 15/16" "L" Superior FJ55,FJ43 74/79' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='38400' ValorTotalItem='115200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='4757069045'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='115200' Valor='13824'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19261'> 
+<Subtotal ValorBase='101376'  Porcentaje='19'  Valor='19261' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='107184' Descripcion='CILINDRO TRASERO FRENOS 15/16" "L" Inferior FJ55,FJ43 74/79' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='40600' ValorTotalItem='121800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='4758069045'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='121800' Valor='14616'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20365'> 
+<Subtotal ValorBase='107184'  Porcentaje='19'  Valor='20365' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='115104' Descripcion='PASTILLAS DE FRENO Pathfinder, 92/96; D21, 90/97;Frontier 4x2 1998/200' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='32700' ValorTotalItem='130800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='64'/> 
+<CampoAdicional Nombre='referencia' Valor='7228-D333SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='7228-D333S'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='130800' Valor='15696'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21870'> 
+<Subtotal ValorBase='115104'  Porcentaje='19'  Valor='21870' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='5' UnidadMedida='Unidad' SubTotalLinea='110440' Descripcion='PASTILLAS DE FRENO Versa, 2012/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='5' UnidadCantidadBase='Unidad' PrecioUnitario='25100' ValorTotalItem='125500' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='64'/> 
+<CampoAdicional Nombre='referencia' Valor='8804-D1592SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='8804-D1592S'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='125500' Valor='15060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20984'> 
+<Subtotal ValorBase='110440'  Porcentaje='19'  Valor='20984' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='51744' Descripcion='PASTILLAS DE FRENO Hilux, 4x2, 93/04' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='29400' ValorTotalItem='58800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='7205-D303SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='7205-D303S'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='58800' Valor='7056'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9831'> 
+<Subtotal ValorBase='51744'  Porcentaje='19'  Valor='9831' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='109824' Descripcion='PASTILLAS DE FRENO Land Cruiser 91/95,Hilux 2.4L 4 Runner 4 y 6 Cyl 90' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='31200' ValorTotalItem='124800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='67'/> 
+<CampoAdicional Nombre='referencia' Valor='7298-D436SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='7298-D436S'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='124800' Valor='14976'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20867'> 
+<Subtotal ValorBase='109824'  Porcentaje='19'  Valor='20867' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='85008' Descripcion='PASTILLAS DE FRENO Montero 94/2000, Nativa Sport 98/2004' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='32200' ValorTotalItem='96600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='68'/> 
+<CampoAdicional Nombre='referencia' Valor='7412-D530SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='7412-D530S'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='12' Indicador='false' Justificacion='Descuento directo' Porcentaje='12' ValorBase='96600' Valor='11592'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16152'> 
+<Subtotal ValorBase='85008'  Porcentaje='19'  Valor='16152' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='11' Cantidad='1' UnidadMedida='94' SubTotalLinea='43714' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='44606' Ocultar='true'/> 
+<precioreferencia ValorArticulo= '43714' CodigoTipoPrecio='03'> 
+</precioreferencia> 
+<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='2' ValorBase='44606' Valor='892'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8306'> 
+<Subtotal ValorBase='43714' Valor='8306' Porcentaje='19' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<CodificacionesEstandar> 
+<CodificacionEstandar CodigoArticulo='891000039'/> 
+</CodificacionesEstandar> 
+</Linea> 
+</Factura> 
+ 
+ 
+

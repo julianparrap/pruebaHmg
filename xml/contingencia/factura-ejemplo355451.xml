@@ -1,0 +1,116 @@
+<Factura> 
+<Cabecera  Numero='SETT219' OrdenCompra='552' FechaOrdenCompra='2020-01-07' FechaEmision='2020-03-01' Vencimiento='2020-03-31' HoraEmision='16:16:43' MonedaFactura='COP' TipoFactura='FACTURA-CONTINGENCIA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<DocumentosAdicionalesReferencia>
+<DocumentoAdicionalReferencia Numero='355451' FechaEmision='1970-01-01' TipoDocumento='03'/>
+</DocumentosAdicionalesReferencia>
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='901004439' DV='6' NombreComercial='FRENOS FONTANAR SAS' RazonSocial='VICTOR MANUEL MALAGON PINZON'> 
+<Direccion CodigoMunicipio='2500175' NombreCiudad='CHÍA' CodigoPostal='' NombreDepartamento='CUNDINAMARCA' CodigoDepartamento='25' Direccion='KILOMETRO 24 CHIA CAJICA  AD BOJACA TEXACO ' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='VICTOR MANUEL MALAGON PINZON' Telefono='3158942680' Telfax='' Email='frenos.fontanar@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='2500175' NombreCiudad='CHÍA' CodigoPostal='' NombreDepartamento='CUNDINAMARCA' CodigoDepartamento='25' Direccion='KILOMETRO 24 CHIA CAJICA  AD BOJACA TEXACO ' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-31'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='10422'/> 
+<CampoAdicional Nombre='pedido N°' Valor='601449'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='COORDINAD LOCAL'/> 
+<CampoAdicional Nombre='vendedor' Valor=''/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CONTADO'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $158,938'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-158937.6'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-31'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1644576' BaseImponible='1644576' BrutoMasImpuestos='1957045' Cargos= '0' Descuentos='0' Impuestos='312469' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1589376' Neto='1589376' Subtotal='1644576' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='55200'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='312469'> 
+<Subtotal ValorBase='1644576'  Porcentaje='19'  Valor='312469' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='713280' Descripcion='LIQUIDO FRENO "Caneca" X 20 Lts  DOT4' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='356640' ValorTotalItem='713280' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5811'/> 
+<CampoAdicional Nombre='equivalencia' Valor='20 Lts.'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='135523.2'> 
+<Subtotal ValorBase='713280'  Porcentaje='19'  Valor='135523.2' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='30' UnidadMedida='Unidad' SubTotalLinea='624960' Descripcion='LIQUIDO FRENO 1 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='30' UnidadCantidadBase='Unidad' PrecioUnitario='20832' ValorTotalItem='624960' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5802'/> 
+<CampoAdicional Nombre='equivalencia' Valor='LITRO DOT4'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='118742.4'> 
+<Subtotal ValorBase='624960'  Porcentaje='19'  Valor='118742.4' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='24' UnidadMedida='Unidad' SubTotalLinea='251136' Descripcion='LIQUIDO FRENO "Pinta" 1/4 Litro-DOT 4SL' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='24' UnidadCantidadBase='Unidad' PrecioUnitario='10464' ValorTotalItem='251136' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='5808'/> 
+<CampoAdicional Nombre='equivalencia' Valor='1/4 LITRO'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='47715.84'> 
+<Subtotal ValorBase='251136'  Porcentaje='19'  Valor='47715.84' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Cantidad='1' UnidadMedida='94' SubTotalLinea='55200.00' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='55200.00' Ocultar='true'/> 
+<precioreferencia ValorArticulo= '55200.00' CodigoTipoPrecio='03'> 
+</precioreferencia> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='10488'> 
+<Subtotal ValorBase='55200.00' Valor='10488' Porcentaje='19' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<CodificacionesEstandar> 
+<CodificacionEstandar CodigoArticulo='891000039'/> 
+</CodificacionesEstandar> 
+</Linea> 
+</Factura> 
+ 
+ 
+

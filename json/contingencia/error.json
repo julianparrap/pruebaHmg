@@ -1,0 +1,10 @@
+{
+    "maximumSeverityCode": "Error",
+    "eventItems": [
+        {
+            "errorCode": 2000,
+            "severityCode": "Error",
+            "shortDescription": "InvalidDocument: DIAN: Ocurrió un error al validar el documento [SETT200]. Mensaje: [Set de prueba con identificador 1bf9c4bf-10d4-4d30-8276-fc5997fef746 se encuentra Rechazado.] - Errores: [] - responseContent => [[InvalidDocumentException: DIAN: Ocurrió un error al validar el documento [SETT200]. Mensaje: [Set de prueba con identificador 1bf9c4bf-10d4-4d30-8276-fc5997fef746 se encuentra Rechazado.] - Errores: []\n   at PLColab.Issue.Extended.Steps.SendToDian.DianSoapClient.<GetStatusZip>d__3.MoveNext() in C:\\TFS1\\PLColab\\Core\\3Beta\\7-IssueV2\\Extended\\Steps\\SendToDian\\DianSoapClient.cs:line 34\r\n   at PLColab.Issue.Extended.Steps.Sync.SendToTestDianV2.<>c__DisplayClass1_0.<<Execute>b__1>d.MoveNext() in C:\\TFS1\\PLColab\\Core\\3Beta\\7-IssueV2\\Extended\\Steps\\Sync\\SendToTestDianV2.cs:line 66\r\n   at Notification.Base.Components.Utilities.RetryUtility.<RunAsync>d__3`1.MoveNext() in E:\\Tfs1\\Colab\\Notification\\1Dev\\3-Base\\dev\\Components\\Utilities\\RetryUtility.cs:line 0\r\n   at PLColab.Issue.Extended.Steps.Sync.SendToTestDianV2.<Execute>d__1.MoveNext() in C:\\TFS1\\PLColab\\Core\\3Beta\\7-IssueV2\\Extended\\Steps\\Sync\\SendToTestDianV2.cs:line 65\r\n   at PLColab.Issue.Extended.Workflow.RunSyncSteps.<Run>d__2.MoveNext() in C:\\TFS1\\PLColab\\Core\\3Beta\\7-IssueV2\\Extended\\Workflow\\RunSyncSteps.cs:line 41\r\n   at PLColab.Functions.Base.Jobs.EndpointIssueSyncSteps.<OnProcess>d__0.MoveNext() in C:\\TFS1\\PLColab\\Core\\3Beta\\8-Hosts\\FunctionApp\\PLColab.Functions.Base\\Jobs\\EndpointIssueSyncSteps.cs:line 20\r\n   at PLColab.Functions.Base.BaseFunctionManager.<Run>d__2`2.MoveNext() in C:\\TFS1\\PLColab\\Core\\3Beta\\8-Hosts\\FunctionApp\\PLColab.Functions.Base\\BaseFunctionManager.cs:line 0]]"
+        }
+    ]
+}

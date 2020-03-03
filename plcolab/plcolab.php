@@ -170,7 +170,7 @@ class ApiClient
 
 	public function Issue($documentType, $xml, $options, $attachmentPaths = null)
 	{
-		$validDocumentTypes = array("FACTURA-UBL", "NC-UBL", "ND-UBL", "FA_CONTINGENCIA", "FA_EXPORTACION", 
+		$validDocumentTypes = array("FACTURA-UBL", "NC-UBL", "ND-UBL", "FACTURA-CONTINGENCIA-UBL", "FA_EXPORTACION", 
 									"FA_DIGITAL", "RECAUDO", "RFQ", "ORDER", "QUOTE", "ESTADO_CUENTA");
 		if (!in_array($documentType, $validDocumentTypes)) {
 			throw new \InvalidArgumentException("Invalid document type: '".$documentType."'");

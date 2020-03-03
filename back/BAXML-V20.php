@@ -12,6 +12,11 @@ class generaXml extends conectarBD{
 	//Función para generar factura
 	public function generarFactura() {
 		extract($_POST);
+		$sqlDetaLiem = $this->consultar("deli_idxx", "deta_liem", "deli_idle=".$lima_idxx." and deli_care!=0 and deli_prec=0", 4);
+		if (mysqli_num_rows($sqlDetaLiem)>0) {
+			exit("precio");
+		}
+
 		$fechaActual = date("Y-m-d");
 		$horaActual = date("H:i:s");
 		$sqlLiemMaes = $this->consultar("fecha,lima_liem,clma_feec,clma_tipo,clma_noes,clma_raso,clma_nitt,clma_dive,clma_repr,cima_noci,cima_codi,dema_node,clma_idxx,dema_codi,clma_dire,lima_vfle,lima_vdfl,idx_vend,clma_codi,transport,clma_copa,lima_vdes,copc_deco,lima_vtpe,copc_pldi,copc_depf,copc_codi,clma_cel1,clma_cor1", "liem_maes JOIN mpedidos ON (lima_orco = idx OR lima_liem = pedido ) join clie_mae on (lima_clie=clma_codi) join copa_clie on (descuento=copc_idxx) join ciud_mae on (clma_ciud=cima_idxx) join depa_mae on (cima_iddp=dema_idxx)", "lima_idxx=".$lima_idxx, 4);
@@ -20,6 +25,9 @@ class generaXml extends conectarBD{
 		$datosLiemMaes = mysqli_fetch_array($sqlLiemMaes);
 		//contador de la cantidad del detalle de la factura
 		$sqlContDetaLiem = $this->consultar("deli_idle", "deta_liem", "deli_idle=".$lima_idxx, 2);
+		if ($datosLiemMaes["lima_vdfl"]!=0) {
+			$sqlContDetaLiem = $sqlContDetaLiem+1;
+		}
 
 		echo $datosLiemMaes["lima_liem"];
 		$formaDePago = ($datosLiemMaes["copc_pldi"]==0)?1:2;
@@ -27,7 +35,7 @@ class generaXml extends conectarBD{
  		$morden = fopen($nom_mae,"w") or die("No se encontro la ruta para la exportacion");
 		$vencimiento = date("Y-m-d",strtotime($fechaActual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
  		$text = "<Factura> \n";
- 		$text .= "<Cabecera  Numero='SETT".rand(5, 115)."' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
+ 		$text .= "<Cabecera  Numero='SETT".rand(5, 715)."' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
  		//$text .= "<Cabecera  Numero='SETT".$datosLiemMaes["lima_liem"]."' OrdenCompra='".$datosLiemMaes["lima_liem"]."' FechaOrdenCompra='".substr($datosLiemMaes["fecha"], 0, 10)."' FechaEmision='".$fechaActual."' Vencimiento='".$vencimiento."' HoraEmision='".$horaActual."' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='".$formaDePago."' LineasDeFactura='".$sqlContDetaLiem."' TipoOperacion='10' FormatoContingencia='Papel'/> \n";
  		$text .= "<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> \n";
  		$text .= "<Notificacion Tipo='Mail' De='info@hermagu.com.co'> \n";
@@ -91,27 +99,7 @@ class generaXml extends conectarBD{
  		$text .= "<CampoAdicional Nombre='Transportador - Guia N°' Valor='".$datosLiemMaes["transport"]."'/> \n";
  		$text .= "<CampoAdicional Nombre='vendedor' Valor='".$datosAsesoresWeb["nombres"]."'/> \n";
  		$text .= "<CampoAdicional Nombre='condicionesdepago' Valor='".$datosLiemMaes["clma_copa"]."'/> \n";
- 		//validar descuentos
- 		//$lima_vdes =($datosLiemMaes["copc_depf"]==0)?0:$datosLiemMaes["lima_vdes"];
- 			//condicionado
- 		if ($datosLiemMaes["copc_deco"]!=0) {
- 			$porceCond = $datosLiemMaes["copc_deco"];
- 			$valorCond = $datosLiemMaes["lima_vtpe"]*($datosLiemMaes["copc_deco"]/100);
- 			$pagueSoloCond = $brutoMasImpuestos-$valorCond;
- 			$fecha_actual = date("Y-m-d");
-			$canceleAntes = date("Y-m-d",strtotime($fecha_actual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
-
-	 		//texto en letras
-	 		$textoEnLetras = $this->numerotexto(round(intval($brutoMasImpuestos),0));
-	 		$text .= "<CampoAdicional Nombre='ValorLetras' Valor='".strtoupper($textoEnLetras)." MCT'/> \n";
-	 		$text .= "<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='".$porceCond."%  $".number_format($valorCond)."'/> \n";
-	 		$text .= "<CampoAdicional Nombre='paguesolamente' Valor='".$pagueSoloCond."'/> \n";
-	 		$text .= "<CampoAdicional Nombre='canceleantes' Valor='".$canceleAntes."'/> \n";
-	 		$text .= "<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el ".$porceCond."% Dcto a pie, para pago antes de ".$datosLiemMaes["copc_pldi"]." días. Pague oportunamete y evite perder este descuento.'/> \n";
-		}
- 		$text .= "</DatosAdicionales> \n";
- 		$text .= "</Extensiones> \n";
-//
+		
 		$sqlDetaLiem = $this->consultar("deli_caap,deli_prec,rema_desc,rema_apci,rema_line,rema_oem,rema_popu", "deta_liem join refe_maes on (deli_idre=rema_idxx)", "deli_caap!=0 and deli_idle=".$lima_idxx, 4);
 		$deta_prec =0;
 		while ($datosDetaLiem = mysqli_fetch_array($sqlDetaLiem)) {
@@ -119,13 +107,33 @@ class generaXml extends conectarBD{
 		}
  		//totales
  		$descuento = $deta_prec*($datosLiemMaes["copc_depf"]/100);
+ 		$descuentoLineas = $descuento+$datosLiemMaes["lima_vdfl"];
  		$neto = $deta_prec-$descuento;
  		$baseImponible=$neto+($datosLiemMaes["lima_vfle"]-$datosLiemMaes["lima_vdfl"]);
  		$iva = $baseImponible*0.19;
  		$brutoMasImpuestos = $baseImponible+$iva;
- 		//totales
+	 	$textoEnLetras = $this->numerotexto(round(intval($brutoMasImpuestos),0));
+		$observacion ="A esta factura se le otorgo el ".$porceCond."% Dcto a pie, para pago antes de ".$datosLiemMaes["copc_pldi"]." días. Pague oportunamete y evite perder este descuento.";
+ 		//condicionado
+ 		if ($datosLiemMaes["copc_deco"]!=0) {
+ 			$porceCond = $datosLiemMaes["copc_deco"];
+ 			$valorCond = $datosLiemMaes["lima_vtpe"]*($datosLiemMaes["copc_deco"]/100);
+ 			$pagueSoloCond = $brutoMasImpuestos-$valorCond;
+ 			$fecha_actual = date("Y-m-d");
+			$canceleAntes = date("Y-m-d",strtotime($fecha_actual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
+
+	 		$text .= "<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='".$porceCond."%  $".number_format($valorCond,0,',','.')."'/> \n";
+	 		$text .= "<CampoAdicional Nombre='paguesolamente' Valor='".number_format($pagueSoloCond,0,',','.')."'/> \n";
+	 		$text .= "<CampoAdicional Nombre='canceleantes' Valor='".$canceleAntes."'/> \n";
+			$observacion ="Descuentese el ".$porceCond."% sobre el valor de la mercancia. Si cancela antes de ".$datosLiemMaes["copc_pldi"]." días. Despues de esta fecha no se aceptan descuentos.";
+		}
+	 	//texto en letras
+	 	$text .= "<CampoAdicional Nombre='ValorLetras' Valor='".strtoupper($textoEnLetras)." PESOS M/CTE'/> \n";
+	 	$text .= "<CampoAdicional Nombre='Observacion1' Valor='".$observacion."'/> \n";
+ 		$text .= "</DatosAdicionales> \n";
+ 		$text .= "</Extensiones> \n";
  		//<!--Impuestos generales de la factura-->
- 		$text .= "<Totales Bruto='".round($baseImponible,0)."' BaseImponible='".round($baseImponible,0)."' BrutoMasImpuestos='".round($brutoMasImpuestos,0)."' Cargos= '0' Descuentos='0' Impuestos='".round($iva,0)."' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='".round($datosLiemMaes["lima_vtpe"],0)."' Neto='".round($neto,0)."' Subtotal='".round($baseImponible,0)."' TotalDescuentosLineas='".round($descuento,0)."' TotalCargosLineas='0' Flete='".round($datosLiemMaes["lima_vfle"],0)."'  DescuentoEnFlete='".round($datosLiemMaes["lima_vdfl"],0)."'/>\n";
+ 		$text .= "<Totales Bruto='".round($baseImponible,0)."' BaseImponible='".round($baseImponible,0)."' BrutoMasImpuestos='".round($brutoMasImpuestos,0)."' Cargos= '0' Descuentos='0' Impuestos='".round($iva,0)."' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='".round($datosLiemMaes["lima_vtpe"],0)."' Neto='".round($neto,0)."' Subtotal='".round($baseImponible,0)."' TotalDescuentosLineas='".round($descuentoLineas,0)."' TotalCargosLineas='0' Flete='".round($datosLiemMaes["lima_vfle"],0)."'  DescuentoEnFlete='".round($datosLiemMaes["lima_vdfl"],0)."'/>\n";
  		$text .= "<Impuestos> \n";
  		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($iva,0)."'> \n";
  		$text .= "<Subtotal ValorBase='".round($baseImponible,0)."'  Porcentaje='19'  Valor='".round($iva,0)."' CodigoUnidadMedidaBase='94'/> \n";
@@ -141,7 +149,7 @@ class generaXml extends conectarBD{
 			$valorTotal = $subTotal - $vrDescuento;
 			$vrIva = $valorTotal*0.19;
  			$text .= "<Linea> \n";
- 			$text .= "<Detalle NumeroLinea='".$contador."' Nota='' Cantidad='".$datosDetaLiem["deli_caap"]."' UnidadMedida='Unidad' SubTotalLinea='".$valorTotal."' Descripcion='".substr($datosDetaLiem["rema_desc"]." ".$datosDetaLiem["rema_apci"], 0, 70)."' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='".$datosDetaLiem["deli_caap"]."' UnidadCantidadBase='Unidad' PrecioUnitario='".$datosDetaLiem["deli_prec"]."' ValorTotalItem='".$subTotal."' /> \n";
+ 			$text .= "<Detalle NumeroLinea='".$contador."' Nota='' Cantidad='".$datosDetaLiem["deli_caap"]."' UnidadMedida='Unidad' SubTotalLinea='".round($valorTotal,0)."' Descripcion='".substr($datosDetaLiem["rema_desc"]." ".$datosDetaLiem["rema_apci"], 0, 70)."' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='".round($datosDetaLiem["deli_caap"],0)."' UnidadCantidadBase='Unidad' PrecioUnitario='".round($datosDetaLiem["deli_prec"],0)."' ValorTotalItem='".round($subTotal,0)."' /> \n";
  			$text .= "<DatosAdicionales> \n";
  			$text .= "<CampoAdicional Nombre='linea' Valor='".$datosDetaLiem["rema_line"]."'/> \n";
  			$text .= "<CampoAdicional Nombre='referencia' Valor='".$datosDetaLiem["rema_oem"]."'/> \n";
@@ -149,11 +157,11 @@ class generaXml extends conectarBD{
  			$text .= "</DatosAdicionales> \n";
  			//<!--Se adidiona el descunto que se ofrece PF-->
 			if ($datosLiemMaes["copc_depf"]!=0) {
- 				$text .= "<DescuentoOCargo ID='".$datosLiemMaes["copc_codi"]."' Indicador='false' Justificacion='Descuento directo' Porcentaje='".$datosLiemMaes["copc_depf"]."' ValorBase='".$subTotal."' Valor='".$vrDescuento."'  /> \n";
+ 				$text .= "<DescuentoOCargo ID='".$datosLiemMaes["copc_codi"]."' Indicador='false' Justificacion='Descuento directo' Porcentaje='".round($datosLiemMaes["copc_depf"],0)."' ValorBase='".round($subTotal,0)."' Valor='".round($vrDescuento,0)."'  /> \n";
 			}
  			$text .= "<Impuestos> \n";
- 			$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".$vrIva."'> \n";
- 			$text .= "<Subtotal ValorBase='".$valorTotal."'  Porcentaje='19'  Valor='".$vrIva."' CodigoUnidadMedidaBase='94'/> \n";
+ 			$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($vrIva,0)."'> \n";
+ 			$text .= "<Subtotal ValorBase='".round($valorTotal,0)."'  Porcentaje='19'  Valor='".round($vrIva,0)."' CodigoUnidadMedidaBase='94'/> \n";
  			$text .= "</Impuesto> \n";
 	 		$text .= "</Impuestos> \n";
 	 		$text .= "</Linea> \n";
@@ -174,15 +182,15 @@ class generaXml extends conectarBD{
  		//<!-- Datos para la factura que lleva fletes -->
 		if ($datosLiemMaes["lima_vfle"]!=0) {
 	 		$text .= "<Linea> \n";
-	 		$text .= "<Detalle NumeroLinea='".$contador."' Cantidad='1' UnidadMedida='94' SubTotalLinea='".$vrFlete."' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='".$datosLiemMaes["lima_vfle"]."' Ocultar='true'/> \n";
-	 		$text .= "<precioreferencia ValorArticulo= '".$vrFlete."' CodigoTipoPrecio='03'> \n";
+	 		$text .= "<Detalle NumeroLinea='".$contador."' Cantidad='1' UnidadMedida='94' SubTotalLinea='".round($vrFlete,0)."' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='".round($datosLiemMaes["lima_vfle"],0)."' Ocultar='true'/> \n";
+	 		$text .= "<precioreferencia ValorArticulo= '".round($vrFlete,0)."' CodigoTipoPrecio='03'> \n";
 	 		$text .= "</precioreferencia> \n";
 			if ($datosLiemMaes["lima_vdfl"]!=0) {
-				$text .= "<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='".$porc_desc."' ValorBase='".$datosLiemMaes["lima_vfle"]."' Valor='".$vrFlete."'  /> \n";
+				$text .= "<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='".$porc_desc."' ValorBase='".round($datosLiemMaes["lima_vfle"],0)."' Valor='".round($datosLiemMaes["lima_vfle"],0)."'  /> \n";
 			}
 	 		$text .= "<Impuestos> \n";
 	 		$text .= "<Impuesto Tipo='01' Nombre='IVA' Valor='".round($iva_flete,0)."'> \n";
-	 		$text .= "<Subtotal ValorBase='".$vrFlete."' Valor='".round($iva_flete,0)."' Porcentaje='19' CodigoUnidadMedidaBase='94'/> \n";
+	 		$text .= "<Subtotal ValorBase='".round($vrFlete,0)."' Valor='".round($iva_flete,0)."' Porcentaje='19' CodigoUnidadMedidaBase='94'/> \n";
 	 		$text .= "</Impuesto> \n";
 	 		$text .= "</Impuestos> \n";
 	 		$text .= "<CodificacionesEstandar> \n";

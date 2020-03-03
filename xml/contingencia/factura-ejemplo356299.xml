@@ -1,0 +1,130 @@
+<Factura> 
+<Cabecera  Numero='SETT317' OrdenCompra='312' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-01' Vencimiento='2020-03-31' HoraEmision='17:37:23' MonedaFactura='COP' TipoFactura='FACTURA-CONTINGENCIA-UBL' FormaDePago='2' LineasDeFactura='5' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<DocumentosAdicionalesReferencia>
+<DocumentoAdicionalReferencia Numero='356299' FechaEmision='1970-01-01' TipoDocumento='03'/>
+</DocumentosAdicionalesReferencia>
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='901317504' DV='0' NombreComercial='AUTO REPUESTOS TOBON S.A.S.' RazonSocial='MONICA MARIA TOBON GONZALEZ'> 
+<Direccion CodigoMunicipio='500360' NombreCiudad='ITAGÜÍ' CodigoPostal='' NombreDepartamento='ANTIOQUIA' CodigoDepartamento='5' Direccion='CARRERA 50A # 43-14' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='MONICA MARIA TOBON GONZALEZ' Telefono='3216488815' Telfax='' Email='autortobon@gmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='500360' NombreCiudad='ITAGÜÍ' CodigoPostal='' NombreDepartamento='ANTIOQUIA' CodigoDepartamento='5' Direccion='CARRERA 50A # 43-14' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-31'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='7203'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602371'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='COLVANES M.V.T.'/> 
+<CampoAdicional Nombre='vendedor' Valor=''/> 
+<CampoAdicional Nombre='condicionesdepago' Valor=''/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' MCT'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $19,920'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='-19920'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-03-31'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 10% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='227346' BaseImponible='227346' BrutoMasImpuestos='270542' Cargos= '0' Descuentos='0' Impuestos='43196' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='199200' Neto='199200' Subtotal='227346' TotalDescuentosLineas='574' TotalCargosLineas='0' Flete='28720'  DescuentoEnFlete='574'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='43196'> 
+<Subtotal ValorBase='227346'  Porcentaje='19'  Valor='43196' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='20' UnidadMedida='Unidad' SubTotalLinea='116000' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 0.8;  Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='20' UnidadCantidadBase='Unidad' PrecioUnitario='5800' ValorTotalItem='116000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RA8HC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='22040'> 
+<Subtotal ValorBase='116000'  Porcentaje='19'  Valor='22040' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='31000' Descripcion='PASTILLAS DE FRENO Picanto Ion, 2012/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='31000' ValorTotalItem='31000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='60'/> 
+<CampoAdicional Nombre='referencia' Valor='SP1405SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='10318'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='5890'> 
+<Subtotal ValorBase='31000'  Porcentaje='19'  Valor='5890' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='26100' Descripcion='PASTILLAS DE FRENO Rio Taxi 1.3, 1.5 Lts, 2002/12' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='26100' ValorTotalItem='26100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='60'/> 
+<CampoAdicional Nombre='referencia' Valor='8724-D1515SM '/> 
+<CampoAdicional Nombre='equivalencia' Valor='8724-D1515S'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='4959'> 
+<Subtotal ValorBase='26100'  Porcentaje='19'  Valor='4959' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='26100' Descripcion='PASTILLAS DE FRENO Picanto 2005/11' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='26100' ValorTotalItem='26100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='60'/> 
+<CampoAdicional Nombre='referencia' Valor='8815-D1601SM '/> 
+<CampoAdicional Nombre='equivalencia' Valor='8815-D1601S'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='4959'> 
+<Subtotal ValorBase='26100'  Porcentaje='19'  Valor='4959' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Cantidad='1' UnidadMedida='94' SubTotalLinea='28146' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='28720' Ocultar='true'/> 
+<precioreferencia ValorArticulo= '28146' CodigoTipoPrecio='03'> 
+</precioreferencia> 
+<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='2' ValorBase='28720' Valor='574'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='5348'> 
+<Subtotal ValorBase='28146' Valor='5348' Porcentaje='19' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<CodificacionesEstandar> 
+<CodificacionEstandar CodigoArticulo='891000039'/> 
+</CodificacionesEstandar> 
+</Linea> 
+</Factura> 
+ 
+ 
+

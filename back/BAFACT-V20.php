@@ -9,7 +9,7 @@ class facturacion extends conectarBD{
 	//
 	public function mostrarContenido() {
 		$fech = date("Y-m-d");
-		$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-17' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
+		$result = $this->consultar("idx,lima_vdfl,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
 		//descomentarear cuando allán pedidos en estado de facturacion 
 		//$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='FAC' GROUP BY (cliente) ORDER BY (fecha) limit 100", 4);
 		$pedi_manu = mysqli_num_rows($this->consultar("* ","liem_maes","lima_orco<'500000' and lima_esta='FAC' and cast(lima_fefa as DATE)='$fech'", 4));
@@ -47,11 +47,12 @@ class facturacion extends conectarBD{
 					<td class='cabecera'>Pedidos</td>
 					<td class='cabecera'>Tiempo trans.</td>
 					<td class='cabecera'>Tipo Entrega</td>
-					<td class='cabecera'>Vr mercancía</td>
-					<td class='cabecera'>Vr descuento</td>
-					<td class='cabecera'>Vr flete</td>
-					<td class='cabecera'>Vr iva</td>
-					<td class='cabecera'>Vr total</td>
+					<td class='cabecera'>Mercancía</td>
+					<td class='cabecera'>Descuento</td>
+					<td class='cabecera'>Flete</td>
+					<td class='cabecera'>Desc flete</td>
+					<td class='cabecera'>Iva</td>
+					<td class='cabecera'>Valor total</td>
 				</tr></thead><tbody>";
 		while($datos = mysqli_fetch_array($result)){
 			$sqlClieMaes = $this->consultar("clma_tipo,clma_noes,clma_raso,clma_codi", "clie_mae", "clma_esta='ACT' and clma_codi=".$datos["cliente"], 4);
@@ -91,12 +92,13 @@ class facturacion extends conectarBD{
 					<td class='$estilo1' title='$causal'>".$nombre."</td>
 					<td class='$estilo1' style='text-align:center' title='$causal'>".$datos["cantidad"]."</td>
 					<td class='$estilo' title='$causal'>".$tiempo."</td>
-					<td class='$estilo1' title='$causal'>".strtoupper($datos["tp_entrega"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["lima_vtpe"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["lima_vdes"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["lima_vfle"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($datos["vriva"])."</td>
-					<td class='$estilo' title='$causal'>".number_format($total)."</td>
+					<td class='$estilo1' title='$causal' align='right'>".strtoupper($datos["tp_entrega"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["lima_vtpe"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["lima_vdes"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["lima_vfle"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["lima_vdfl"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($datos["vriva"],0,',','.')."</td>
+					<td class='$estilo' title='$causal' align='right'>".number_format($total,0,',','.')."</td>
 				";
 			/*if ($datos["lima_gude"]=="S"){
 				echo"<td class='$estilo' title='$causal'>SI</td>";

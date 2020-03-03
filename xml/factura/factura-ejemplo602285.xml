@@ -1,0 +1,99 @@
+<Factura> 
+<Cabecera  Numero='SETT61' OrdenCompra='602285' FechaOrdenCompra='2020-01-18' FechaEmision='2020-03-01' Vencimiento='2020-03-31' HoraEmision='18:26:20' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='830147376' DV='7' NombreComercial='PACHON CARDONA AUTOPARTES S.A.S' RazonSocial='MARTHA PATRICIA CARDONA BENAVIDES'> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 14 NO. 55-42' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='MARTHA PATRICIA CARDONA BENAVIDES' Telefono='3107855061' Telfax='' Email='pacars_autopartes@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='1100001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 14 NO. 55-42' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-03-31'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='1244'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602285'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='MIGUEL ANGEL'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='409860' BaseImponible='409860' BrutoMasImpuestos='487733' Cargos= '0' Descuentos='0' Impuestos='77873' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='455400' Neto='409860' Subtotal='409860' TotalDescuentosLineas='45540' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='77873'> 
+<Subtotal ValorBase='409860'  Porcentaje='19'  Valor='77873' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='110520' Descripcion='DISCO CLUTCH 12"x1.1/8x10,C10,C30,P30      V8-350 75/95' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='122800' ValorTotalItem='122800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='02'/> 
+<CampoAdicional Nombre='referencia' Valor='15592287'/> 
+<CampoAdicional Nombre='equivalencia' Valor='380169'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='122800' Valor='12280'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20998.8'> 
+<Subtotal ValorBase='110520'  Porcentaje='19'  Valor='20999' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='223380' Descripcion='PRENSA CLUTCH De 12",C10,C30,P30 80/96,De   Diafragma' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='248200' ValorTotalItem='248200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='02'/> 
+<CampoAdicional Nombre='referencia' Valor='14045241'/> 
+<CampoAdicional Nombre='equivalencia' Valor='360148'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='248200' Valor='24820'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='42442.2'> 
+<Subtotal ValorBase='223380'  Porcentaje='19'  Valor='42442' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='75960' Descripcion='GUAYA FRENO EMERGENCIA NPR Con Turbo 99/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='42200' ValorTotalItem='84400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='12'/> 
+<CampoAdicional Nombre='referencia' Valor='97215434'/> 
+<CampoAdicional Nombre='equivalencia' Valor='GMCFP-1960'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='84400' Valor='8440'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14432.4'> 
+<Subtotal ValorBase='75960'  Porcentaje='19'  Valor='14432' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

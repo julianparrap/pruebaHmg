@@ -158,21 +158,26 @@
 						},
 						success:function(data){
 							$("#bloquea").css({'display':'none'});
-							//ajax para correr el xml de la facturacion electronica
-							$.ajax({
-								type :"POST",
-								url : "../plcolab/index.php",
-								data: "accion=generarFactura&lima_idxx="+data+"&origen=FACT",
-								beforeSend :function(){
-									$("#bloquea").css({'display':'block'});
-								},
-								success:function(data){
-									$("#bloquea").css({'display':'none'});
-									//funcion para guardar la respuesta del json en la base de datos
-									//validarJson();
-									contenido();
-								} 
-							}); 
+							if (data=="precio") {
+								swal("Referencias con precio en cero (0), porfavor revisar detalle del pedido.");
+							}
+							else{
+								//ajax para correr el xml de la facturacion electronica
+								$.ajax({
+									type :"POST",
+									url : "../plcolab/index.php",
+									data: "accion=generarFactura&lima_idxx="+data+"&origen=FACT",
+									beforeSend :function(){
+										$("#bloquea").css({'display':'block'});
+									},
+									success:function(data){
+										$("#bloquea").css({'display':'none'});
+										//funcion para guardar la respuesta del json en la base de datos
+										//validarJson();
+										contenido();
+									} 
+								}); 
+							}
 							//ejecutarXmlFactElect(data);
 						} 
 					});
@@ -240,7 +245,7 @@
 		function agrgarFlete(lima_idxx=0){	
 			swal({
 				title: 'Cargue de fletes',
-				html: '<h3 style="text-align:left">Fletes</h3><input type="text" class="form-control" name="lima_vfle" id="lima_vfle" placeholder="Valor en fletes" style="width:200px" onkeydown="formatomunerico(\'lima_vfle\')" onkeypress="event soloNumeros()"><hr><h3 style="text-align:left">Descuento en fletes</h3><input type="text" class="form-control" name="lima_vdfl" id="lima_vdfl" placeholder="Desuento en fletes" style="width:200px">', 
+				html: '<h3 style="text-align:left">Fletes</h3><input type="text" class="form-control" name="lima_vfle" id="lima_vfle" placeholder="Valor en fletes" style="width:200px" onkeypress="event soloNumeros()"><hr><h3 style="text-align:left">Descuento en fletes</h3><input type="text" class="form-control" name="lima_vdfl" id="lima_vdfl" placeholder="Desuento en fletes" style="width:200px">', 
 				inputAttributes: {
 					autocapitalize: 'off'
 				},
@@ -261,8 +266,6 @@
 //			    swal("Debe agregar el valor de los fletes.");
 					return false;
 				}
-				alert("pasa");
-				return;
 				$.ajax({
 					type: "POST",
 					url : "../func/php/FUFACT-V20.php",

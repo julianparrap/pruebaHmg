@@ -8,8 +8,6 @@ $Password = 'abc123$$';
 $SubscriptionKey = 'de5da094f12c47d38a8aa676f4c59a93';
 
 // tipo de documento a emitir: "FA", "NC", "ND", ...
-$documentType = "FACTURA-UBL";
-$lima_idxx = $_POST["lima_idxx"];
 $origen = $_POST["origen"];
 $options = [];
 
@@ -17,9 +15,13 @@ $options = [];
 // WARNING: para efectos de la prueba, cada vez que emita, cambiar manualmente el numero de documento (nodo: /Factura/Cabecera/@Numero)
 //$xml = file_get_contents('./app-data/input/factura-ejemplo602191.xml');
 if ($origen=="CONT") {
-	$xml = file_get_contents('../xml/contingencia/factura-ejemplo'.$lima_idxx.'.xml');
+	$DOCTO = $_POST["lima_idxx"];
+	$documentType = "FACTURA-CONTINGENCIA-UBL";
+	$xml = file_get_contents('../xml/contingencia/factura-ejemplo'.$DOCTO.'.xml');
 }
 else{
+	$lima_idxx = $_POST["lima_idxx"];
+	$documentType = "FACTURA-UBL";
 	$xml = file_get_contents('../xml/factura/factura-ejemplo'.$lima_idxx.'.xml');
 }
 // EJEMPLO: esta es una de las maneras de especificar adjuntos
@@ -67,7 +69,13 @@ echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 			$output = file_get_contents("../json/factura/".$numeroDocumento.".json");
 		$arreglo = json_decode($output, true);
 		//consultar liem_maes
-		$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "liem_maes JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "lima_liem=".$lima_idxx, 4);
+		$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "FACT as fac join liem_maes on (OC=lima_liem) JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "fac.DOCTO=".$DOCTO, 4);
+		if (mysqli_num_rows($sqlLiemMaes)==0) {
+			$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "FACTtemp as fac join liem_maes on (OC=lima_liem) JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "fac.DOCTO=".$DOCTO, 4);
+		}
+		else{
+			mysqli_data_seek($sqlLiemMaes,0);
+		}
 		$datosLiemMaes= mysqli_fetch_array($sqlLiemMaes);
 		$redl_idli= $datosLiemMaes["lima_idxx"];
 		$redl_idmp= $datosLiemMaes["pedIdx"];
