@@ -1,0 +1,212 @@
+<Factura> 
+<Cabecera  Numero='SETT84' OrdenCompra='602267' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-03' Vencimiento='2020-04-02' HoraEmision='01:51:00' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='11' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='901275662' DV='4' NombreComercial='ALMACEN Y TALLER TODO NISSAN AYT S.A.S.' RazonSocial='LEYSIT MARTHA PEREZ CHARRIS'> 
+<Direccion CodigoMunicipio='47001' NombreCiudad='SANTA MARTA' CodigoPostal='' NombreDepartamento='MAGDALENA' CodigoDepartamento='47' Direccion='DIAGONAL 39 # 6-44 LOCAL 1' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='LEYSIT MARTHA PEREZ CHARRIS' Telefono='3015050747' Telfax='' Email='atodonissanaytsas@gmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='47001' NombreCiudad='SANTA MARTA' CodigoPostal='' NombreDepartamento='MAGDALENA' CodigoDepartamento='47' Direccion='DIAGONAL 39 # 6-44 LOCAL 1' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-02'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='6185'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602267'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='TCC
+'/> 
+<CampoAdicional Nombre='vendedor' Valor='LUZ ESTHELLA'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor=''/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' DOS MILLONES  DIECISIETE MIL CUATROCIENTOS  SIETE PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el % Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1695300' BaseImponible='1695300' BrutoMasImpuestos='2017407' Cargos= '0' Descuentos='0' Impuestos='322107' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1817000' Neto='1635300' Subtotal='1695300' TotalDescuentosLineas='182789' TotalCargosLineas='0' Flete='61089'  DescuentoEnFlete='1089'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='322107'> 
+<Subtotal ValorBase='1695300'  Porcentaje='19'  Valor='322107' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='40860' Descripcion='PASTILLAS DE FRENO UD41  95/2000' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='45400' ValorTotalItem='45400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='64'/> 
+<CampoAdicional Nombre='referencia' Valor='7575-D701SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='7575-D701'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='45400' Valor='4540'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7763'> 
+<Subtotal ValorBase='40860'  Porcentaje='19'  Valor='7763' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='153900' Descripcion='CORREA AUTOMOTRIZ Ventilador Simca 1300         Bomba Hidraulica Toyot' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='17100' ValorTotalItem='171000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='17450-GTS'/> 
+<CampoAdicional Nombre='equivalencia' Valor='9451'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='171000' Valor='17100'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29241'> 
+<Subtotal ValorBase='153900'  Porcentaje='19'  Valor='29241' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='59310' Descripcion='SPLINDERS DIRECCION NHR 2000/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='65900' ValorTotalItem='65900' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='12'/> 
+<CampoAdicional Nombre='referencia' Valor='5878310290'/> 
+<CampoAdicional Nombre='equivalencia' Valor='BF232'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='65900' Valor='6590'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11269'> 
+<Subtotal ValorBase='59310'  Porcentaje='19'  Valor='11269' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='285480' Descripcion='DISCO CLUTCH NKR-NHR 2001/,Dmax 3.0L.     Diesel 2005/' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='79300' ValorTotalItem='317200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='8972571240'/> 
+<CampoAdicional Nombre='equivalencia' Valor='ISD141U'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='317200' Valor='31720'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='54241'> 
+<Subtotal ValorBase='285480'  Porcentaje='19'  Valor='54241' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='378000' Descripcion='DISCO CLUTCH Nissan MT3000/3500 1a Serie y Turbo' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='70000' ValorTotalItem='420000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='482013'/> 
+<CampoAdicional Nombre='equivalencia' Valor='LR02'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='420000' Valor='42000'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='71820'> 
+<Subtotal ValorBase='378000'  Porcentaje='19'  Valor='71820' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='391500' Descripcion='CORREA MICRO-V SERIE PK Ford Pickups y Vans 90,Jeep Wrangler.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='43500' ValorTotalItem='435000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='6PK1995-GTS'/> 
+<CampoAdicional Nombre='equivalencia' Valor='K060785'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='435000' Valor='43500'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='74385'> 
+<Subtotal ValorBase='391500'  Porcentaje='19'  Valor='74385' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='38970' Descripcion='CORREA MICRO-V SERIE PK Mercedes Benz 190' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='43300' ValorTotalItem='43300' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='6PK1980-GTS'/> 
+<CampoAdicional Nombre='equivalencia' Valor='K060780'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='43300' Valor='4330'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7404'> 
+<Subtotal ValorBase='38970'  Porcentaje='19'  Valor='7404' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='5' UnidadMedida='Unidad' SubTotalLinea='126000' Descripcion='CORREA AUTOMOTRIZ LV150 2009' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='5' UnidadCantidadBase='Unidad' PrecioUnitario='28000' ValorTotalItem='140000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BX060-GTS'/> 
+<CampoAdicional Nombre='equivalencia' Valor='BX60'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='140000' Valor='14000'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23940'> 
+<Subtotal ValorBase='126000'  Porcentaje='19'  Valor='23940' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='87300' Descripcion='CORREA AUTOMOTRIZ Ventilador Simca 1300         Bomba Hidraulica Toyot' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='9700' ValorTotalItem='97000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='17450-FED'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='97000' Valor='9700'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16587'> 
+<Subtotal ValorBase='87300'  Porcentaje='19'  Valor='16587' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='73980' Descripcion='BALINERA CARDAN NPR, NKR Todos' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='82200' ValorTotalItem='82200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='210865-1X'/> 
+<CampoAdicional Nombre='equivalencia' Valor='210865-1X'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='11' Indicador='false' Justificacion='Descuento directo' Porcentaje='10' ValorBase='82200' Valor='8220'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14056'> 
+<Subtotal ValorBase='73980'  Porcentaje='19'  Valor='14056' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='11' Cantidad='1' UnidadMedida='94' SubTotalLinea='60000' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='61089' Ocultar='true'/> 
+<precioreferencia ValorArticulo= '60000' CodigoTipoPrecio='03'> 
+</precioreferencia> 
+<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='1.78' ValorBase='61089' Valor='61089'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11400'> 
+<Subtotal ValorBase='60000' Valor='11400' Porcentaje='19' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<CodificacionesEstandar> 
+<CodificacionEstandar CodigoArticulo='891000039'/> 
+</CodificacionesEstandar> 
+</Linea> 
+</Factura> 
+ 
+ 
+

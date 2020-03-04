@@ -1,0 +1,156 @@
+<Factura> 
+<Cabecera  Numero='SETT201' OrdenCompra='602352' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-03' Vencimiento='2020-04-02' HoraEmision='03:01:23' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='7' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='900022709' DV='2' NombreComercial='LA ESQUINA KOREANA S.A.S.' RazonSocial='CARLOS ARTURO CARDENAS CELIS'> 
+<Direccion CodigoMunicipio='5001' NombreCiudad='MEDELLÍN' CodigoPostal='' NombreDepartamento='ANTIOQUIA' CodigoDepartamento='5' Direccion='CARRERA 52 # 34-59' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CARLOS ARTURO CARDENAS CELIS' Telefono='3187071282' Telfax='' Email='laesquinakoreanasas@gmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='5001' NombreCiudad='MEDELLÍN' CodigoPostal='' NombreDepartamento='ANTIOQUIA' CodigoDepartamento='5' Direccion='CARRERA 52 # 34-59' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-02'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='7388'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602352'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='TCC'/> 
+<CampoAdicional Nombre='vendedor' Valor='AYDE PATRICIA'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $99.250'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='1081825'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-04-02'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' UN MILLóN CIENTO  OCHENTA Y UN MIL  SETENTA Y CINCO PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='Descuentese el 10% sobre el valor de la mercancia. Si cancela antes de 30 días. Despues de esta fecha no se aceptan descuentos.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='992500' BaseImponible='992500' BrutoMasImpuestos='1181075' Cargos= '0' Descuentos='0' Impuestos='188575' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='992500' Neto='992500' Subtotal='992500' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='188575'> 
+<Subtotal ValorBase='992500'  Porcentaje='19'  Valor='188575' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='224200' Descripcion='BOMBA DIRECCION HIDRAULICA H100 Porter, 2007/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='224200' ValorTotalItem='224200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='59'/> 
+<CampoAdicional Nombre='referencia' Valor='571004F100 '/> 
+<CampoAdicional Nombre='equivalencia' Valor='106U'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='42598'> 
+<Subtotal ValorBase='224200'  Porcentaje='19'  Valor='42598' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='133800' Descripcion='ANILLOS MOTOR Motor F8A,  LJ80' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='44600' ValorTotalItem='133800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='SWS20098 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='25422'> 
+<Subtotal ValorBase='133800'  Porcentaje='19'  Valor='25422' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='100200' Descripcion='ANILLOS MOTOR Motor F8A,  LJ80' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='50100' ValorTotalItem='100200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='SWS20098-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19038'> 
+<Subtotal ValorBase='100200'  Porcentaje='19'  Valor='19038' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='157200' Descripcion='CASQUETES BIELA LJ80, SJ410, Super Carry' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='26200' ValorTotalItem='157200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='CB1179 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='CB1179A STD'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='29868'> 
+<Subtotal ValorBase='157200'  Porcentaje='19'  Valor='29868' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='110000' Descripcion='CASQUETES BIELA LJ80, SJ410, Super Carry' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='27500' ValorTotalItem='110000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='CB1179-025'/> 
+<CampoAdicional Nombre='equivalencia' Valor='CB1179A-025'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20900'> 
+<Subtotal ValorBase='110000'  Porcentaje='19'  Valor='20900' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='3' UnidadMedida='Unidad' SubTotalLinea='143100' Descripcion='BOMBA AGUA Swift 1.3,Chevytaxi,          Esteem 1.3' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='3' UnidadCantidadBase='Unidad' PrecioUnitario='47700' ValorTotalItem='143100' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='53'/> 
+<CampoAdicional Nombre='referencia' Valor='1740082851US'/> 
+<CampoAdicional Nombre='equivalencia' Valor='TJ-5058'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='27189'> 
+<Subtotal ValorBase='143100'  Porcentaje='19'  Valor='27189' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='124000' Descripcion='PASTILLAS DE FRENO Picanto Ion, 2012/...' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='31000' ValorTotalItem='124000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='60'/> 
+<CampoAdicional Nombre='referencia' Valor='SP1405SM'/> 
+<CampoAdicional Nombre='equivalencia' Valor='10318'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='23560'> 
+<Subtotal ValorBase='124000'  Porcentaje='19'  Valor='23560' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

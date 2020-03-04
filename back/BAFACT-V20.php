@@ -12,13 +12,7 @@ class facturacion extends conectarBD{
 		$result = $this->consultar("idx,lima_vdfl,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
 		//descomentarear cuando allán pedidos en estado de facturacion 
 		//$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='FAC' GROUP BY (cliente) ORDER BY (fecha) limit 100", 4);
-		$pedi_manu = mysqli_num_rows($this->consultar("* ","liem_maes","lima_orco<'500000' and lima_esta='FAC' and cast(lima_fefa as DATE)='$fech'", 4));
-		if($pedi_manu > 0){
-			$img_fmanu="Fact_mp.png";
-		}
-		else{
-			$img_fmanu="Fact_manual.png";
-		}
+		
 		echo "
 		<table class='table table-hover' style='width:500px'>
 			<thead>
@@ -84,7 +78,9 @@ class facturacion extends conectarBD{
 			$lima_liem = $datos["lima_clie"];
 			$lima_orco = $datos["lima_orco"];
 			$estadowf = ($datos["estadowf"]=="Anulado" || $datos["estadowf"]=="Anuladoback")?"<td class='$estilo1' title='$causal'>".$datos["estadowf"]."</td>":"";
-			$sqlCantidad = $this->consultar("pedido", "mpedidos join liem_maes on (pedido=lima_liem or idx=lima_orco) ", "workflow='FACT' and lima_esta='FAC' and estadowf!='Anulado' and cliente=".$datos["cliente"], 4);
+			$sqlLiemMaes = $this->consultar("pedido,SUM(deli_prec*deli_case) as vrbruto,lima_vfle,lima_vdfl,descuento", "mpedidos join liem_maes on (pedido=lima_liem or idx=lima_orco) join deta_liem on (lima_idxx=deli_idle)", "workflow='FACT' and lima_esta='FAC' and estadowf!='Anulado' and cliente=".$datos["cliente"], 4);
+			$datosLiemMaes = mysqli_fetch_array($sqlLiemMaes);
+			//$sqlCopaClie = $this->consultar("", "copa_clie", "copc_codi=".$datosLiemMaes["descuento"], 4);
 			$total=($datos["lima_vtpe"]-$datos["lima_vtpe"])+$datos["lima_vfle"]+$datos["vriva"];
 			echo "<tr>
 					<td><input type='checkbox' name='checkbox' id='".$lima_liem."' value='".$lima_liem."' onChange='contar(1)'></td>
@@ -115,7 +111,7 @@ class facturacion extends conectarBD{
 					$LimaIdxx = "";
 					//vali_dian:para que muestre la ventana emergente si lima_vafe es diferente a S y N
 					$vali_dian = "validar_dian";
-					$sqlLimaIdxx = $this->consultar("lima_idxx,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_clie=".$datos["lima_clie"]." and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-17'", 4);
+					$sqlLimaIdxx = $this->consultar("lima_idxx,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_clie=".$datos["lima_clie"]." and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20'", 4);
 					while ($datosLimaIdxx = mysqli_fetch_array($sqlLimaIdxx)) {
 						$LimaIdxx = ($LimaIdxx=="")?$datosLimaIdxx["lima_idxx"]:$LimaIdxx."-".$datosLimaIdxx["lima_idxx"];
 						if ($datosLimaIdxx["lima_vafe"]!="N" ) {
@@ -160,7 +156,7 @@ class facturacion extends conectarBD{
 	//trae las facturas que se le han asignado al cliente 
 	public function factCliente(){
 		extract($_POST);
-		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-17' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
+		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
 		echo "<table class='table table-striped'>
 				<thead>
 				<tr>

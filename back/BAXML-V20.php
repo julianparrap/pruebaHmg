@@ -73,7 +73,7 @@ class generaXml extends conectarBD{
  		$tipoPersona=($datosLiemMaes["clma_tipo"] == "NATURAL")?2:1;
  		$tipoIdentificacion=($datosLiemMaes["clma_tipo"] == "NATURAL")?13:31;
  		$text .= "<Cliente TipoPersona='".$tipoPersona."' TipoRegimen='".$tiporegimen."' TipoIdentificacion='".$tipoIdentificacion."' NumeroIdentificacion='".$datosLiemMaes["clma_nitt"]."' DV='".$datosLiemMaes["clma_dive"]."' NombreComercial='".$nombreComercial."' RazonSocial='".$datosLiemMaes["clma_repr"]."'> \n";
- 		$text .= "<Direccion CodigoMunicipio='".$datosLiemMaes["dema_codi"]."".str_pad($datosLiemMaes["cima_codi"], 5, "0", STR_PAD_LEFT)."' NombreCiudad='".$datosLiemMaes["cima_noci"]."' CodigoPostal='' NombreDepartamento='".$datosLiemMaes["dema_node"]."' CodigoDepartamento='".$datosLiemMaes["dema_codi"]."' Direccion='".$datosLiemMaes["clma_dire"]."' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> \n";
+ 		$text .= "<Direccion CodigoMunicipio='".$datosLiemMaes["dema_codi"]."".str_pad($datosLiemMaes["cima_codi"], 3, "0", STR_PAD_LEFT)."' NombreCiudad='".$datosLiemMaes["cima_noci"]."' CodigoPostal='' NombreDepartamento='".$datosLiemMaes["dema_node"]."' CodigoDepartamento='".$datosLiemMaes["dema_codi"]."' Direccion='".$datosLiemMaes["clma_dire"]."' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> \n";
  		//$text .= "<Contacto Nombre='GUSTAVO ADOLFO GALLO' Telefono='2635244' Telfax='' Email='gallonetrepuestos@hotmail.com' Notas='Representante legal'/> \n";
  		$text .= "<Contacto Nombre='".$datosLiemMaes["clma_repr"]."' Telefono='".$datosLiemMaes["clma_cel1"]."' Telfax='' Email='".$datosLiemMaes["clma_cor1"]."' Notas='Representante legal'/> \n";
  		$text .= "<ObligacionesCliente> \n";
@@ -83,7 +83,7 @@ class generaXml extends conectarBD{
  			$text .= "<CodigoObligacion>O-".$datosMoviReti["retm_codi"]."</CodigoObligacion> \n";
 		}
  		$text .= "</ObligacionesCliente> \n";
- 		$text .= "<Direccion CodigoMunicipio='".$datosLiemMaes["dema_codi"]."".str_pad($datosLiemMaes["cima_codi"], 5, "0", STR_PAD_LEFT)."' NombreCiudad='".$datosLiemMaes["cima_noci"]."' CodigoPostal='' NombreDepartamento='".$datosLiemMaes["dema_node"]."' CodigoDepartamento='".$datosLiemMaes["dema_codi"]."' Direccion='".$datosLiemMaes["clma_dire"]."' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> \n";
+ 		$text .= "<Direccion CodigoMunicipio='".$datosLiemMaes["dema_codi"]."".str_pad($datosLiemMaes["cima_codi"], 3, "0", STR_PAD_LEFT)."' NombreCiudad='".$datosLiemMaes["cima_noci"]."' CodigoPostal='' NombreDepartamento='".$datosLiemMaes["dema_node"]."' CodigoDepartamento='".$datosLiemMaes["dema_codi"]."' Direccion='".$datosLiemMaes["clma_dire"]."' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> \n";
  		$text .= "<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> \n";
  		$text .= "</Cliente> \n";
  		$text .= "<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='".$vencimiento."'> \n";
@@ -113,7 +113,7 @@ class generaXml extends conectarBD{
  		$iva = $baseImponible*0.19;
  		$brutoMasImpuestos = $baseImponible+$iva;
 	 	$textoEnLetras = $this->numerotexto(round(intval($brutoMasImpuestos),0));
-		$observacion ="A esta factura se le otorgo el ".$porceCond."% Dcto a pie, para pago antes de ".$datosLiemMaes["copc_pldi"]." días. Pague oportunamete y evite perder este descuento.";
+		$observacion ="A esta factura se le otorgo el ".$datosLiemMaes["copc_depf"]."% Dcto a pie, para pago antes de ".$datosLiemMaes["copc_pldi"]." días. Pague oportunamete y evite perder este descuento.";
  		//condicionado
  		if ($datosLiemMaes["copc_deco"]!=0) {
  			$porceCond = $datosLiemMaes["copc_deco"];
@@ -123,7 +123,7 @@ class generaXml extends conectarBD{
 			$canceleAntes = date("Y-m-d",strtotime($fecha_actual."+ ".$datosLiemMaes["copc_pldi"]." days")); 
 
 	 		$text .= "<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='".$porceCond."%  $".number_format($valorCond,0,',','.')."'/> \n";
-	 		$text .= "<CampoAdicional Nombre='paguesolamente' Valor='".number_format($pagueSoloCond,0,',','.')."'/> \n";
+	 		$text .= "<CampoAdicional Nombre='paguesolamente' Valor='".$pagueSoloCond."'/> \n";
 	 		$text .= "<CampoAdicional Nombre='canceleantes' Valor='".$canceleAntes."'/> \n";
 			$observacion ="Descuentese el ".$porceCond."% sobre el valor de la mercancia. Si cancela antes de ".$datosLiemMaes["copc_pldi"]." días. Despues de esta fecha no se aceptan descuentos.";
 		}

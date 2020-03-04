@@ -17,16 +17,13 @@ class conectarBD {
 		$this->con_base="hmg";
 		$this->con_user="sistemas";
 		$this->con_pass="linuxmoya";
-		if (!($this->con=mysqli_connect($this->con_serv,$this->con_user,$this->con_pass,$this->con_base))){
-			echo "ERROR AL CONECTAR LA BASE DE DATOS.";
-			exit();
-		}
+
 		$mysqli = new mysqli($this->con_serv,$this->con_user,$this->con_pass,$this->con_base);
-		if (mysqli_connect_errno()) {
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		  exit;
-		}
-		$mysqli->query("SET NAMES 'utf8'");
+		if ($mysqli -> connect_errno) {
+  		echo "Fallo conexión con Mysql, por favor contacte al administrador: " . $mysqli -> connect_error;
+  		exit();
+  	}	
+ 		$mysqli -> set_charset("utf8");
 		return $mysqli;
 	}
 
