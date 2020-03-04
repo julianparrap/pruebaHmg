@@ -9,9 +9,9 @@ class facturacion extends conectarBD{
 	//
 	public function mostrarContenido() {
 		$fech = date("Y-m-d");
-		$result = $this->consultar("idx,lima_vdfl,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
+//		$result = $this->consultar("idx,lima_vdfl,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' GROUP BY (cliente) ORDER BY (fecha) limit 10", 4);
 		//descomentarear cuando allán pedidos en estado de facturacion 
-		//$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='FAC' GROUP BY (cliente) ORDER BY (fecha) limit 100", 4);
+		$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='FAC' GROUP BY (cliente) ORDER BY (fecha) limit 100", 4);
 		
 		echo "
 		<table class='table table-hover' style='width:500px'>
@@ -111,7 +111,8 @@ class facturacion extends conectarBD{
 					$LimaIdxx = "";
 					//vali_dian:para que muestre la ventana emergente si lima_vafe es diferente a S y N
 					$vali_dian = "validar_dian";
-					$sqlLimaIdxx = $this->consultar("lima_idxx,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_clie=".$datos["lima_clie"]." and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20'", 4);
+//					$sqlLimaIdxx = $this->consultar("lima_idxx,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_clie=".$datos["lima_clie"]." and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20'", 4);
+					$sqlLimaIdxx = $this->consultar("lima_idxx,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_clie=".$datos["lima_clie"]." and lima_esta='REA'", 4);
 					while ($datosLimaIdxx = mysqli_fetch_array($sqlLimaIdxx)) {
 						$LimaIdxx = ($LimaIdxx=="")?$datosLimaIdxx["lima_idxx"]:$LimaIdxx."-".$datosLimaIdxx["lima_idxx"];
 						if ($datosLimaIdxx["lima_vafe"]!="N" ) {
@@ -156,7 +157,8 @@ class facturacion extends conectarBD{
 	//trae las facturas que se le han asignado al cliente 
 	public function factCliente(){
 		extract($_POST);
-		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
+//		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
+		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
 		echo "<table class='table table-striped'>
 				<thead>
 				<tr>
@@ -234,8 +236,8 @@ class facturacion extends conectarBD{
 	 	$t_ped = 0;
 	 	$t_ref = 0;
 	 	//home/hmg/html/asesores/mysql/claseMysql-V20.php
-	 	$morden = fopen("u:/mordencompra.txt","w") or die("No se encontro la ruta para la exportacion");
-	 	$dorden = fopen("u:/dordencompra.txt","w") or die("No se encontro la ruta para la exportacion");
+	 	$morden = fopen("u:/programas/expo_oc/exportar/mordencompra.txt","w") or die("No se encontro la ruta para la exportacion");
+	 	$dorden = fopen("u:/programas/expo_oc/exportar/dordencompra.txt","w") or die("No se encontro la ruta para la exportacion");
 		$listas = explode("-", $cliente);
 		$cantidad_listas = count($listas);
 		$i = 0;

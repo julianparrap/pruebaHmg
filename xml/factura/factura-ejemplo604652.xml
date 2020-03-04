@@ -1,0 +1,449 @@
+<Factura> 
+<Cabecera  Numero='SETT608' OrdenCompra='604652' FechaOrdenCompra='2020-03-03' FechaEmision='2020-03-04' Vencimiento='2020-04-03' HoraEmision='02:42:10' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='28' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='49' TipoIdentificacion='31' NumeroIdentificacion='800004800' DV='6' NombreComercial='IMPORTADORA CELESTE S.A.' RazonSocial='IMPORTADORA CELESTE S.A.'> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 65 NO. 27-23' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='IMPORTADORA CELESTE S.A.' Telefono='3195548261' Telfax='' Email='auxsistemas@hermagu.com.co' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-49</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 65 NO. 27-23' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-03'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='2082'/> 
+<CampoAdicional Nombre='pedido N°' Valor='604652'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='JUAN CARLOS'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' UN MILLóN SEISCIENTOS  TREINTA MIL DOSCIENTOS  OCHO PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 13% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='1369923' BaseImponible='1369923' BrutoMasImpuestos='1630208' Cargos= '0' Descuentos='0' Impuestos='260285' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='1522900' Neto='1324923' Subtotal='1369923' TotalDescuentosLineas='202977' TotalCargosLineas='0' Flete='50000'  DescuentoEnFlete='5000'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='260285'> 
+<Subtotal ValorBase='1369923'  Porcentaje='19'  Valor='260285' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='38541' Descripcion='6-POLEA GUIA CORREA MICRO V Ram 1500 ; Grand Cherokee     Durango, 98/' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='44300' ValorTotalItem='44300' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='38033 '/> 
+<CampoAdicional Nombre='equivalencia' Valor='38033'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='44300' Valor='5759'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7323'> 
+<Subtotal ValorBase='38541'  Porcentaje='19'  Valor='7323' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='40890' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='4700' ValorTotalItem='47000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BCPR5ES'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='47000' Valor='6110'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7769'> 
+<Subtotal ValorBase='40890'  Porcentaje='19'  Valor='7769' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='53940' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6200' ValorTotalItem='62000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BCPR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='62000' Valor='8060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='10249'> 
+<Subtotal ValorBase='53940'  Porcentaje='19'  Valor='10249' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='46980' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5400' ValorTotalItem='54000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5E'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='54000' Valor='7020'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8926'> 
+<Subtotal ValorBase='46980'  Porcentaje='19'  Valor='8926' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='46110' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5300' ValorTotalItem='53000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='53000' Valor='6890'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8761'> 
+<Subtotal ValorBase='46110'  Porcentaje='19'  Valor='8761' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='46110' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5300' ValorTotalItem='53000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR5EYA-11'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='53000' Valor='6890'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8761'> 
+<Subtotal ValorBase='46110'  Porcentaje='19'  Valor='8761' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='42630' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='4900' ValorTotalItem='49000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR6E'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='49000' Valor='6370'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8100'> 
+<Subtotal ValorBase='42630'  Porcentaje='19'  Valor='8100' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='52200' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6000' ValorTotalItem='60000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BKR6E-11'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='60000' Valor='7800'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9918'> 
+<Subtotal ValorBase='52200'  Porcentaje='19'  Valor='9918' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='41760' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='4800' ValorTotalItem='48000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BPR5ES'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='48000' Valor='6240'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7934'> 
+<Subtotal ValorBase='41760'  Porcentaje='19'  Valor='7934' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='10' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='45240' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5200' ValorTotalItem='52000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BPR5EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='52000' Valor='6760'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8596'> 
+<Subtotal ValorBase='45240'  Porcentaje='19'  Valor='8596' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='11' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='49590' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x19mm; Copa 1' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5700' ValorTotalItem='57000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='BPR6EY'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='57000' Valor='7410'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9422'> 
+<Subtotal ValorBase='49590'  Porcentaje='19'  Valor='9422' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='12' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='62640' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='7200' ValorTotalItem='72000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='DCPR7E'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='72000' Valor='9360'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11902'> 
+<Subtotal ValorBase='62640'  Porcentaje='19'  Valor='11902' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='13' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='71340' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyectado;   Rosca 14x26,49mm; Cop' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='8200' ValorTotalItem='82000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='LFR5A-11'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='82000' Valor='10660'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='13555'> 
+<Subtotal ValorBase='71340'  Porcentaje='19'  Valor='13555' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='14' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='53940' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6200' ValorTotalItem='62000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RA7YC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='62000' Valor='8060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='10249'> 
+<Subtotal ValorBase='53940'  Porcentaje='19'  Valor='10249' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='15' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='48720' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 0.8;  Rosca 12x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5600' ValorTotalItem='56000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RA8HC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='56000' Valor='7280'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9257'> 
+<Subtotal ValorBase='48720'  Porcentaje='19'  Valor='9257' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='16' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='58290' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6700' ValorTotalItem='67000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC10MCC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='67000' Valor='8710'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11075'> 
+<Subtotal ValorBase='58290'  Porcentaje='19'  Valor='11075' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='17' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='53940' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6200' ValorTotalItem='62000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC10YC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='62000' Valor='8060'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='10249'> 
+<Subtotal ValorBase='53940'  Porcentaje='19'  Valor='10249' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='18' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='41760' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 5.1;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='4800' ValorTotalItem='48000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC12LC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='48000' Valor='6240'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7934'> 
+<Subtotal ValorBase='41760'  Porcentaje='19'  Valor='7934' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='19' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='48720' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 5.1;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5600' ValorTotalItem='56000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC12LYC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='56000' Valor='7280'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9257'> 
+<Subtotal ValorBase='48720'  Porcentaje='19'  Valor='9257' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='20' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='60030' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6900' ValorTotalItem='69000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC12MC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='69000' Valor='8970'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11406'> 
+<Subtotal ValorBase='60030'  Porcentaje='19'  Valor='11406' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='21' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='59160' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='6800' ValorTotalItem='68000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC12MCC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='68000' Valor='8840'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='11240'> 
+<Subtotal ValorBase='59160'  Porcentaje='19'  Valor='11240' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='22' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='48720' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5600' ValorTotalItem='56000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC12YC'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='56000' Valor='7280'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='9257'> 
+<Subtotal ValorBase='48720'  Porcentaje='19'  Valor='9257' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='23' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='45240' Descripcion='BUJIA CON RESISTOR Caliente;  Aislador Normal    Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5200' ValorTotalItem='52000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC21'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='52000' Valor='6760'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8596'> 
+<Subtotal ValorBase='45240'  Porcentaje='19'  Valor='8596' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='24' Nota='' Cantidad='1' UnidadMedida='Unidad' SubTotalLinea='4872' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='1' UnidadCantidadBase='Unidad' PrecioUnitario='5600' ValorTotalItem='5600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC9YC'/> 
+<CampoAdicional Nombre='equivalencia' Valor='E344'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='5600' Valor='728'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='926'> 
+<Subtotal ValorBase='4872'  Porcentaje='19'  Valor='926' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='25' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='38280' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x19mm; Copa 5' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='4400' ValorTotalItem='44000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='RC9YC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='44000' Valor='5720'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='7273'> 
+<Subtotal ValorBase='38280'  Porcentaje='19'  Valor='7273' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='26' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='79170' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 3.0;  Rosca 12x26,5mm; Copa' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='9100' ValorTotalItem='91000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='REA8MX'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='91000' Valor='11830'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='15042'> 
+<Subtotal ValorBase='79170'  Porcentaje='19'  Valor='15042' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='27' Nota='' Cantidad='10' UnidadMedida='Unidad' SubTotalLinea='46110' Descripcion='BUJIA CON RESISTOR Medio; Aislador Proyec. 1.5;  Rosca 14x26,49mm; Cop' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='10' UnidadCantidadBase='Unidad' PrecioUnitario='5300' ValorTotalItem='53000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='18'/> 
+<CampoAdicional Nombre='referencia' Valor='REC10YC4'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='53000' Valor='6890'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8761'> 
+<Subtotal ValorBase='46110'  Porcentaje='19'  Valor='8761' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='28' Cantidad='1' UnidadMedida='94' SubTotalLinea='45000' Descripcion='flete' CantidadBase='0' UnidadCantidadBase='94' PrecioUnitario='0' ValorTotalItem='50000' Ocultar='true'/> 
+<precioreferencia ValorArticulo= '45000' CodigoTipoPrecio='03'> 
+</precioreferencia> 
+<DescuentoOCargo ID='99' Indicador='false' Justificacion='Descuento flete' Porcentaje='10' ValorBase='50000' Valor='50000'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='8550'> 
+<Subtotal ValorBase='45000' Valor='8550' Porcentaje='19' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<CodificacionesEstandar> 
+<CodificacionEstandar CodigoArticulo='891000039'/> 
+</CodificacionesEstandar> 
+</Linea> 
+</Factura> 
+ 
+ 
+

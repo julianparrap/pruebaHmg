@@ -255,7 +255,7 @@
 				showLoaderOnConfirm: true
 			}).then((result) => {
 				var lima_vfle = $("#lima_vfle").val();
-				alert(new Intl.NumberFormat("en-IN").format(lima_vfle));
+				//alert(new Intl.NumberFormat("en-IN").format(lima_vfle));
 				var lima_vdfl = $("#lima_vdfl").val();
 				if (lima_vfle === false) return false;
 				if (lima_vfle === "" || isNaN(lima_vfle)) {
