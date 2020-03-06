@@ -1,0 +1,74 @@
+<Factura> 
+<Cabecera  Numero='SETT602370' OrdenCompra='602370' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-05' Vencimiento='2020-04-04' HoraEmision='02:51:11' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='1' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='800154107' DV='2' NombreComercial='REPUESTOS LA 94 LTDA' RazonSocial='JORGE ELIECER GOMEZ MORALES'> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 17 NO. 96 H - 05' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='JORGE ELIECER GOMEZ MORALES' Telefono='3003192883' Telfax='' Email='repula94@hotmail.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 17 NO. 96 H - 05' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-04'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='1583'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602370'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='ABEL'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $2.240'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='24416'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-04-04'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' VEINTISEIS MIL SEISCIENTOS  CINCUENTA Y SEIS PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='Descuentese el 10% sobre el valor de la mercancia. Si cancela antes de 30 días. Despues de esta fecha no se aceptan descuentos.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='22400' BaseImponible='22400' BrutoMasImpuestos='26656' Cargos= '0' Descuentos='0' Impuestos='4256' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='22400' Neto='22400' Subtotal='22400' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='4256'> 
+<Subtotal ValorBase='22400'  Porcentaje='19'  Valor='4256' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='22400' Descripcion='CAUCHO VALVULAS Fiesta 1.0L SuperCharger      2004/07,1.6L Power 02/03' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='2800' ValorTotalItem='22400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='03'/> 
+<CampoAdicional Nombre='referencia' Valor='96MM6571BE'/> 
+<CampoAdicional Nombre='equivalencia' Valor='09250BREF'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='4256'> 
+<Subtotal ValorBase='22400'  Porcentaje='19'  Valor='4256' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

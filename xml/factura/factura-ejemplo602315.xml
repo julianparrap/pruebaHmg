@@ -1,0 +1,113 @@
+<Factura> 
+<Cabecera  Numero='SETT602315' OrdenCompra='602315' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-05' Vencimiento='2020-04-04' HoraEmision='02:49:50' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='4' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='2' TipoRegimen='48' TipoIdentificacion='13' NumeroIdentificacion='79742304' DV='5' NombreComercial='CAR WEST' RazonSocial='CARLOS ARMANDO GOMEZ LOPEZ'> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 1 # 18A-23' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CARLOS ARMANDO GOMEZ LOPEZ' Telefono='3107725277' Telfax='' Email='info@carwestautopartes.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CALLE 1 # 18A-23' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-04'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='3322'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602315'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='MIGUEL ANGEL'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='Dcto. por Pronto Pago' Valor='10%  $40.800'/> 
+<CampoAdicional Nombre='paguesolamente' Valor='444720'/> 
+<CampoAdicional Nombre='canceleantes' Valor='2020-04-04'/> 
+<CampoAdicional Nombre='ValorLetras' Valor='CUATROCIENTOS  OCHENTA Y CINCO MIL QUINIENTOS  VEINTE PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='Descuentese el 10% sobre el valor de la mercancia. Si cancela antes de 30 días. Despues de esta fecha no se aceptan descuentos.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='408000' BaseImponible='408000' BrutoMasImpuestos='485520' Cargos= '0' Descuentos='0' Impuestos='77520' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='408000' Neto='408000' Subtotal='408000' TotalDescuentosLineas='0' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='77520'> 
+<Subtotal ValorBase='408000'  Porcentaje='19'  Valor='77520' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='102400' Descripcion='VALVULAS DE ADMISION Twingo 1.2 Lts, 8 Valvulas,   1996/13' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='12800' ValorTotalItem='102400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701469266'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3620-A'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='19456'> 
+<Subtotal ValorBase='102400'  Porcentaje='19'  Valor='19456' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='109600' Descripcion='VALVULAS DE ESCAPE Twingo 1.2 Lts, 8 Valvulas,   1996/13' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='13700' ValorTotalItem='109600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701469269'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3621-EB'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20824'> 
+<Subtotal ValorBase='109600'  Porcentaje='19'  Valor='20824' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='88000' Descripcion='VALVULAS DE ADMISION Twingo IV, 1200cc, 16 Valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='11000' ValorTotalItem='88000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701472986'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3862-A'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='16720'> 
+<Subtotal ValorBase='88000'  Porcentaje='19'  Valor='16720' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='8' UnidadMedida='Unidad' SubTotalLinea='108000' Descripcion='VALVULAS DE ESCAPE Twingo IV, 1200cc, 16 Valvulas' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='8' UnidadCantidadBase='Unidad' PrecioUnitario='13500' ValorTotalItem='108000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='16'/> 
+<CampoAdicional Nombre='referencia' Valor='7701473004'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3863-EB'/> 
+</DatosAdicionales> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20520'> 
+<Subtotal ValorBase='108000'  Porcentaje='19'  Valor='20520' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

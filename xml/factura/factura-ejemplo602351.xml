@@ -1,0 +1,100 @@
+<Factura> 
+<Cabecera  Numero='SETT602351' OrdenCompra='602351' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-06' Vencimiento='2020-04-05' HoraEmision='01:40:39' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='3' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='49' TipoIdentificacion='31' NumeroIdentificacion='800004800' DV='2' NombreComercial='BODEGA CHEVROLET' RazonSocial='CARLOS ANDRES PINEDA OSORIO'> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 26 No. 64-29' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CARLOS ANDRES PINEDA OSORIO' Telefono='3136954963' Telfax='' Email='compras_bog2@importadoraceleste.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-49</CodigoObligacion> 
+<CodigoObligacion>O-15</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 26 No. 64-29' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-05'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='2003'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602351'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Recoge Bodega'/> 
+<CampoAdicional Nombre='vendedor' Valor='BLANCA DORIS'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor='SEISCIENTOS  DIECINUEVE MIL NOVECIENTOS  TREINTA Y SIETE PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 13% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='520956' BaseImponible='520956' BrutoMasImpuestos='619938' Cargos= '0' Descuentos='0' Impuestos='98982' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='598800' Neto='520956' Subtotal='520956' TotalDescuentosLineas='77844' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='98982'> 
+<Subtotal ValorBase='520956'  Porcentaje='19'  Valor='98982' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='293016' Descripcion='PISTONES MOTOR Motor J18 L4-2.0 Grand Vitara' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='168400' ValorTotalItem='336800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='KS8413/4 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='S8413/4-0 ST'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='336800' Valor='43784'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='55673'> 
+<Subtotal ValorBase='293016'  Porcentaje='19'  Valor='55673' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='152424' Descripcion='ANILLOS MOTOR Motor J18 L4-2.0 Grand Vitara' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='87600' ValorTotalItem='175200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='SWS20178 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='175200' Valor='22776'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='28961'> 
+<Subtotal ValorBase='152424'  Porcentaje='19'  Valor='28961' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='75516' Descripcion='CASQUETES BIELA Motor J18 L4-2.0 Grand Vitara' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='43400' ValorTotalItem='86800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='CB2408-025'/> 
+<CampoAdicional Nombre='equivalencia' Valor='CB2408A-025'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='86800' Valor='11284'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='14348'> 
+<Subtotal ValorBase='75516'  Porcentaje='19'  Valor='14348' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

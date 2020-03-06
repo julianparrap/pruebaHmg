@@ -1,0 +1,184 @@
+<Factura> 
+<Cabecera  Numero='SETT602349' OrdenCompra='602349' FechaOrdenCompra='2020-01-20' FechaEmision='2020-03-06' Vencimiento='2020-04-05' HoraEmision='01:40:39' MonedaFactura='COP' TipoFactura='FACTURA-UBL' FormaDePago='2' LineasDeFactura='11' TipoOperacion='10' FormatoContingencia='Papel'/> 
+<NumeracionDIAN NumeroResolucion='18760000001' FechaInicio='2019-01-19' FechaFin='2030-01-19' PrefijoNumeracion='SETT' ConsecutivoInicial='1' ConsecutivoFinal='5000000'/> 
+<Notificacion Tipo='Mail' De='info@hermagu.com.co'> 
+<Para>sistemas@hermagu.com.co</Para> 
+<Para>auxsistemas@hermagu.com.co</Para> 
+</Notificacion> 
+<Emisor TipoPersona='1' TipoRegimen='48' TipoIdentificacion='31' NumeroIdentificacion='860511055' DV='8' RazonSocial='HERMAGU S.A.' NumeroMatriculaMercantil='183263' NombreComercial= 'HERMAGU S.A.' > 
+<CodigosCIIU> 
+<CIIU>4530</CIIU> 
+</CodigosCIIU> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29' /> 
+<ObligacionesEmisor> 
+<CodigoObligacion>O-03</CodigoObligacion> 
+<CodigoObligacion>O-05</CodigoObligacion> 
+<CodigoObligacion>O-07</CodigoObligacion> 
+<CodigoObligacion>O-09</CodigoObligacion> 
+<CodigoObligacion>O-10</CodigoObligacion> 
+<CodigoObligacion>O-14</CodigoObligacion> 
+<CodigoObligacion>O-42</CodigoObligacion> 
+<CodigoObligacion>O-48</CodigoObligacion> 
+</ObligacionesEmisor> 
+<DireccionFiscal CodigoMunicipio='11001' NombreCiudad='BOGOTA D.C.' CodigoPostal='' NombreDepartamento='BOGOTA D.C.' CodigoDepartamento='11' Direccion='Calle 17 No 28A - 29'/> 
+<TributoEmisor CodigoTributo='01' NombreTributo='IVA'/> 
+</Emisor> 
+<Cliente TipoPersona='1' TipoRegimen='49' TipoIdentificacion='31' NumeroIdentificacion='800004800' DV='2' NombreComercial='BODEGA CHEVROLET' RazonSocial='CARLOS ANDRES PINEDA OSORIO'> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 26 No. 64-29' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<Contacto Nombre='CARLOS ANDRES PINEDA OSORIO' Telefono='3136954963' Telfax='' Email='compras_bog2@importadoraceleste.com' Notas='Representante legal'/> 
+<ObligacionesCliente> 
+<CodigoObligacion>O-49</CodigoObligacion> 
+<CodigoObligacion>O-15</CodigoObligacion> 
+</ObligacionesCliente> 
+<Direccion CodigoMunicipio='11001' NombreCiudad='BOGOTÁ, D.C.' CodigoPostal='' NombreDepartamento='BOGOTÁ, D.C.' CodigoDepartamento='11' Direccion='CARRERA 26 No. 64-29' CodigoPais='CO' NombrePais='Colombia' IdiomaPais='es'/> 
+<TributoCliente CodigoTributo='01' NombreTributo='IVA'/> 
+</Cliente> 
+<MediosDePago CodigoMedioPago='ZZZ' FormaDePago='OTRO' Vencimiento='2020-04-05'> 
+</MediosDePago> 
+<Extensiones> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='codigo' Valor='2003'/> 
+<CampoAdicional Nombre='pedido N°' Valor='602349'/> 
+<CampoAdicional Nombre='Transportador - Guia N°' Valor='Entregas AM'/> 
+<CampoAdicional Nombre='vendedor' Valor='BLANCA DORIS'/> 
+<CampoAdicional Nombre='condicionesdepago' Valor='CREDITO A 30 DIAS'/> 
+<CampoAdicional Nombre='ValorLetras' Valor=' DOS MILLONES SEISCIENTOS  DIECISIETE MIL CUATROCIENTOS  CUARENTA Y CINCO PESOS M/CTE'/> 
+<CampoAdicional Nombre='Observacion1' Valor='A esta factura se le otorgo el 13% Dcto a pie, para pago antes de 30 días. Pague oportunamete y evite perder este descuento.'/> 
+</DatosAdicionales> 
+</Extensiones> 
+<Totales Bruto='2199534' BaseImponible='2199534' BrutoMasImpuestos='2617445' Cargos= '0' Descuentos='0' Impuestos='417911' Retenciones='0' General='' Anticipo='0' Redondeo='0' TotalOtros1='2528200' Neto='2199534' Subtotal='2199534' TotalDescuentosLineas='328666' TotalCargosLineas='0' Flete='0'  DescuentoEnFlete='0'/>
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='417911'> 
+<Subtotal ValorBase='2199534'  Porcentaje='19'  Valor='417911' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+<Linea> 
+<Detalle NumeroLinea='1' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='105618' Descripcion='ANILLOS MOTOR Motor F10A, Super Carry, SJ410' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='60700' ValorTotalItem='121400' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='SWS20106-050'/> 
+<CampoAdicional Nombre='equivalencia' Valor=''/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='121400' Valor='15782'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='20067'> 
+<Subtotal ValorBase='105618'  Porcentaje='19'  Valor='20067' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='2' Nota='' Cantidad='6' UnidadMedida='Unidad' SubTotalLinea='201492' Descripcion='CILINDRO DELANTERO FRENOS 1 3/16,R,  Anterior,       NPR 2001/... T.T.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='6' UnidadCantidadBase='Unidad' PrecioUnitario='38600' ValorTotalItem='231600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='12'/> 
+<CampoAdicional Nombre='referencia' Valor='8971398200'/> 
+<CampoAdicional Nombre='equivalencia' Valor='8970220281'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='231600' Valor='30108'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='38283'> 
+<Subtotal ValorBase='201492'  Porcentaje='19'  Valor='38283' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='3' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='508254' Descripcion='CORONA Y SPEED 36x7,Super Carry-Integracion  Nacional' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='292100' ValorTotalItem='584200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='06'/> 
+<CampoAdicional Nombre='referencia' Valor='X73439XKT-1X'/> 
+<CampoAdicional Nombre='equivalencia' Valor='X73439XKT-1X'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='584200' Valor='75946'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='96568'> 
+<Subtotal ValorBase='508254'  Porcentaje='19'  Valor='96568' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='4' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='111186' Descripcion='CASQUETES CIGUENAL Motor J18 L4-2.0 Grand Vitara' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='63900' ValorTotalItem='127800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='MS2408 STD '/> 
+<CampoAdicional Nombre='equivalencia' Valor='MS2408 STD'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='127800' Valor='16614'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='21125'> 
+<Subtotal ValorBase='111186'  Porcentaje='19'  Valor='21125' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='5' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='183570' Descripcion='BOMBA AGUA Grand Vitara,2000cc' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='105500' ValorTotalItem='211000' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='1740077810JP'/> 
+<CampoAdicional Nombre='equivalencia' Valor='S-20'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='211000' Valor='27430'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='34878'> 
+<Subtotal ValorBase='183570'  Porcentaje='19'  Valor='34878' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='6' Nota='' Cantidad='2' UnidadMedida='Unidad' SubTotalLinea='99354' Descripcion='BOMBA AGUA Super Carry' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='2' UnidadCantidadBase='Unidad' PrecioUnitario='57100' ValorTotalItem='114200' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='1740078821JP'/> 
+<CampoAdicional Nombre='equivalencia' Valor='S-08'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='114200' Valor='14846'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='18877'> 
+<Subtotal ValorBase='99354'  Porcentaje='19'  Valor='18877' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='7' Nota='' Cantidad='12' UnidadMedida='Unidad' SubTotalLinea='128412' Descripcion='VALVULAS DE ADMISION Grand Vitara 2.0L,2.5L,2.7L   12 y 24 valvulas.  ' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='12' UnidadCantidadBase='Unidad' PrecioUnitario='12300' ValorTotalItem='147600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='65'/> 
+<CampoAdicional Nombre='referencia' Valor='1291186FA1'/> 
+<CampoAdicional Nombre='equivalencia' Valor='3930-AN'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='147600' Valor='19188'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='24398'> 
+<Subtotal ValorBase='128412'  Porcentaje='19'  Valor='24398' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='8' Nota='' Cantidad='4' UnidadMedida='Unidad' SubTotalLinea='215412' Descripcion='CILINDRO TRASERO FRENOS 1 5/16,R, Superior,        NPR 2001/... T.G.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='4' UnidadCantidadBase='Unidad' PrecioUnitario='61900' ValorTotalItem='247600' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='12'/> 
+<CampoAdicional Nombre='referencia' Valor='8973322250'/> 
+<CampoAdicional Nombre='equivalencia' Valor='8971398540'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='247600' Valor='32188'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='40928'> 
+<Subtotal ValorBase='215412'  Porcentaje='19'  Valor='40928' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+<Linea> 
+<Detalle NumeroLinea='9' Nota='' Cantidad='12' UnidadMedida='Unidad' SubTotalLinea='646236' Descripcion='CILINDRO TRASERO FRENOS 1 5/16, L, Inferior,       NPR 2001/... T.T.' CantidadXEmpaque='' Marca='' NombreModelo='' CantidadBase='12' UnidadCantidadBase='Unidad' PrecioUnitario='61900' ValorTotalItem='742800' /> 
+<DatosAdicionales> 
+<CampoAdicional Nombre='linea' Valor='12'/> 
+<CampoAdicional Nombre='referencia' Valor='8973322260'/> 
+<CampoAdicional Nombre='equivalencia' Valor='8971398550'/> 
+</DatosAdicionales> 
+<DescuentoOCargo ID='13' Indicador='false' Justificacion='Descuento directo' Porcentaje='13' ValorBase='742800' Valor='96564'  /> 
+<Impuestos> 
+<Impuesto Tipo='01' Nombre='IVA' Valor='122785'> 
+<Subtotal ValorBase='646236'  Porcentaje='19'  Valor='122785' CodigoUnidadMedidaBase='94'/> 
+</Impuesto> 
+</Impuestos> 
+</Linea> 
+</Factura> 
+ 
+ 
+

@@ -41,20 +41,17 @@ if ($json['documentNumber']=="")
 	$numeroDocumento = "error";
 else
 	$numeroDocumento = $json['documentNumber'];
-echo "string".$numeroDocumento;
+//echo "string".$numeroDocumento;
 if ($origen=="CONT") 
 	$outputFilePath = '../json/contingencia/' . $numeroDocumento . '.json';
 else
 	$outputFilePath = '../json/factura/' . $numeroDocumento . '.json';
 $formattedOutput = json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-
 file_put_contents($outputFilePath, $formattedOutput);
-
 echo "<br/>Response Saved to: " . $outputFilePath;
 echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 ?>
 <textarea rows="20" cols="120">
-
 
 <?php
 	require_once("../cone/mysql.php");
@@ -62,19 +59,24 @@ echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 	$obj_queryDB = new conectarBD();
 	//funcion para guardar la respuesta del json en la base de datos
 	$fechaActual = date("Y-m-d H:i:s");
-	if (file_exists("app-data/output/".$numeroDocumento.".json") && $numeroDocumento != "error") {
+	if (file_exists("../json/factura/".$numeroDocumento.".json") && $numeroDocumento != "error") {
 		if ($origen=="CONT") 
 			$output = file_get_contents("../json/contingencia/".$numeroDocumento.".json");
 		else
 			$output = file_get_contents("../json/factura/".$numeroDocumento.".json");
 		$arreglo = json_decode($output, true);
-		//consultar liem_maes
-		$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "FACT as fac join liem_maes on (OC=lima_liem) JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "fac.DOCTO=".$DOCTO, 4);
-		if (mysqli_num_rows($sqlLiemMaes)==0) {
-			$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "FACTtemp as fac join liem_maes on (OC=lima_liem) JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "fac.DOCTO=".$DOCTO, 4);
+		if ($origen=="CONT") {
+			//consultar liem_maes
+			$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "FACT as fac join liem_maes on (OC=lima_liem) JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "fac.DOCTO=".$DOCTO, 4);
+			if (mysqli_num_rows($sqlLiemMaes)==0) {
+				$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "FACTtemp as fac join liem_maes on (OC=lima_liem) JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "fac.DOCTO=".$DOCTO, 4);
+			}
+			else{
+				mysqli_data_seek($sqlLiemMaes,0);
+			}
 		}
 		else{
-			mysqli_data_seek($sqlLiemMaes,0);
+			$sqlLiemMaes = $obj_queryDB->consultar("lima_idxx, ped.idx as pedIdx, con.idx as conIdx", "liem_maes JOIN mpedidos as ped ON (lima_orco = ped.idx OR lima_liem = ped.pedido) join conse_web as con on (ped.idx_vend=con.idx)", "lima_liem=".$lima_idxx, 4);
 		}
 		$datosLiemMaes= mysqli_fetch_array($sqlLiemMaes);
 		$redl_idli= $datosLiemMaes["lima_idxx"];
@@ -90,12 +92,16 @@ echo "<br/>RESPONSE (TokenIsCached: " . $client->getTokenIsCached() . "):<br/>";
 		$redl_fxml= $arreglo["xmlFileName"];
 		$redl_fech= $fechaActual;
 		$redl_idus= 1;//$_SESSION["usum_idxx"];
-
 		$obj_queryDB->insertar("redi_liem (redl_idli,redl_idmp,redl_idcf,redl_reid,redl_cufe,redl_ufac,redl_updf,redl_uxml,redl_uack,redl_fpdf,redl_fxml,redl_fech,redl_idus)","(".$redl_idli.",".$redl_idmp.",".$redl_idcf.",'".$redl_reid."','".$redl_cufe."','".$redl_ufac."','".$redl_updf."','".$redl_uxml."','".$redl_uack."','".$redl_fpdf."','".$redl_fxml."','".$redl_fech."',".$redl_idus.")");
 		$obj_queryDB->actualizar("liem_maes","lima_vafe='S'","lima_idxx=".$datosLiemMaes["lima_idxx"]);
 	}
 	else{
-		$obj_queryDB->actualizar("liem_maes","lima_vafe='E'","lima_liem=".$lima_idxx);
+		if ($origen=="CONT") {
+			$obj_queryDB->actualizar("liem_maes","lima_vafe='E'","lima_liem=".$DOCTO);
+		}
+		else{
+			$obj_queryDB->actualizar("liem_maes","lima_vafe='E'","lima_liem=".$lima_idxx);
+		}
 	}	
 ?>
 </textarea>
