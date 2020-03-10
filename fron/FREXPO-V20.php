@@ -1,6 +1,7 @@
 <?php
-	$tituloFavicon = "Facturación - Redsa";
-	$tituloPagina = "FACTURACIÓN";
+	//Modulo para exportar los pedidos a zeus 
+	$tituloFavicon = "Exportar pedido - Redsa";
+	$tituloPagina = "EXPORTAR PEDIDOS";
 	require_once("FRHEAD-V20.php");
 ?>
 	<!-- inicio-javascript" -->
@@ -9,7 +10,7 @@
 			var accion = "mostrarContenido";
 			$.ajax({
 				type :"POST",
-				url : "../func/php/FUFACT-V20.php",
+				url : "../func/php/FUEXPO-V20.php",
 				data: "accion="+accion,
 				success:function(data){
 					$("#bloquea").css({'display':'none'});	
@@ -17,25 +18,7 @@
 					$("#clma_codi").focus();
 				}
 			});
-		}   
-	 
-		function buscar(){
-			var caso = "buscar";
-			var clma_codi = $("#clma_codi").val();
-			$.ajax({
-				type :"POST",
-				url : "../../funciones/php/FFAC-V20.php",
-				data: "caso="+caso+"&clma_codi="+clma_codi,
-				beforeSend :function(){
-					$("#bloquea").css({'display':'block'});
-				},
-				success:function(data){
-					$("#bloquea").css({'display':'none'});
-					$("#contenido").html(data);
-					$("#clma_codi").focus();
-				}
-			});
-		}  
+		}    
 	 
 		function seleccionar_todo(){
 			var checkboxes = document.getElementById("formulario").checkbox; //Array que contiene los checkbox
@@ -108,7 +91,7 @@
 			}
 			$.ajax({
 				type :"POST",
-				url : "../func/php/FUFACT-V20.php",
+				url : "../func/php/FUEXPO-V20.php",
 				data : "cliente="+cliente+"&accion="+accion,
 				beforeSend :function(){
 					$("#bloquea").css({'display':'block'});
@@ -202,7 +185,7 @@
 		else{
 			$.ajax({
 				type :"POST",
-				url : "../func/php/FUFACT-V20.php",
+				url : "../func/php/FUEXPO-V20.php",
 				data: "accion=factCliente&clma_codi="+clma_codi,
 				beforeSend :function(){
 					$("#bloquea").css({'display':'block'});
@@ -248,7 +231,7 @@
 				}
 				$.ajax({
 					type: "POST",
-					url : "../func/php/FUFACT-V20.php",
+					url : "../func/php/FUEXPO-V20.php",
 					data: "accion=agrgarFlete&lima_idxx="+lima_idxx+"&lima_vfle="+lima_vfle+"&lima_vdfl="+lima_vdfl,
 					beforeSend :function(){
 						$("#bloquea").css({'display':'block'});

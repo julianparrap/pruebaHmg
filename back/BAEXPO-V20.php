@@ -1,6 +1,6 @@
 <?php
 /**
- * Modulo de facturacion 
+ * Modulo para exportar los pedidos a zeus 
  * Por: Julian Parra
 */
 require_once("../../cone/mysql.php");
@@ -14,7 +14,14 @@ class facturacion extends conectarBD{
 //		$result = $this->consultar("idx,lima_idxx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,cliente,count(idx) as cantidad,lima_vtpe,lima_vfle,lima_vdes,vriva,lima_vafe", "mpedidos join liem_maes on(lima_liem=pedido or lima_orco=idx)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='FAC' GROUP BY (cliente) ORDER BY (fecha) limit 100", 4);
 		
 		echo "
-		<center><img src='../img/volverForm.png' class='detalles' onclick='javascrip:location.href=\"../../funciones/php/FSAL-V10.php\"' title='Salir'></center>
+		<table class='table table-hover' style='width:500px'>
+			<thead>
+				<tr>
+					<td><img src='../img/facturar.png' class='detalles' onclick='exportar()' title='Facturar'></td>
+					<td><img src='../img/volverForm.png' class='detalles' onclick='javascrip:location.href=\"../../funciones/php/FSAL-V10.php\"' title='Salir'></td>
+				</tr>
+			</thead>
+		</table>
 		<hr>
 		";
 		echo "
@@ -86,6 +93,13 @@ class facturacion extends conectarBD{
 					<td class='$estilo' title='$causal' align='right'>".number_format($datos["vriva"],0,',','.')."</td>
 					<td class='$estilo' title='$causal' align='right'>".number_format($total,0,',','.')."</td>
 				";
+			/*if ($datos["lima_gude"]=="S"){
+				echo"<td class='$estilo' title='$causal'>SI</td>";
+			}
+			else{
+				echo"<td class='$estilo' title='$causal'>NO</td>";
+			}*/
+			/*
 			$estadowf;
 			if ($datos["cantidad"]==1) {
 				echo "<td><img src='../img/cargar_flete.png' width='32px' class='detalles' onclick='agrgarFlete(".$datos["lima_idxx"].")' title='Agregar flete'></td>";			
@@ -108,12 +122,6 @@ class facturacion extends conectarBD{
 							}
 						}
 					}
-					if ($vali_dian=="validar_dian") {
-							echo "<td><img src='../img/validar_dian.png' width='32px' class='detalles' onclick='ventFactElec(".$datos["lima_clie"].",\"".$LimaIdxx."\",".$datos["cantidad"].",\"$nombre\")' title='Ver mas...'></td>";
-					}
-					else{
-						echo "<td><img src='../img/".$vali_dian.".png' width='32px' class='detalles' onclick='ventFactElec(".$datos["lima_clie"].",0,".$datos["cantidad"].",\"$nombre\")' title='Ver mas...'></td>";
-					}
 				}
 				else{
 					switch ($datos["lima_vafe"]) {
@@ -132,80 +140,13 @@ class facturacion extends conectarBD{
 					}
 								
 				}
-			}
+			}*/
 			echo"</tr>";
 		}
 		echo "</tbody></table></div></form>";
 	}
 
-	//trae las facturas que se le han asignado al cliente 
-	public function factCliente(){
-		extract($_POST);
-		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FINA' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and DATE_FORMAT( `fecha` , '%Y-%m-%d' ) = '2020-01-20' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
-//		$sqlMpedidos = $this->consultar("idx,fecha,lima_clie,estadowf,lima_orco,tp_entrega,lima_gude,lima_liem,lima_vafe,lima_idxx", "mpedidos join liem_maes on(lima_liem=pedido)", "(workflow='FACT' or lima_esta='FEL' or (workflow='FINA' and lima_orco!=0)) and lima_esta='REA' and cliente=".$clma_codi." ORDER BY (fecha) limit 10", 4);
-		echo "<table class='table table-striped'>
-				<thead>
-				<tr>
-					<td class='cabecera'>Num Pedido</td>
-					<td class='cabecera'>Tiempo trans.</td>
-					<td class='cabecera'>Tipo Entrega</td>
-					<td class='cabecera'>Remision</td>
-				</tr></thead><tbody>";
-		while ($datosMpedidos = mysqli_fetch_array($sqlMpedidos)) {
-			$causal = "Por Facturar";
-			$estilo = "cuerpo";
-			$estilo1 = "cuerpo_izq";
-			$idxx = $datosMpedidos["idx"];
-			$codi = $datosMpedidos["lima_clie"];
-			$fecha1 = new DateTime($datosMpedidos["fecha"]);
-			$fecha2 = new DateTime(date("Y-m-d H:i:s"));
-			$fecha = $fecha1->diff($fecha2);
-			$dias = $fecha->format('%D');
-			$hora = $fecha->format('%H');
-			$minu = $fecha->format('%I');
-			if($dias > 0){
-				$tiempo = "D ".$dias." ".$hora.":".$minu;
-			}	 
-			else{
-				$tiempo = $hora.":".$minu;
-			}	
-			$lima_liem = $datosMpedidos["lima_clie"];
-			$lima_orco = $datosMpedidos["lima_orco"];
-			$estadowf = ($datosMpedidos["estadowf"]=="Anulado" || $datosMpedidos["estadowf"]=="Anuladoback")?"<td class='$estilo1' title='$causal'>".$datosMpedidos["estadowf"]."</td>":"";
-			$sqlCantidad = $this->consultar("pedido", "mpedidos join liem_maes on (pedido=lima_liem or idx=lima_orco) ", "workflow='FACT' and lima_esta='FAC' and estadowf!='Anulado' and cliente=".$datosMpedidos["lima_clie"], 4);
-
-			echo "<tr>
-					<td class='$estilo' title='$causal'>".$datosMpedidos["lima_liem"]."</td>
-					<td class='$estilo1' style='text-align:center' title='$causal'>".mysqli_num_rows($sqlCantidad)."</td>
-					<td class='$estilo' title='$causal'>".$tiempo."</td>
-					<td class='$estilo1' title='$causal'>".strtoupper($datosMpedidos["tp_entrega"])."</td>
-				";
-			if ($datosMpedidos["lima_gude"]=="S"){
-				echo"<td class='$estilo' title='$causal'>SI</td>";
-			}
-			else{
-				echo"<td class='$estilo' title='$causal'>NO</td>";
-			}
-			echo "<td><img src='../img/cargar_flete.png' width='32px' class='detalles' onclick='agrgarFlete(".$datosMpedidos["lima_idxx"].")' title='Agregar flete'></td>";			
-			$estadowf;
-			switch ($datosMpedidos["lima_vafe"]) {
-				case 'S':
-					echo "<td><img src='../img/revisado.png' width='32px' class='detalles' onclick='valiFactElec(\"".$datosMpedidos["lima_idxx"]."\",1,".$datosMpedidos["lima_clie"].",\"$nombre\")' title='Facturar'></td>";
-					break;
-				case 'N':
-					echo "<td><img src='../img/validar_dian.png' width='32px' class='detalles' onclick='valiFactElec(\"".$datosMpedidos["lima_idxx"]."\",1,".$datosMpedidos["lima_clie"].",\"$nombre\")' title='Validar DIAN'></td>";
-					break;
-				case 'C':
-					echo "<td><img src='../img/exportar.png' width='32px' class='detalles' onclick='valiFactElec(\"".$datosMpedidos["lima_idxx"]."\",1,".$datosMpedidos["lima_clie"].",\"$nombre\")' title='Contingencia'></td>";
-					break;
-				case 'E':
-					echo "<td><img src='../img/error-icon.png' width='32px' class='detalles' onclick='valiFactElec(\"".$datosMpedidos["lima_idxx"]."\",1,".$datosMpedidos["lima_clie"].",\"$nombre\")' title='Error'></td>";
-					break;
-			}
-			echo"</tr>";
-		}
-		echo "</tbody></table></form>";
-	}
+	
 
 	//agrgarFlete
 	public function agrgarFlete(){
@@ -220,8 +161,8 @@ class facturacion extends conectarBD{
 	 	$t_ped = 0;
 	 	$t_ref = 0;
 	 	//home/hmg/html/asesores/mysql/claseMysql-V20.php
-	 	$morden = fopen("u:/programas/expo_oc/exportar/mordencompra.txt","w") or die("No se encontro la ruta para la exportacion");
-	 	$dorden = fopen("u:/programas/expo_oc/exportar/dordencompra.txt","w") or die("No se encontro la ruta para la exportacion");
+	 	$morden = fopen("u:/programas/expo_oc/exportar/mordencompra1.txt","w") or die("No se encontro la ruta para la exportacion");
+	 	$dorden = fopen("u:/programas/expo_oc/exportar/dordencompra.1txt","w") or die("No se encontro la ruta para la exportacion");
 		$listas = explode("-", $cliente);
 		$cantidad_listas = count($listas);
 		$i = 0;
